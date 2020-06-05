@@ -109,7 +109,7 @@ a.logo-link:hover {
     stroke-dashoffset: -269.559;
     animation-name: stroke_anim;
 }
-
+/*
 a.logo-link:hover .stroke_one {
      stroke-dashoffset: 346.905;
 }
@@ -136,7 +136,7 @@ a.logo-link:hover .stroke_six {
 
 a.logo-link:hover .stroke_seven {
      stroke-dashoffset: 51.52;
-}
+}*/
 
 @keyframes stroke_anim {
     0% {stroke: #2D3142;
