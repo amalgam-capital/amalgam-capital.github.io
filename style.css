@@ -7,7 +7,7 @@ body {
 }
 
 .logo {
-    animation: load 1s linear forwards;
+    animation: load 1s ease-in-out forwards;
     text-align: center;
     color: #E6E8EF;
     text-transform: uppercase;
@@ -34,7 +34,7 @@ body {
     stroke-width: 2.477;
     stroke-linecap: round;
     animation-duration: 2s;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
