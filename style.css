@@ -47,7 +47,7 @@ body {
 
 @keyframes stroke_one {
     0% {stroke: #2D3142;
-        stroke-width: 2;stroke-dashoffset: -51.52;}
+        stroke-width: 2;stroke-dashoffset: 51.573;}
     33.33% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 346.905;
