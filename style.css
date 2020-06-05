@@ -23,10 +23,10 @@ body {
 }
 
 @keyframes load {
-    from {
+    0 {
          opacity: 0;
     }
-    to {
+    100 {
         opacity: 1;
     }
 }
@@ -49,13 +49,12 @@ body {
 }
 
 @keyframes stroke_one {
-from {
-    stroke: #767C7C;
-}
-  to {
+    0 {stroke: #767C7C;}
+    75 { stroke: #767C7C;}
+    100 {
     stroke-dashoffset: 346.905;
     stroke-width: 2.477;
-  }
+    }
 }
 
 .stroke_two {
@@ -66,13 +65,12 @@ from {
 }
 
 @keyframes stroke_two {
-    from {
-    stroke: #767C7C;
-}
-  to {
+    0 {stroke: #767C7C;}
+    75 { stroke: #767C7C;}
+    100 {
     stroke-dashoffset: 280.06;
     stroke-width: 2.477;
-  }
+}
 }
 
 .stroke_three {
@@ -83,13 +81,12 @@ from {
 }
 
 @keyframes stroke_three {
-    from {
-    stroke: #767C7C;
-}
-  to {
+    0 {stroke: #767C7C;}
+    75 { stroke: #767C7C;}
+    100 {
     stroke-dashoffset: 268.65;
     stroke-width: 2.477;
-  }
+    }
 }
 
 .stroke_four {
@@ -100,13 +97,12 @@ from {
 }
 
 @keyframes stroke_four {
-    from {
-    stroke: #767C7C;
-}
-  to {
+    0 {stroke: #767C7C;}
+    75 { stroke: #767C7C;}
+    100 {
     stroke-dashoffset: 152.15;
     stroke-width: 2.477;
-  }
+    }
 }
 
 .stroke_five {
@@ -117,10 +113,9 @@ from {
 }
 
 @keyframes stroke_five {
-    from {
-    stroke: #767C7C;
-}
-  to {
+    0 {stroke: #767C7C;}
+    75 { stroke: #767C7C;}
+    100 {
     stroke-dashoffset: 77.54;
     stroke-width: 2.477;
   }
@@ -134,13 +129,12 @@ from {
 }
 
 @keyframes stroke_six {
-    from {
-    stroke: #767C7C;
-}
-  to {
+    0 {stroke: #767C7C;}
+    75 { stroke: #767C7C;}
+    100 {
     stroke-dashoffset: 68.615;
     stroke-width: 2.477;
-  }
+    }
 }
 
 .stroke_seven {
@@ -151,11 +145,10 @@ from {
 }
 
 @keyframes stroke_seven {
-    from {
-    stroke: #767C7C;
-}
-  to {
+    0 {stroke: #767C7C;}
+    75 { stroke: #767C7C;}
+    100 {
     stroke-dashoffset: 51.52;
     stroke-width: 2.477;
-  }
+    }
 }
