@@ -50,7 +50,7 @@ body {
 
 @keyframes stroke_one {
     0% {stroke: #767C7C;}
-    75% { stroke: #767C7C;}
+    50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 346.905;
     stroke-width: 2.477;
@@ -82,7 +82,7 @@ body {
 
 @keyframes stroke_three {
     0% {stroke: #767C7C;}
-    75% { stroke: #767C7C;}
+    50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 268.65;
     stroke-width: 2.477;
@@ -98,7 +98,7 @@ body {
 
 @keyframes stroke_four {
     0% {stroke: #767C7C;}
-    75% { stroke: #767C7C;}
+    50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 152.15;
     stroke-width: 2.477;
@@ -113,9 +113,9 @@ body {
 }
 
 @keyframes stroke_five {
-    0 {stroke: #767C7C;}
-    75 { stroke: #767C7C;}
-    100 {
+    0% {stroke: #767C7C;}
+    50% { stroke: #767C7C;}
+    100% {
     stroke-dashoffset: 77.54;
     stroke-width: 2.477;
   }
@@ -130,7 +130,7 @@ body {
 
 @keyframes stroke_six {
     0% {stroke: #767C7C;}
-    75% { stroke: #767C7C;}
+    50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 68.615;
     stroke-width: 2.477;
@@ -146,7 +146,7 @@ body {
 
 @keyframes stroke_seven {
     0% {stroke: #767C7C;}
-    75% { stroke: #767C7C;}
+    50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 51.52;
     stroke-width: 2.477;
