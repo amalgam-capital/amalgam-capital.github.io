@@ -36,7 +36,7 @@ body {
     stroke: rgba(0,0,0,0);
     stroke-width: 2;
     stroke-linecap: round;
-    animation-duration: 2.5s;
+    animation-duration: 3s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
