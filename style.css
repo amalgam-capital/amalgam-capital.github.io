@@ -9,7 +9,7 @@ body {
 .logo {
     animation: load 1.5s linear forwards;
     text-align: center;
-    color: white;
+    color: #E6E8EF;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 500;
@@ -23,9 +23,9 @@ body {
 }
 
 @keyframes load {
-    0% {
-         opacity: 0;
-    }
+    0% {opacity: 0;
+        color: #2D3142;}
+    33.33% { color: #767C7C;}
     100% {
         opacity: 1;
     }
