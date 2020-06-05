@@ -33,7 +33,7 @@ body {
     stroke: rgba(0,0,0,0);
     stroke-width: 2.477;
     stroke-linecap: round;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
@@ -47,7 +47,8 @@ body {
 
 @keyframes stroke_one {
     0% {stroke: #2D3142;
-        stroke-width: 2;}
+        stroke-width: 2;
+        stroke-dashoffset: 295.332;}
     33.33% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 346.905;
@@ -63,7 +64,7 @@ body {
 }
 
 @keyframes stroke_two {
-    0% {stroke: #2D3142;stroke-width: 2;}
+    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 295.332;}
     33.33% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 280.06;
@@ -79,7 +80,7 @@ body {
 }
 
 @keyframes stroke_three {
-    0% {stroke: #2D3142;stroke-width: 2;}
+    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 295.332;}
     33.33% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 268.65;
@@ -95,7 +96,7 @@ body {
 }
 
 @keyframes stroke_four {
-    0% {stroke: #2D3142;stroke-width: 2;}
+    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 295.332;}
     33.33% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 152.15;
@@ -111,7 +112,7 @@ body {
 }
 
 @keyframes stroke_five {
-    0% {stroke: #2D3142;stroke-width: 2;}
+    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 295.332;}
     33.33% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 77.54;
@@ -127,7 +128,7 @@ body {
 }
 
 @keyframes stroke_six {
-    0% {stroke: #2D3142;stroke-width: 2;}
+    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 295.332;}
     33.33% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 68.615;
@@ -143,7 +144,7 @@ body {
 }
 
 @keyframes stroke_seven {
-    0% {stroke: #2D3142;stroke-width: 2;}
+    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 295.332;}
     33.33% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 51.52;
