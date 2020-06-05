@@ -23,12 +23,9 @@ body {
 }
 
 @keyframes load {
-    0% {opacity: 0;
-        color: #2D3142;}
+    0% {opacity: 0;color: #2D3142;}
     33.33% { color: #767C7C;}
-    100% {
-        opacity: 1;
-    }
+    100% {opacity: 1;}
 }
 .stroke_one,.stroke_two,.stroke_three,.stroke_four,.stroke_five,.stroke_six,.stroke_seven {
     fill: rgba(0,0,0,0);
