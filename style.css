@@ -22,6 +22,11 @@ body {
     margin-bottom: 32px;
 }
 
+a.logo-link {
+    color: #E6E8EF;
+    text-decoration: none;
+}
+
 @keyframes load {
     0% {opacity: 0;color: #2D3142;}
     33.33% { color: #767C7C;}
@@ -45,30 +50,11 @@ body {
     animation-name: stroke_anim;
 }
 
-@keyframes stroke_one {
-    0% {stroke: #2D3142;
-        stroke-width: 2;stroke-dashoffset: 295.332;}
-    33.33% { stroke: #767C7C;}
-    100% {
-    stroke-dashoffset: 346.905;
-    stroke-width: 2.477;
-    }
-}
-
 .stroke_two {
     stroke: #767C7C;
     stroke-dasharray: 41.243 295.332;
     stroke-dashoffset: -56.529;
     animation-name: stroke_anim;
-}
-
-@keyframes stroke_two {
-    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 228.487;}
-    33.33% { stroke: #767C7C;}
-    100% {
-    stroke-dashoffset: 280.06;
-    stroke-width: 2.477;
-}
 }
 
 .stroke_three {
@@ -78,29 +64,13 @@ body {
     animation-name: stroke_anim;
 }
 
-@keyframes stroke_three {
-    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 217.077;}
-    33.33% { stroke: #767C7C;}
-    100% {
-    stroke-dashoffset: 268.65;
-    stroke-width: 2.477;
-    }
-}
+
 
 .stroke_four {
     stroke: #767c7c;
     stroke-dasharray: 40.552 295.332;
     stroke-dashoffset: -183.722;
     animation-name: stroke_anim;
-}
-
-@keyframes stroke_four {
-    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 100.577;}
-    33.33% { stroke: #767C7C;}
-    100% {
-    stroke-dashoffset: 152.15;
-    stroke-width: 2.477;
-    }
 }
 
 .stroke_five {
@@ -110,14 +80,7 @@ body {
     animation-name: stroke_anim;
 }
 
-@keyframes stroke_five {
-    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 25.967;}
-    33.33% { stroke: #767C7C;}
-    100% {
-    stroke-dashoffset: 77.54;
-    stroke-width: 2.477;
-  }
-}
+
 
 .stroke_six {
     stroke: #F4C35A;
@@ -126,14 +89,6 @@ body {
     animation-name: stroke_anim;
 }
 
-@keyframes stroke_six {
-    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 17.042;}
-    33.33% { stroke: #767C7C;}
-    100% {
-    stroke-dashoffset: 68.615;
-    stroke-width: 2.477;
-    }
-}
 
 .stroke_seven {
     stroke: #767c7c;
@@ -142,13 +97,51 @@ body {
     animation-name: stroke_anim;
 }
 
-@keyframes stroke_seven {
-    0% {stroke: #2D3142;stroke-width: 2;stroke-dashoffset: 0;}
-    33.33% { stroke: #767C7C;}
-    100% {
-    stroke-dashoffset: 51.52;
-    stroke-width: 2.477;
+@keyframes stroke_one {
+    to {
+    stroke-dashoffset: 346.905;
     }
+}
+
+@keyframes stroke_two {
+    to {
+    stroke-dashoffset: 280.06;
+    }
+}
+
+
+@keyframes stroke_three {
+    to {
+    stroke-dashoffset: 268.65;
+    }
+}
+
+@keyframes stroke_four {
+    to {
+    stroke-dashoffset: 152.15;
+    }
+}
+
+@keyframes stroke_five {
+    to {
+    stroke-dashoffset: 77.54;
+  }
+}
+
+@keyframes stroke_six {
+    to {
+    stroke-dashoffset: 68.615;
+    }
+}
+
+@keyframes stroke_seven {
+    to {
+    stroke-dashoffset: 51.52;
+    }
+}
+
+a.logo-link:hover .stroke_one {
+    animation: stroke_one 1s ease-in-out infinite;
 }
 
 @keyframes stroke_anim {
