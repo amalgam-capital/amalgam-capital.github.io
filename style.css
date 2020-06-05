@@ -153,8 +153,7 @@ body {
 
 @keyframes stroke_anim {
     0% {stroke: #2D3142;
-        stroke-width: 1;stroke-dashoffset: 0;}
-    33.33% { stroke: #767C7C;}
+        stroke-width: 2;stroke-dashoffset: 0;}
     100% {
     stroke-width: 2.477;
     }
