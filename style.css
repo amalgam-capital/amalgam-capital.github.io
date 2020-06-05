@@ -24,6 +24,7 @@ a {
 }
 
 .mark {
+    background: none;
     margin: 0px auto;
     width: 100px;
     margin-bottom: 32px;
