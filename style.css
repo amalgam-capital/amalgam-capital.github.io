@@ -6,6 +6,13 @@ body {
     padding: 0;
 }
 
+a {
+  -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
 .logo {
     animation: load 1s ease-in-out forwards;
     text-align: center;
@@ -23,8 +30,15 @@ body {
 }
 
 a.logo-link {
+    max-width: 400px;
+    margin: 0px auto;
+    display: block;
     color: #E6E8EF;
     text-decoration: none;
+}
+
+a.logo-link:hover {
+    color: #767C7C;
 }
 
 @keyframes load {
@@ -33,9 +47,9 @@ a.logo-link {
     100% {opacity: 1;}
 }
 .stroke_one,.stroke_two,.stroke_three,.stroke_four,.stroke_five,.stroke_six,.stroke_seven {
-    fill: rgba(0,0,0,0);
+    fill: none;
     stroke-linecap: round;
-    stroke: rgba(0,0,0,0);
+    stroke: none;
     stroke-width: 2.477;
     stroke-linecap: round;
     animation-duration: 2s;
@@ -63,8 +77,6 @@ a.logo-link {
     stroke-dashoffset: -102.726;
     animation-name: stroke_anim;
 }
-
-
 
 .stroke_four {
     stroke: #767c7c;
@@ -97,57 +109,41 @@ a.logo-link {
     animation-name: stroke_anim;
 }
 
-@keyframes stroke_one {
-    to {
-    stroke-dashoffset: 346.905;
-    }
-}
-
-@keyframes stroke_two {
-    to {
-    stroke-dashoffset: 280.06;
-    }
-}
-
-
-@keyframes stroke_three {
-    to {
-    stroke-dashoffset: 268.65;
-    }
-}
-
-@keyframes stroke_four {
-    to {
-    stroke-dashoffset: 152.15;
-    }
-}
-
-@keyframes stroke_five {
-    to {
-    stroke-dashoffset: 77.54;
-  }
-}
-
-@keyframes stroke_six {
-    to {
-    stroke-dashoffset: 68.615;
-    }
-}
-
-@keyframes stroke_seven {
-    to {
-    stroke-dashoffset: 51.52;
-    }
-}
-
 a.logo-link:hover .stroke_one {
-    animation: stroke_one 1s ease-in-out infinite;
+  stroke: #000;
+     stroke-dashoffset: 346.905;
+}
+
+a.logo-link:hover .stroke_two {
+     stroke-dashoffset: 280.06;
+}
+
+a.logo-link:hover .stroke_three {
+     stroke-dashoffset: 268.65;
+}
+
+a.logo-link:hover .stroke_four {
+     stroke-dashoffset: 152.15;
+}
+
+a.logo-link:hover .stroke_five {
+     stroke-dashoffset: 77.54;
+}
+
+a.logo-link:hover .stroke_six {
+     stroke-dashoffset: 68.615;
+}
+
+a.logo-link:hover .stroke_seven {
+     stroke-dashoffset: 51.52;
 }
 
 @keyframes stroke_anim {
     0% {stroke: #2D3142;
-        stroke-width: 0;stroke-dashoffset: 0;}
+      opacity: 0;
+        stroke-width: 2;stroke-dashoffset: 0;}
     100% {
     stroke-width: 2.477;
+    opacity: 1;
     }
 }
