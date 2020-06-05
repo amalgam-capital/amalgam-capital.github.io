@@ -1,7 +1,7 @@
 body {
     font-family: montserrat,sans-serif;
     font-style: normal;
-    background: #2D3142;
+    background: #111522;
     margin: 0;
     padding: 0;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 @keyframes stroke_one {
-    0% {stroke: #767C7C;}
+    0% {stroke: #2D3142;}
     50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 346.905;
@@ -65,7 +65,7 @@ body {
 }
 
 @keyframes stroke_two {
-    0% {stroke: #767C7C;}
+    0% {stroke: #2D3142;}
     75% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 280.06;
@@ -81,7 +81,7 @@ body {
 }
 
 @keyframes stroke_three {
-    0% {stroke: #767C7C;}
+    0% {stroke: #2D3142;}
     50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 268.65;
@@ -97,7 +97,7 @@ body {
 }
 
 @keyframes stroke_four {
-    0% {stroke: #767C7C;}
+    0% {stroke: #2D3142;}
     50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 152.15;
@@ -113,7 +113,7 @@ body {
 }
 
 @keyframes stroke_five {
-    0% {stroke: #767C7C;}
+    0% {stroke: #2D3142;}
     50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 77.54;
@@ -129,7 +129,7 @@ body {
 }
 
 @keyframes stroke_six {
-    0% {stroke: #767C7C;}
+    0% {stroke: #2D3142;}
     50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 68.615;
@@ -145,7 +145,7 @@ body {
 }
 
 @keyframes stroke_seven {
-    0% {stroke: #767C7C;}
+    0% {stroke: #2D3142;}
     50% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 51.52;
