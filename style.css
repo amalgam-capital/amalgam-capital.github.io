@@ -42,7 +42,7 @@ body {
     stroke: #767C7C;
     stroke-dasharray: 51.573 295.332;
     stroke-dashoffset: 0;
-    animation-name: stroke_one;
+    animation-name: stroke_anim;
 }
 
 @keyframes stroke_one {
@@ -59,7 +59,7 @@ body {
     stroke: #767C7C;
     stroke-dasharray: 41.243 295.332;
     stroke-dashoffset: -56.529;
-    animation-name: stroke_two;
+    animation-name: stroke_anim;
 }
 
 @keyframes stroke_two {
@@ -75,7 +75,7 @@ body {
     stroke: #F06647;
     stroke-dasharray: 76.04 295.332;
     stroke-dashoffset: -102.726;
-    animation-name: stroke_three;
+    animation-name: stroke_anim;
 }
 
 @keyframes stroke_three {
@@ -91,7 +91,7 @@ body {
     stroke: #767c7c;
     stroke-dasharray: 40.552 295.332;
     stroke-dashoffset: -183.722;
-    animation-name: stroke_four;
+    animation-name: stroke_anim;
 }
 
 @keyframes stroke_four {
@@ -107,7 +107,7 @@ body {
     stroke: #F06647;
     stroke-dasharray: 11.452 295.332;
     stroke-dashoffset: -229.253;
-    animation-name: stroke_five;
+    animation-name: stroke_anim;
 }
 
 @keyframes stroke_five {
@@ -123,7 +123,7 @@ body {
     stroke: #F4C35A;
     stroke-dasharray: 18.951 295.332;
     stroke-dashoffset: -245.659;
-    animation-name: stroke_six;
+    animation-name: stroke_anim;
 }
 
 @keyframes stroke_six {
@@ -139,7 +139,7 @@ body {
     stroke: #767c7c;
     stroke-dasharray: 25.773 295.332;
     stroke-dashoffset: -269.559;
-    animation-name: stroke_seven;
+    animation-name: stroke_anim;
 }
 
 @keyframes stroke_seven {
@@ -147,6 +147,15 @@ body {
     33.33% { stroke: #767C7C;}
     100% {
     stroke-dashoffset: 51.52;
+    stroke-width: 2.477;
+    }
+}
+
+@keyframes stroke_anim {
+    0% {stroke: #2D3142;
+        stroke-width: 1;stroke-dashoffset: 0;}
+    33.33% { stroke: #767C7C;}
+    100% {
     stroke-width: 2.477;
     }
 }
