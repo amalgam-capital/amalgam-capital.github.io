@@ -55,6 +55,7 @@ a.logo-link:hover {
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+    transition: all 1s ease;
 }
 
 .stroke_one {
@@ -110,7 +111,6 @@ a.logo-link:hover {
 }
 
 a.logo-link:hover .stroke_one {
-  stroke: #000;
      stroke-dashoffset: 346.905;
 }
 
