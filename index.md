@@ -85,7 +85,7 @@ title: Amalgam Capital
 		</div>
 	</div>
 </section>
-<section  data-aos="fade" class="home-section industries row block-container equal-blocks align-items-center">
+<section  data-aos="fade" data-aos-delay="100" class="home-section industries row block-container equal-blocks align-items-center">
 	<h3 class="h1 col-lg-10 col-lg-offset-1">Our Target Industries</h3>
 	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
 		<div class="block-content">
