@@ -3,12 +3,12 @@ layout: home
 permalink: /
 title: Amalgam Capital
 ---
-<section data-aos="fade" data-aos-delay="2000" class="hero home-section row">
+<section data-aos="fade" data-aos-delay="1800" class="hero home-section row">
 	<div class="col-lg-10 col-lg-offset-1">
 		<h2 class="h1">We’re an amalgam of investors, entrepreneurs, and operators, that acquire and sustainably grow <em>underrated</em> businesses.</h2>
 	</div>
 </section>
-<section data-aos="fade" data-aos-delay="2000" class="numbers home-section block-container row align-items-center equal-blocks">
+<section data-aos="fade" data-aos-delay="1800" class="numbers home-section block-container row align-items-center equal-blocks">
 	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p><span class="large">$10.47B</span> Cumulative revenue growth through our strategies</p>
