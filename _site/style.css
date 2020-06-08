@@ -1,0 +1,149 @@
+body {
+    font-family: montserrat,sans-serif;
+    font-style: normal;
+    background: #2D3142;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.logo {
+    animation: load 1s ease-in-out forwards;
+    text-align: center;
+    color: #E6E8EF;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    margin-top: 200px;
+}
+
+.mark {
+    background: none;
+    margin: 0px auto;
+    width: 100px;
+    margin-bottom: 32px;
+}
+
+a.logo-link {
+    margin: 0px auto;
+    display: block;
+    color: #E6E8EF;
+    text-decoration: none;
+}
+
+a.logo-link:hover {
+    color: #767C7C;
+}
+
+@keyframes load {
+    0% {opacity: 0;color: #2D3142;}
+    33.33% { color: #767C7C;}
+    100% {opacity: 1;}
+}
+.stroke_one,.stroke_two,.stroke_three,.stroke_four,.stroke_five,.stroke_six,.stroke_seven {
+    fill: none;
+    stroke-linecap: round;
+    stroke: none;
+    stroke-width: 2.477;
+    stroke-linecap: round;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transition: all 1s ease;
+}
+
+.stroke_one {
+    stroke: #767C7C;
+    stroke-dasharray: 51.573 295.332;
+    stroke-dashoffset: 0;
+    animation-name: stroke_anim;
+}
+
+.stroke_two {
+    stroke: #767C7C;
+    stroke-dasharray: 41.243 295.332;
+    stroke-dashoffset: -56.529;
+    animation-name: stroke_anim;
+}
+
+.stroke_three {
+    stroke: #F06647;
+    stroke-dasharray: 76.04 295.332;
+    stroke-dashoffset: -102.726;
+    animation-name: stroke_anim;
+}
+
+.stroke_four {
+    stroke: #767c7c;
+    stroke-dasharray: 40.552 295.332;
+    stroke-dashoffset: -183.722;
+    animation-name: stroke_anim;
+}
+
+.stroke_five {
+    stroke: #F06647;
+    stroke-dasharray: 11.452 295.332;
+    stroke-dashoffset: -229.253;
+    animation-name: stroke_anim;
+}
+
+
+
+.stroke_six {
+    stroke: #F4C35A;
+    stroke-dasharray: 18.951 295.332;
+    stroke-dashoffset: -245.659;
+    animation-name: stroke_anim;
+}
+
+
+.stroke_seven {
+    stroke: #767c7c;
+    stroke-dasharray: 25.773 295.332;
+    stroke-dashoffset: -269.559;
+    animation-name: stroke_anim;
+}
+/*
+a.logo-link:hover .stroke_one {
+     stroke-dashoffset: 346.905;
+}
+
+a.logo-link:hover .stroke_two {
+     stroke-dashoffset: 280.06;
+}
+
+a.logo-link:hover .stroke_three {
+     stroke-dashoffset: 268.65;
+}
+
+a.logo-link:hover .stroke_four {
+     stroke-dashoffset: 152.15;
+}
+
+a.logo-link:hover .stroke_five {
+     stroke-dashoffset: 77.54;
+}
+
+a.logo-link:hover .stroke_six {
+     stroke-dashoffset: 68.615;
+}
+
+a.logo-link:hover .stroke_seven {
+     stroke-dashoffset: 51.52;
+}*/
+
+@keyframes stroke_anim {
+    0% {stroke: #2D3142;
+      opacity: 0;
+        stroke-width: 2;stroke-dashoffset: 0;}
+    100% {
+    stroke-width: 2.477;
+    opacity: 1;
+    }
+}

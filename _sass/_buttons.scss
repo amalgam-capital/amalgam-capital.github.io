@@ -1,0 +1,29 @@
+.btn-primary {
+	background-color: rgba($primary,0.2);
+	color: $primary;
+	border: none;
+	padding: $section-spacing-tiny ($section-spacing-tiny * 2);
+	&:hover {
+		background-color: rgba(darken( $primary, 10% ),0.2);
+		color: darken( $primary, 10% );
+	}
+	border-radius: $border-radius;
+	&:focus, &:active,&:active:focus,&:active:hover {
+		background-color: rgba(darken( $primary, 20% ),0.2);
+		color: darken( $primary, 10% );
+	}
+}
+
+.btn-large {
+	display: inline-block;
+	@include font-size(18);
+	border-radius: $border-radius;
+	padding: ($section-spacing-tiny*2) ($section-spacing-tiny * 4);
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus, &:active,&:active:focus,&:active:hover {
+		background-color: rgba(darken( $primary, 20% ),0.2);
+		color: darken( $primary, 10% );
+	}	
+}

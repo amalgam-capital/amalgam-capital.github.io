@@ -1,0 +1,41 @@
+html {
+	margin: 0;
+	overflow-x: hidden;
+	font-size: 14px;
+}
+
+body {
+    font-family: $base-font-family;
+    font-style: normal;
+    background-color: $body-bg;
+    color: $light-text;
+    margin: 0;
+    padding: 0;
+    @include font-size($doc-font-size,no,$doc-line-height);
+}
+
+/* Links */
+
+a {
+	color: $link-color;
+	transition: all .4s ease;
+}
+
+/* Headings */
+
+h1,h2,h3,h4,h5,h6,h7, .h1,.h2,.h3,.h4,.h5,.h6,.h7 {
+	font-family: $heading-font-family;
+	font-weight: 300;
+	letter-spacing: 0.04em;
+}
+
+h1, .h1 {
+	@include font-size(32,yes,40);
+}
+
+/* Paragraph */
+p {
+	&.large {
+	@include font-size(18,no,32);
+	}
+}

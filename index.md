@@ -1,0 +1,126 @@
+---
+layout: home
+permalink: /
+title: Amalgam Capital
+---
+<section data-aos="fade" class="hero home-section row">
+	<div class="col-lg-10 col-lg-offset-1">
+		<h2 class="h1">We’re an amalgam of investors, entrepreneurs, and operators, that acquire and sustainably grow <em>underrated</em> businesses.</h2>
+	</div>
+</section>
+<section data-aos="fade" class="numbers home-section block-container row align-items-center equal-blocks">
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<p><span class="large">$10.47B</span> Cumulative revenue growth through our strategies</p>
+		</div>
+	</div>
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<p><span class="large">$1.27B</span> Cumulative savings (EBITDA) improvement</p>
+		</div>
+	</div>	
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<p><span class="large">$1.22B</span> Working capital improvement</p>
+		</div>
+	</div>		
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<p> <span class="large">47</span> Full-Time Executives Placed</p>
+		</div>
+	</div>			
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<p><span class="large">~10K</span> Total Jobs Saved/Rationalized</p>
+		</div>
+	</div>				
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<p><span class="large">97</span> Executives Coached</p>
+		</div>
+	</div>					
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<p><span class="large">09</span> Mergers and Exits Led</p>
+		</div>
+	</div>						
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<p><span class="large">07</span> Investments Made</p>
+		</div>
+	</div>							
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<p><span class="large">03</span> Unicorns Accelerated</p>
+		</div>
+	</div>								
+</section>
+<section class="home-section criteria row">
+	<div class="col-lg-10 col-lg-offset-1">
+		<div class="criteria-content">
+			<h3 class="h1">Our Investment Sweetspot</h3>
+			<p class="large">Revenue Generating</p>
+			<p>We invest in business generating between $20M to $100M revenue annually</p>
+			<p class="large">History of Profitablility</p>
+			<p>Businesses that have proven the ability to generate between $2M to $10M in profit (EBITDA)</p>
+			<p class="large">We Do Our Best Work With:</p>
+			<div class="row nogutters">
+				<div class="col-md-6">
+					<p><strong>Companies in Transition</strong></p>
+					<p>We can help you, as the owner, transition out of the business and/or retire with peace-of-mind that all that you’ve worked so hard to build will continue to flourish</p>
+					<p><strong>Growth Challenged</strong></p>
+					<p>If you’re a business that is stuck, under-capitalized, and/or lagging behind your competitors, we can level you up</p>
+					<p><strong>Turnarounds</strong></p>
+					<p>Are you experiencing negative cash-flow or operational distress? We can help bring stability to the business and ultimately retool it to grow (even in industries falling out of favor)</p>
+				</div>
+				<div class="col-md-6">
+					<p><strong>High Performers with Growth Potential</strong></p>
+					<p>You may find that your business is doing well, but your management and capital are stretched thin. We can help carve-out non-core businesses and ensure that cash is re-invested wisely</p>
+					<p><strong>Asset Heavy Companies</strong></p>
+					<p>We specialize in managing business that hold on to expensive, stable assets and can help you utilize them fully to facilitate growth</p>
+				</div>
+			</div>
+			<p class="large">Does this sound like your business or one you represent?</p>
+			<a class="btn-primary btn-large" href="mailto:intro@amalgamcapital.com">Chat with us</a>
+		</div>
+	</div>
+</section>
+<section class="home-section industries row block-container equal-blocks align-items-center">
+	<h3 class="h1 col-lg-10 col-lg-offset-1">Our Target Industries</h3>
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<img alt="shopping icon" src="../images/ic-shopping.svg">
+			<p class="large">Consumer Products</p>
+		</div>
+	</div>
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<img alt="distribution icon" src="../images/ic-distribution.svg">
+			<p class="large">Distribution</p>
+		</div>
+	</div>	
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<img alt="manufacturing icon" src="../images/ic-manufacturing.svg">
+			<p class="large">Industrial Manufacturing</p>
+		</div>
+	</div>	
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<img alt="retail icon" src="../images/ic-retail.svg">
+			<p class="large">Retail</p>
+		</div>
+	</div>	
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<img alt="healthcare icon" src="../images/ic-healthcare.svg">
+			<p class="large">Healthcare</p>
+		</div>
+	</div>	
+	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+		<div class="block-content">
+			<img alt="industrial icon" src="../images/ic-industrial.svg">
+			<p class="large">Industrial Services</p>
+		</div>
+	</div>	
+</section>

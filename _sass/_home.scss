@@ -1,0 +1,57 @@
+.home {
+	.site-header {
+		margin-top: $section-spacing * 2;
+		margin-bottom: $section-spacing * 2;
+	}
+}
+.home-section {
+	margin-bottom: $section-spacing;
+}
+
+.hero {
+	h2 {
+		background: url(../images/eyebrow-one.svg) top left no-repeat, url(../images/eyebrow-two.svg) bottom left no-repeat;
+		padding-top: $section-spacing;
+		padding-bottom: $section-spacing;
+	}
+}
+
+.numbers {
+	.em-block {
+		text-align: center;
+	}
+	.large {
+		color: $secondary;
+		display: block;
+		font-size: 3.428571429em;
+	}
+}
+
+.criteria {
+	.criteria-content {
+		background: url(../images/eyebrow-three.svg) top left no-repeat, url(../images/eyebrow-four.svg) bottom left no-repeat;
+		padding-top: $section-spacing;
+		padding-bottom: $section-spacing;
+		p.large {
+			margin-top: $section-spacing-small;
+		}
+		p strong {
+			margin-top: $section-spacing-tiny*2;
+			display: block;
+		}
+		a.btn-large {
+			margin: $section-spacing-tiny 0;
+		}
+	}
+}
+
+.industries {
+	.h1 {
+	margin-bottom: $section-spacing;
+	}
+	img {
+	margin: $section-spacing-small 0;
+	max-width: 48px;
+	max-height: 48px;
+	}
+}
