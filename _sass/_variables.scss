@@ -4,11 +4,15 @@
 /*
    Breakpoints
    ========================================================================== */
-$short: new-breakpoint(max-height em(700) 12);
-$micro: new-breakpoint(min-width em(240) max-width em(480) 12);
-$small: new-breakpoint(min-width em(600) 12);
-$medium: new-breakpoint(min-width em(900) 12);
-$large: new-breakpoint(min-width em(1280) 12);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
 
 /*
    Typography variables

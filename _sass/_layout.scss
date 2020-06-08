@@ -10,20 +10,26 @@
 	}
 	h1.logo {
 	    font-family: $base-font-family;
-	    text-align: center;
+	    text-align: left;
 	    text-transform: uppercase;
 	    letter-spacing: 0.1em;
 	    font-weight: 500;
-	    font-size: 1.51em;
+	    font-size: 1em;
 	    display: block;
+	    @include media-breakpoint-up(md) { 
+		    font-size: 1.51em;
+	    }
 	}
 	a.logo-link {
-		max-width: 323px;
+		max-width: 208px;
 	    display: flex;
 	    justify-content: space-between;
 	    color: $light-text;
 	    text-decoration: none;
 	    align-items: center;
+	    @include media-breakpoint-up(md) { 
+		    max-width: 323px;
+	    }
 	    &:hover {
 		    color: darken( $light-text, 20%);
 	    }
@@ -32,7 +38,10 @@
 	    background: none;
 	    padding: 0;
 	    margin: 0;
-	    width: 58px;
+	    width: 36px;
+	    @include media-breakpoint-up(md) { 
+		    width: 58px;
+	    }
 	}
 	nav {
 	display: flex;

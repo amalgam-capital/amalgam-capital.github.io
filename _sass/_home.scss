@@ -1,7 +1,11 @@
 .home {
 	.site-header {
-		margin-top: $section-spacing * 2;
-		margin-bottom: $section-spacing * 2;
+		margin-top: $section-spacing;
+		margin-bottom: $section-spacing;
+		@include media-breakpoint-up(md) { 
+			margin-top: $section-spacing * 2;
+			margin-bottom: $section-spacing * 2;
+		}
 	}
 }
 .home-section {
