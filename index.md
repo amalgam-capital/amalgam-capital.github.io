@@ -60,9 +60,9 @@ title: Amalgam Capital
 		<div class="criteria-content">
 			<h3 class="h1">Our Investment Sweetspot</h3>
 			<p class="large">Revenue Generating</p>
-			<p>We invest in business generating between <strong>$20M to $100M</strong> revenue annually</p>
+			<p>We invest in business generating between <b>$20M to $100M</b> revenue annually</p>
 			<p class="large">History of Profitablility</p>
-			<p>Businesses that have proven the ability to generate between <strong>$2M to $10M in profit (EBITDA)</strong></p>
+			<p>Businesses that have proven the ability to generate between <b>$2M to $10M in profit (EBITDA)</b></p>
 			<p class="large">We Do Our Best Work With:</p>
 			<div class="row nogutters">
 				<div class="col-md-6">
