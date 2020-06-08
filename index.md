@@ -3,7 +3,7 @@ layout: home
 permalink: /
 title: Amalgam Capital
 ---
-<section data-aos="fade" class="hero home-section row">
+<section data-aos="fade" data-aos-delay="2000" class="hero home-section row">
 	<div class="col-lg-10 col-lg-offset-1">
 		<h2 class="h1">We’re an amalgam of investors, entrepreneurs, and operators, that acquire and sustainably grow <em>underrated</em> businesses.</h2>
 	</div>
@@ -55,7 +55,7 @@ title: Amalgam Capital
 		</div>
 	</div>								
 </section>
-<section data-aos="fade" class="home-section criteria row">
+<section data-aos="fade" data-aos-delay="2000" class="home-section criteria row">
 	<div class="col-lg-10 col-lg-offset-1">
 		<div class="criteria-content">
 			<h3 class="h1">Our Investment Sweetspot</h3>
