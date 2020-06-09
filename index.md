@@ -86,7 +86,7 @@ title: Amalgam Capital
 	</div>
 </section>
 <section id="industries" data-aos="fade" data-aos-delay="100" class="home-section industries row block-container equal-blocks align-items-center">
-	<h3 class="h1 col-lg-10 col-lg-offset-1">Our Favorite Industries</h3>
+	<h3 class="h1 col-xl-10 offset-xl-1">Our Favorite Industries</h3>
 	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<img alt="shopping icon" src="../images/ic-shopping.svg">
