@@ -144,7 +144,11 @@ title: Amalgam Capital
 					<li>Q&amp;As + Renegotiations <em>- 1 Month</em></li>
 					<li>Closing <em>- 1-2 Months <50% Probability</em></li>
 				</ul>
-				<p><strong>Total Time + 300-365 Days</strong></p>
+				<hr/>
+				<p><strong>Total Time: 300-365 Days</strong></p>
+				<hr/>
+				<p><strong>Next 5 years</strong></p>
+				<p>Your business is a reporting machine and you're locked into unreasonable earn-outs.</p>
 				</div>
 			</div>
 			<div class="col-md-6 em-block em-block-alt">
@@ -158,7 +162,11 @@ title: Amalgam Capital
 					<li>The Handshake <em>2-3 Days</em></li>
 					<li>Closing <em>- 8-10 Weeks</em></li>
 				</ul>
-				<p><strong>Total Time + 75 Days</strong></p>
+				<hr/>
+				<p><strong>Total Time: 75 Days</strong></p>
+				<hr/>
+				<p><strong>Next 3 Years</strong></p>
+				<p>We work together to sustainably grow your business and deliver the next exit event with wins for both you and your employees</p>
 				</div>
 			</div>
 		</div>

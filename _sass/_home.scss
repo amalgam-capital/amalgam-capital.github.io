@@ -69,11 +69,8 @@
 		background: url(../images/eyebrow-five.svg) top left no-repeat, url(../images/eyebrow-six.svg) bottom left no-repeat;
 		padding: $section-spacing 0;
 	}
-	p.large {
-		margin-bottom: $section-spacing-small;
-	}
 	ul {
-		padding: $section-spacing-tiny 0 $section-spacing-small $section-spacing-small;
+		padding: 0 0 0 $section-spacing-small;
 		margin: 0;
 	}
 	li {
