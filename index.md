@@ -80,8 +80,8 @@ title: Amalgam Capital
 					We specialize in managing businesses that hold on to expensive, stable assets and can help you utilize them fully to facilitate growth</p>
 				</div>
 			</div>
-			<p class="large">Does this sound like your business or one you represent?</p>
-			<a class="btn-primary btn-lg" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
+			<p class="large d-print-none">Does this sound like your business or one you represent?</p>
+			<a class="btn-primary btn-lg d-print-none" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
 		</div>
 	</div>
 </section>
@@ -177,8 +177,8 @@ title: Amalgam Capital
 			<p>Share your historical financials. We're primarily looking for a profitability benchmark between $2.0M to $10M per year.</p>
 			<p><strong>Future Plans</strong></p>
 			<p>Tell us about your desires for the future of the business. Would you like to continue to run it or would you like to transition out? If you would like to stay, how do you see growing the business and where do you see the opportunities?</p><br/>
-			<p class="large">Ready to kick off the process?</p>
-			<a class="btn-primary btn-lg" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
+			<p class="large d-print-none">Ready to kick off the process?</p>
+			<a class="btn-primary btn-lg d-print-none" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
 		</div>
 	</div>
 </section>

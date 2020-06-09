@@ -1,0 +1,11 @@
+@media print {
+	html,body,p,h1,h2,h3,h4,h5,h6,div,span,td,table,tr,header,footer,h1.logo,.large {
+		color: black;
+	}
+	[data-aos^=fade][data-aos^=fade] {
+		opacity: 1;
+	}
+	.stroke_one,.stroke_two,.stroke_three,.stroke_four,.stroke_five,.stroke_six,.stroke_seven {
+		stroke: black;
+	}
+}
