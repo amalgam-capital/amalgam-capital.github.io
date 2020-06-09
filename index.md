@@ -5,7 +5,7 @@ title: Amalgam Capital
 ---
 <section data-aos="fade" data-aos-delay="1000" class="hero home-section row">
 	<div class="col-lg-10 col-lg-offset-1">
-		<h2 class="h1">We’re an amalgam of investors, entrepreneurs, and operators, that acquire and sustainably grow <em>underrated</em> businesses.</h2>
+		<h2 class="h1">We’re an amalgam of investors, entrepreneurs, and operators, who acquire and sustainably grow <em>underrated</em> businesses.</h2>
 	</div>
 </section>
 <section data-aos="fade" data-aos-delay="1000" class="numbers home-section block-container row align-items-center equal-blocks">
@@ -60,8 +60,8 @@ title: Amalgam Capital
 		<div class="criteria-content">
 			<h3 class="h1">Our Investment Sweetspot</h3>
 			<p class="large">Revenue Generating</p>
-			<p>We invest in business generating between <b>$20M to $100M</b> revenue annually</p>
-			<p class="large">History of Profitablility</p>
+			<p>We invest in business generating between <b>$20M to $100M</b> in revenue annually</p>
+			<p class="large">History of Profitability</p>
 			<p>Businesses that have proven the ability to generate between <b>$2M to $10M in profit (EBITDA)</b></p>
 			<p class="large">We Do Our Best Work With:</p>
 			<div class="row nogutters">
@@ -77,7 +77,7 @@ title: Amalgam Capital
 					<p><strong>High Performers with Growth Potential</strong>
 					You may find that your business is doing well, but your management and capital are stretched thin. We can help carve-out non-core businesses and ensure that cash is re-invested wisely</p>
 					<p><strong>Asset Heavy Companies</strong>
-					We specialize in managing business that hold on to expensive, stable assets and can help you utilize them fully to facilitate growth</p>
+					We specialize in managing businesses that hold on to expensive, stable assets and can help you utilize them fully to facilitate growth</p>
 				</div>
 			</div>
 			<p class="large">Does this sound like your business or one you represent?</p>
