@@ -153,30 +153,32 @@ title: Amalgam Capital
 			</div>
 			<div class="col-md-6 em-block em-block-alt">
 				<div class="block-content">
-				<p class="large">Amalgam Capital Process</p>
-				<ul>
-					<li>The Business Statement – A Letter by You</li>
-					<li>Expression of Interest – A Letter by Us <em>- 1 Day</em></li>
-					<li>Analysis of Business <em>- 2-5 Days</em></li>
-					<li>A Fair Offer from Us <em>- 1 Day</em></li>
-					<li>The Handshake <em>2-3 Days</em></li>
-					<li>Closing <em>- 8-10 Weeks</em></li>
-				</ul>
-				<hr/>
-				<p><strong>Total Time: 75 Days</strong></p>
-				<hr/>
-				<p><strong>Next 3 Years</strong></p>
-				<p>We work together to sustainably grow your business and deliver the next exit event with wins for both you and your employees</p>
+					<p class="large">Amalgam Capital Process</p>
+					<ul>
+						<li>The Business Statement – A Letter by You</li>
+						<li>Expression of Interest – A Letter by Us <em>- 1 Day</em></li>
+						<li>Analysis of Business <em>- 2-5 Days</em></li>
+						<li>A Fair Offer from Us <em>- 1 Day</em></li>
+						<li>The Handshake <em>2-3 Days</em></li>
+						<li>Closing <em>- 8-10 Weeks</em></li>
+					</ul>
+					<hr/>
+					<p><strong>Total Time: 75 Days</strong></p>
+					<hr/>
+					<p><strong>Next 3 Years</strong></p>
+					<p>We work together to sustainably grow your business and deliver the next exit event with wins for both you and your employees</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<p id="business-statement" class="large">What do we need from you to get started?</p>
+			<p id="business-statement" class="large">What do we need from you to get started?</p>
 			<p><strong>Business Statement</strong></p>
 			<p>Send us an letter explaining your competitive advantage that protects you from others in your space. Some examples of the things we're looking for: A dominant brand, a large and loyal community, a niche vertical, or something similar with 5+ years of operating history</p>
 			<p><strong>Financials</strong></p>
 			<p>Share your historical financials. We're primarily looking for a profitability benchmark between 2.0M to $10M per year.</p>
 			<p><strong>Future Plans</strong></p>
 			<p>Tell us about your desires for the future of the business. Would you like to continue to run it or would you like to transition out? If you would like to stay, how do you see growing the business and where do you see the opportunities?</p>
+			<p class="large">Want to kick off the process?</p>
+			<a class="btn-primary btn-large" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
 		</div>
 	</div>
 </section>
