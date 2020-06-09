@@ -83,6 +83,13 @@
 	}
 }
 
+.em-block-alt {
+	.block-content {
+		background-color: $secondary;
+		color: $body-dark;
+	}
+}
+
 /* Footer */
 .site-footer {
 	background: rgba($body-dark,0.2);
