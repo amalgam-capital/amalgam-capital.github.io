@@ -128,8 +128,8 @@ title: Amalgam Capital
 	<div class="col-xl-10 offset-xl-1">
 		<div class="process-content">
 		<h3 class="h1">We know what it feels like to sell a business, so we've <em>made it as easy as possible for you.</em></h3>
-		<p>You’ve worked hard to build your business and you have choices. You can work with another private equity and go through the typical process or consider the Amalgam Capital alternative–which is built on trust, professional respect and a thoughtful guidance for continued value creation.</p>
-		<p>Whatever your motives are to sell your business–or seek an investment–the process should be simple and painless. Whether you would like to stay with the business going forward or move to your next venture, we're committed to being true partners in the journey forward.</p>
+		<p>You've worked hard to build your business, and you have choices. You can work with another private equity and go through the typical process or consider the Amalgam Capital alternative–which is built on trust, professional respect, and thoughtful guidance for continued value creation.</p>
+		<p>Whatever your motives are to sell your business–or seek an investment–the process should be painless and straightforward. Whether you would like to stay with the business going forward or move to your next venture, we're committed to being true partners in the journey ahead.</p>
 		<div class="row no-gutter">
 			<div class="col-md-6 em-block">
 				<div class="block-content">
