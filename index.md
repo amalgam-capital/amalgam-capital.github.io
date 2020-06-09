@@ -148,7 +148,7 @@ title: Amalgam Capital
 				<p><strong>Total Time: 300-365 Days</strong></p>
 				<hr/>
 				<p><strong>Next 5 years</strong></p>
-				<p>Your business is a reporting machine and you're locked into unreasonable earn-outs.</p>
+				<p>Your business is a reporting machine, your employees are unhappy, and you're locked into unreasonable earn-outs.</p>
 				</div>
 			</div>
 			<div class="col-md-6 em-block em-block-alt">
@@ -172,7 +172,7 @@ title: Amalgam Capital
 			</div>
 			<p id="business-statement" class="large">What do we need from you to get started?</p>
 			<p><strong>Business Statement</strong></p>
-			<p>Send us an letter explaining your competitive advantage that protects you from others in your space. Some examples of the things we're looking for: A dominant brand, a large and loyal community, a niche vertical, or something similar with 5+ years of operating history</p>
+			<p>Send us an letter explaining your competitive advantage that protects you from others in your space. Some examples of the things we're looking for: A dominant brand, a large and loyal community, a niche vertical, or something similar with 5+ years of operating history.</p>
 			<p><strong>Financials</strong></p>
 			<p>Share your historical financials. We're primarily looking for a profitability benchmark between 2.0M to $10M per year.</p>
 			<p><strong>Future Plans</strong></p>
