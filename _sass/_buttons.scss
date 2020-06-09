@@ -1,20 +1,27 @@
+.btn {
+	color: $link-color;
+	&:hover {
+		color: darken( $link-color, 10% );
+	}
+}
+
 .btn-primary {
 	background-color: rgba($primary,0.2);
-	color: $primary;
+	color: $link-color;
 	border: none;
 	padding: $section-spacing-tiny ($section-spacing-tiny * 2);
 	&:hover {
 		background-color: rgba(darken( $primary, 10% ),0.2);
-		color: darken( $primary, 10% );
+		color: darken( $link-color, 10% );
 	}
 	border-radius: $border-radius;
-	&:focus, &:active,&:active:focus,&:active:hover {
+	&:focus, &:active,&:active:focus,&:active:hover,&:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active {
 		background-color: rgba(darken( $primary, 20% ),0.2);
-		color: darken( $primary, 10% );
+		color: darken( $link-color, 10% );
 	}
 }
 
-.btn-large {
+.btn-lg {
 	display: inline-block;
 	@include font-size(18);
 	border-radius: $border-radius;
@@ -24,6 +31,7 @@
 	}
 	&:focus, &:active,&:active:focus,&:active:hover {
 		background-color: rgba(darken( $primary, 20% ),0.2);
-		color: darken( $primary, 10% );
+		color: darken( $link-color, 10% );
 	}	
 }
+

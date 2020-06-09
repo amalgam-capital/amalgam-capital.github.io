@@ -4,59 +4,59 @@ permalink: /
 title: Amalgam Capital
 ---
 <section data-aos="fade" data-aos-delay="1000" class="hero home-section row">
-	<div class="col-lg-10 col-lg-offset-1">
+	<div class="col-xl-10 offset-xl-1">
 		<h2 class="h1">We’re an amalgam of investors, entrepreneurs, and operators, who acquire and sustainably grow <em>underrated</em> businesses.</h2>
 	</div>
 </section>
 <section id="numbers" data-aos="fade" data-aos-delay="1000" class="numbers home-section block-container row align-items-center equal-blocks">
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p><span class="large">$10.47B</span> Cumulative revenue growth through our strategies</p>
 		</div>
 	</div>
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p><span class="large">$1.27B</span> Cumulative savings (EBITDA) improvement</p>
 		</div>
 	</div>	
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p><span class="large">$1.22B</span> Working capital improvement</p>
 		</div>
 	</div>		
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p> <span class="large">47</span> Full-Time Executives Placed</p>
 		</div>
 	</div>			
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p><span class="large">~10K</span> Total Jobs Saved/Rationalized</p>
 		</div>
 	</div>				
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p><span class="large">97</span> Executives Coached</p>
 		</div>
 	</div>					
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p><span class="large">09</span> Mergers and Exits Led</p>
 		</div>
 	</div>						
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p><span class="large">07</span> Investments Made</p>
 		</div>
 	</div>							
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p><span class="large">03</span> Unicorns Accelerated</p>
 		</div>
 	</div>								
 </section>
 <section id="criteria" data-aos="fade" data-aos-delay="100" class="home-section criteria row">
-	<div class="col-lg-10 col-lg-offset-1">
+	<div class="col-xl-10 offset-xl-1">
 		<div class="criteria-content">
 			<h3 class="h1">Our Investment Sweetspot</h3>
 			<p class="large">Revenue Generating</p>
@@ -81,43 +81,43 @@ title: Amalgam Capital
 				</div>
 			</div>
 			<p class="large">Does this sound like your business or one you represent?</p>
-			<a class="btn-primary btn-large" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
+			<a class="btn-primary btn-lg" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
 		</div>
 	</div>
 </section>
 <section id="industries" data-aos="fade" data-aos-delay="100" class="home-section industries row block-container equal-blocks align-items-center">
 	<h3 class="h1 col-lg-10 col-lg-offset-1">Our Favorite Industries</h3>
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<img alt="shopping icon" src="../images/ic-shopping.svg">
 			<p class="large">Consumer Products</p>
 		</div>
 	</div>
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<img alt="distribution icon" src="../images/ic-distribution.svg">
 			<p class="large">Distribution</p>
 		</div>
 	</div>	
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<img alt="manufacturing icon" src="../images/ic-manufacturing.svg">
 			<p class="large">Industrial Manufacturing</p>
 		</div>
 	</div>	
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<img alt="retail icon" src="../images/ic-retail.svg">
 			<p class="large">Retail</p>
 		</div>
 	</div>	
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<img alt="healthcare icon" src="../images/ic-healthcare.svg">
 			<p class="large">Healthcare</p>
 		</div>
 	</div>	
-	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
+	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<img alt="industrial icon" src="../images/ic-industrial.svg">
 			<p class="large">Industrial Services</p>
@@ -125,7 +125,7 @@ title: Amalgam Capital
 	</div>	
 </section>
 <section id="process" data-aos="fade" data-aos-delay="100" class="home-section process row">
-	<div class="col-lg-10 col-lg-offset-1">
+	<div class="col-xl-10 offset-xl-1">
 		<div class="process-content">
 		<h3 class="h1">We know what it feels like to sell a business, so we've <em>made it as easy as possible for you.</em></h3>
 		<p>You’ve worked hard to build your business and you have choices. You can work with another private equity and go through the typical process or consider the Amalgam Capital alternative–which is built on trust, professional respect and a thoughtful guidance for continued value creation.</p>
@@ -178,7 +178,7 @@ title: Amalgam Capital
 			<p><strong>Future Plans</strong></p>
 			<p>Tell us about your desires for the future of the business. Would you like to continue to run it or would you like to transition out? If you would like to stay, how do you see growing the business and where do you see the opportunities?</p>
 			<p class="large">Ready to kick off the process?</p>
-			<a class="btn-primary btn-large" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
+			<a class="btn-primary btn-lg" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
 		</div>
 	</div>
 </section>
