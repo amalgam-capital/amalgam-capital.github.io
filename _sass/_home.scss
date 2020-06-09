@@ -25,6 +25,7 @@
 		text-align: center;
 	}
 	.large {
+		font-weight: 500;
 		color: $secondary;
 		display: block;
 		font-size: 3.428571429em;
@@ -59,6 +60,6 @@
 	max-height: 48px;
 	}
 	.block-content {
-		padding-bottom: $section-spacing;
+		flex-direction: column;
 	}
 }

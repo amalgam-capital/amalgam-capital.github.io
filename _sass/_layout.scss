@@ -56,14 +56,12 @@
 	flex-wrap: wrap;
 	.em-block {
 		.block-content {
-			flex: 1 0 auto;
+			padding-bottom: $section-spacing-tiny*4;
 			height: 100%;
 			width: 100%;
 			align-items: center;
 			justify-content: center;
-		}
-		p {
-			flex: 1 0 auto;
+			display: flex;
 		}
 	}
 }
