@@ -47,6 +47,12 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	a {
+		margin-left: $section-spacing-tiny;
+	}
+	small {
+		opacity: 0.5;
+	}
 	}
 }
 
@@ -82,6 +88,14 @@
 	background: rgba($body-dark,0.2);
 	padding: $section-spacing 0;
 	color: rgba($light-text,0.5);
+	p {
+	clear: both;
+	}
+	@include media-breakpoint-up(md) { 
+	.footer-right {
+		text-align: right;
+	}
+	}
 	.mark {
 		float: right;
 		background: none;

@@ -81,12 +81,12 @@ title: Amalgam Capital
 				</div>
 			</div>
 			<p class="large">Does this sound like your business or one you represent?</p>
-			<a class="btn-primary btn-large" href="mailto:intro@amalgamcapital.com">Chat with us</a>
+			<a class="btn-primary btn-large" href="mailto:intro@amalgamcapital.com">Get in Touch With Us</a>
 		</div>
 	</div>
 </section>
 <section  data-aos="fade" data-aos-delay="100" class="home-section industries row block-container equal-blocks align-items-center">
-	<h3 class="h1 col-lg-10 col-lg-offset-1">Our Target Industries</h3>
+	<h3 class="h1 col-lg-10 col-lg-offset-1">Our Favorite Industries</h3>
 	<div class="em-block col-xs-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<img alt="shopping icon" src="../images/ic-shopping.svg">
