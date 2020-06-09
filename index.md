@@ -81,7 +81,7 @@ title: Amalgam Capital
 				</div>
 			</div>
 			<p class="large">Does this sound like your business or one you represent?</p>
-			<a class="btn-primary btn-large" href="mailto:intro@amalgamcapital.com">Get in Touch With Us</a>
+			<a class="btn-primary btn-large" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
 		</div>
 	</div>
 </section>
@@ -123,4 +123,6 @@ title: Amalgam Capital
 			<p class="large">Industrial Services</p>
 		</div>
 	</div>	
+</section>
+<section data-aos="fade" data-aos-delay="100" class="home-section process">
 </section>
