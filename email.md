@@ -3,7 +3,7 @@ layout: default
 permalink: /email
 title: Amalgam Capital Email
 ---
-
+<div class="container" style="background:white;">
 
 <table  width="340" cellspacing="0" cellpadding="0" border="0">
    <tr>
@@ -39,3 +39,5 @@ title: Amalgam Capital Email
       </td>
    </tr>
 </table>
+
+</div>
