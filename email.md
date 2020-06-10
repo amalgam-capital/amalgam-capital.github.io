@@ -1,7 +1,7 @@
 ---
-layout: home
+layout: default
 permalink: /email
-title: Amalgam Capital
+title: Amalgam Capital Email
 ---
 
 
