@@ -1,10 +1,15 @@
 ---
 layout: page
 permalink: /email
-title: Amalgam Capital Email
+title: Amalgam Capital Email Styling
 ---
-Copy the content in the section below to add an email signature. Remember to edit the telephone number (and telephone number link)
-<table  width="340" cellspacing="0" cellpadding="0" border="0">
+   <p>Copy the content in the section below to add an email signature. Remember to edit the telephone number (and telephone number link)</p>
+
+<button class="btn-primary" id='copybtn' onclick="CopyToClipboard('email')">
+  Copy Email Code
+</button>
+<div id="email-outline">
+<table id="email" width="340" cellspacing="0" cellpadding="0" border="0">
    <tr>
       <td>
          <table cellspacing="0" cellpadding="0" border="0">
@@ -38,3 +43,4 @@ Copy the content in the section below to add an email signature. Remember to edi
       </td>
    </tr>
 </table>
+</div>
