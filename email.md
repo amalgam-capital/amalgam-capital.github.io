@@ -3,6 +3,7 @@ layout: page
 permalink: /email
 title: Amalgam Capital Email
 ---
+Copy the content in the section below to add an email signature. Remember to edit the telephone number (and telephone number link)
 <table  width="340" cellspacing="0" cellpadding="0" border="0">
    <tr>
       <td>
