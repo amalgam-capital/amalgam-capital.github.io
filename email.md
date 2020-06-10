@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 permalink: /email
 title: Amalgam Capital Email
 ---
-<div class="container" style="background:white;">
 <div class="row">
 <div class="col-xl-10 offset-xl-1">
 <table  width="340" cellspacing="0" cellpadding="0" border="0">
@@ -40,6 +39,5 @@ title: Amalgam Capital Email
       </td>
    </tr>
 </table>
-</div>
 </div>
 </div>
