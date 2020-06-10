@@ -81,7 +81,7 @@ title: Amalgam Capital
 				</div>
 			</div>
 			<p class="large d-print-none">Does this sound like your business or one you represent?</p>
-			<a class="btn-primary btn-lg d-print-none" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
+			<a class="btn-primary btn-lg d-print-none" href="{{ site.url }}/contact">Send us a Message</a>
 		</div>
 	</div>
 </section>
@@ -178,7 +178,7 @@ title: Amalgam Capital
 			<p><strong>Future Plans</strong></p>
 			<p>Tell us about your desires for the future of the business. Would you like to continue to run it or would you like to transition out? If you would like to stay, how do you see growing the business and where do you see the opportunities?</p><br/>
 			<p class="large d-print-none">Ready to kick off the process?</p>
-			<a class="btn-primary btn-lg d-print-none" href="mailto:intro@amalgamcapital.com">Send us a Message</a>
+			<a class="btn-primary btn-lg d-print-none" href="{{ site.url }}/contact">Send us a Message</a>
 		</div>
 	</div>
 </section>
