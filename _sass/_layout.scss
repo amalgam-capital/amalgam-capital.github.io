@@ -16,7 +16,7 @@
 	    font-weight: 500;
 	    font-size: 1em;
 	    display: block;
-	    margin: $section-spacing-tiny 0;;
+	    margin: ($section-spacing-small / 2) 0;;
 	    @include media-breakpoint-up(md) { 
 		    font-size: 1.51em;
 		    margin: $section-spacing-small 0;
@@ -116,7 +116,9 @@
 	}
 	}
 	.mark {
+		@include media-breakpoint-up(md) { 
 		float: right;
+		}
 		background: none;
 		max-width: 100px;
 		.stroke_one,.stroke_two,.stroke_three,.stroke_four,.stroke_five,.stroke_six,.stroke_seven {
