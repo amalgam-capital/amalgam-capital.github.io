@@ -11,19 +11,19 @@ title: Talk To Us
 >
   <div class="form-group">
   <label for="contactname">Name</label>
-  <input class="form-control" id="contactname" type="text" name="name">
+  <input required class="form-control" id="contactname" type="text" name="name">
   </div>
   <div class="form-group">
   <label for="contactemail">
     Email:
   </label>
-  <input class="form-control" id="contactemail" type="text" name="_replyto">
+  <input required class="form-control" id="contactemail" type="text" name="_replyto">
   </div>
   <div class="form-group">
   <label for="contactmessage">
     Message:
   </label>
-  <textarea class="form-control" id="contactmessage" name="message"></textarea>
+  <textarea required class="form-control" id="contactmessage" name="message"></textarea>
   </div>
   <button class="btn btn-primary btn-lg" type="submit">Send</button>
 
