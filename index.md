@@ -5,7 +5,7 @@ title: Amalgam Capital
 ---
 <section data-aos="fade" data-aos-delay="1000" class="hero home-section row">
 	<div class="col-xl-10 offset-xl-1">
-		<h2 class="h1">We’re an amalgam of investors, entrepreneurs, and operators, who acquire and sustainably grow <em>underrated</em> businesses.</h2>
+		<h2 class="h1">We acquire and sustainably grow <em>underrated</em> businesses.</h2>
 	</div>
 </section>
 <section id="numbers" data-aos="fade" data-aos-delay="1000" class="numbers home-section block-container row align-items-center equal-blocks">
