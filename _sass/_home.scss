@@ -32,12 +32,12 @@
 	}
 	.em-block {
 		text-align: center;
-	}
-	.large {
-		font-weight: 500;
-		color: $secondary;
-		display: block;
-		font-size: 3.428571429em;
+		.large {
+			font-weight: 500;
+			color: $secondary;
+			display: block;
+			font-size: 3.428571429em;
+		}
 	}
 }
 
