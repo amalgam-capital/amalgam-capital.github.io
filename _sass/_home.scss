@@ -37,6 +37,7 @@
 			color: $secondary;
 			display: block;
 			@include font-size(48,yes,56);
+			margin-top: $section-spacing-small;
 		}
 	}
 }
