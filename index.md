@@ -9,8 +9,10 @@ title: Amalgam Capital
 	</div>
 </section>
 <section id="numbers" data-aos="fade" data-aos-delay="1000" class="numbers home-section block-container row align-items-center equal-blocks">
-	<h3 class="h4 col-xl-10 offset-xl-1">Our multidisciplinary team of investors, entrepreneurs, and operators, has created substantial value for others.<br/>
-We think there’s a better approach to private equity and we’re looking for capital partners to join us in funding acquisitions targeting maturity at 3 years.</h3>
+	<div class="col-xl-10 offset-xl-1">
+	<p class="large">Our multidisciplinary team of investors, entrepreneurs, and operators, has created substantial value for others.</p>
+	<p class="large">We think there’s a better approach to private equity and we’re looking for capital partners to join us in funding acquisitions targeting maturity at 3 years.</p>
+	</div>
 	<div class="em-block col-12 col-sm-6 col-lg-4">
 		<div class="block-content">
 			<p><span class="large">$10.47B</span> Cumulative revenue growth through our strategies</p>
