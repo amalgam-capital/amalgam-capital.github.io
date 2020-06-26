@@ -14,7 +14,6 @@
     {% include open-graph.html %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-
     <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
     <link href="{{ site.url }}/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
 
@@ -28,7 +27,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
-    
+    {% if page.noindex == true %}
+    <meta name="robots" content="noindex" />
+    {% endif %}
+  
   
   </head>
 
