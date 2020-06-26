@@ -2,6 +2,7 @@
 layout: home
 permalink: /
 title: Amalgam Capital
+exerpt: We acquire and sustainably grow underrated businesses as independent sponsors.
 ---
 <section data-aos="fade" data-aos-delay="1000" class="hero home-section row">
 	<div class="col-xl-10 offset-xl-1">

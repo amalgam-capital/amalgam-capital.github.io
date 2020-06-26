@@ -2,6 +2,7 @@
 layout: page
 permalink: /contact
 title: Talk To Us
+exerpt: We're looking for businesses looking to get acquired and capital partners to work with us
 ---
 <div class="row">
 <div class="col-md-6">
