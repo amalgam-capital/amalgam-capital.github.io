@@ -1,5 +1,5 @@
 ---
-layout: team-member
+layout: team
 title:  "Andrew Klemm"
 job-title: Managing Director
 order: 3
