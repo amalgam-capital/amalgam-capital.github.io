@@ -28,17 +28,9 @@ plugins_dir:
   - jekyll-paginate
 
 collections:
-  services:
-    output: true
-  case-studies:
-    output: true
-  expertise:
-    output: true
   team-members:
-    output: true
-  advisors:
-    output: true    
-  careers:
+    output: true  
+  contact:
     output: true    
 
 defaults:
