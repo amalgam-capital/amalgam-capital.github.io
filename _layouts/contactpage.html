@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: page
 ---
-<div class="content container">
-<section class="hero home-section row">
+<div class="row">
+<div class="col-md-6">
 {% assign filename = page.url | replace: 'contact', '' | replace: '/', ''  | replace: '.html', '.md' %}
 <div id="QR" style="background-url("/images/{{ filename }}.svg)">
 </div>
@@ -14,5 +14,5 @@ layout: default
 <p class="large">
 	<strong>{{ page.job-title }}</strong>
 </p>
-</section>
+</div>
 </div>
