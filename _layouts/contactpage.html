@@ -4,7 +4,7 @@ layout: page
 <div class="row">
 <div class="col-md-6">
 {% assign filename = page.url | replace: 'contact', '' | replace: '/', ''  | replace: '.html', '.md' %}
-<div id="QR" style="background-url("/images/{{ filename }}.svg)">
+<div id="QR" style="background-url: (/images/{{ filename }}.svg)">
 </div>
 <h1>{{ page.title }}</h1>
 <h3>{{ page.job-title }}</h3>
