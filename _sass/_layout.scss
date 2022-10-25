@@ -141,10 +141,11 @@
 	display: block;
 	border: 20px solid $white;
 	background-size: cover;
-	margin: $section-spacing-small auto;
+	margin: ($section-spacing-small/3) auto;
 }
 
 .contactpage {
+	padding-bottom: $section-spacing*2;
 	text-align: center;
 	.page-title {
 	background: url(../images/eyebrow-three.svg) top center no-repeat, url(../images/eyebrow-four.svg) bottom center no-repeat; 
@@ -155,12 +156,27 @@
 	padding-bottom: $section-spacing-small;
 	background: url(../images/eyebrow-one.svg) bottom center no-repeat;
 	}
+	.header-right {
+		display: none;
+	}
+	.header-left {
+	width: 100%;
+	flex: 100%;
+	max-width: 100%;
+	h1.logo {
+		font-size: 1.41em;
+		margin-left: -20px;
+	}
+		.logo-link {
+		margin: 0px auto;
+		max-width: 280px;
+		}
+	}
 }
 
 a.download-vcard {
 	background-color: $primary;
 	color: $body-dark;
-	font-weight: bold;
 	display: block;
 	position: fixed;
 	bottom: $section-spacing-small;
