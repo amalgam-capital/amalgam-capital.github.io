@@ -141,7 +141,7 @@
 	display: block;
 	border: 20px solid $white;
 	background-size: cover;
-	margin: ($section-spacing-small/3) auto;
+	margin: 0 auto;
 }
 
 .contactpage {
@@ -149,6 +149,7 @@
 	text-align: center;
 	.page-title {
 	background: url(../images/eyebrow-three.svg) top center no-repeat, url(../images/eyebrow-four.svg) bottom center no-repeat; 
+	padding:$section-spacing-small 0;
 	margin: $section-spacing-small 0;
 	}
 	h4 {
