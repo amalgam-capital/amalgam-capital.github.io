@@ -61,7 +61,7 @@ superior_outcomes:
     - number: "4"
       title: "Genuine Cultural Continuity"
       description: "We don't just pay lip service to preserving your culture – we do it. Our integration philosophy of 'do no harm' means we take time to understand what makes your organization special before making any changes."
-      example: "After acquiring Hampton Roads Mechanical, we maintained their regional brand identity and team structure while adding resources that helped them expand service offerings and geographic reach."
+      example: "After acquiring State Mechanical Services, we maintained their regional brand identity and team structure while adding resources that helped them expand service offerings and geographic reach."
     
     - number: "5"
       title: "Enhanced Legacy Building"
