@@ -43,6 +43,9 @@
     
     <script src="https://kit.fontawesome.com/203a8036d5.js" crossorigin="anonymous"></script>
 
+    <!-- p5.js for noise texture -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.0.2/lib/p5.min.js"></script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -113,169 +116,128 @@
         }
       }
     </script>
-    
-    <!-- Typography styles -->
+
     <style>
-      .prose {
-        color: #374151;
-        max-width: 65ch;
+
+    /* Noise texture overlay */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      background-image: url('data:image/svg+xml;base64,');
+      background-repeat: repeat;
+      opacity: .;
+      pointer-events: none;
+      z-index: -1;
+      mix-blend-mode: multiply;
+    }
+    @media (prefers-color-scheme: dark) {
+      body::before {
+        opacity: .5;
+        mix-blend-mode: multiply;
       }
-      .prose p {
-        margin-top: 1.25em;
-        margin-bottom: 1.25em;
-      }
-      .prose h1 {
-        color: #111827;
-        font-weight: 800;
-        font-size: 2.25em;
-        margin-top: 0;
-        margin-bottom: 0.8888889em;
-        line-height: 1.1111111;
-      }
-      .prose h2 {
-        color: #111827;
-        font-weight: 700;
-        font-size: 1.5em;
-        margin-top: 2em;
-        margin-bottom: 1em;
-        line-height: 1.3333333;
-      }
-      .prose h3 {
-        color: #111827;
-        font-weight: 600;
-        font-size: 1.25em;
-        margin-top: 1.6em;
-        margin-bottom: 0.6em;
-        line-height: 1.6;
-      }
-      .prose h4 {
-        color: #111827;
-        font-weight: 600;
-        margin-top: 1.5em;
-        margin-bottom: 0.5em;
-        line-height: 1.5;
-      }
-      .prose ul {
-        margin-top: 1.25em;
-        margin-bottom: 1.25em;
-        padding-left: 1.625em;
-      }
-      .prose ol {
-        margin-top: 1.25em;
-        margin-bottom: 1.25em;
-        padding-left: 1.625em;
-      }
-      .prose li {
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-      }
-      .prose blockquote {
-        font-weight: 500;
-        font-style: italic;
-        color: #111827;
-        border-left-width: 0.25rem;
-        border-left-color: #e5e7eb;
-        quotes: "\201C""\201D""\2018""\2019";
-        margin-top: 1.6em;
-        margin-bottom: 1.6em;
-        padding-left: 1em;
-      }
-      .prose strong {
-        color: #111827;
-        font-weight: 600;
-      }
-      .prose a {
-        color: #0ea5e9;
-        text-decoration: underline;
-        font-weight: 500;
-      }
-      .prose a:hover {
-        color: #0284c7;
-      }
-      .prose code {
-        color: #111827;
-        font-weight: 600;
-        font-size: 0.875em;
-        background-color: #f3f4f6;
-        padding: 0.25rem 0.375rem;
-        border-radius: 0.25rem;
-      }
-      .prose pre {
-        color: #e5e7eb;
-        background-color: #374151;
-        overflow-x: auto;
-        font-weight: 400;
-        font-size: 0.875em;
-        line-height: 1.7142857;
-        margin-top: 1.7142857em;
-        margin-bottom: 1.7142857em;
-        border-radius: 0.375rem;
-        padding: 0.8571429em 1.1428571em;
-      }
-      .prose pre code {
-        background-color: transparent;
-        border-width: 0;
-        border-radius: 0;
-        padding: 0;
-        color: inherit;
-        font-size: inherit;
-        font-weight: inherit;
-        line-height: inherit;
-      }
-      .prose table {
-        width: 100%;
-        table-layout: auto;
-        text-align: left;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        font-size: 0.875em;
-        line-height: 1.7142857;
-      }
-      .prose thead {
-        border-bottom-width: 1px;
-        border-bottom-color: #d1d5db;
-      }
-      .prose th {
-        color: #111827;
-        font-weight: 600;
-        vertical-align: bottom;
-        padding-right: 0.5714286em;
-        padding-bottom: 0.5714286em;
-        padding-left: 0.5714286em;
-      }
-      .prose td {
-        vertical-align: baseline;
-        padding-right: 0.5714286em;
-        padding-top: 0.5714286em;
-        padding-bottom: 0.5714286em;
-        padding-left: 0.5714286em;
+    }     
+    
+    </style>
+
+    <!-- Noise Texture Script -->
+    <script>
+      // Generate noise texture
+      function generateNoiseTexture() {
+        console.log('Generating film grain texture...');
+        
+        const size = 512; // Power of 2 for better tiling
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = size;
+        canvas.height = size;
+        
+        const imageData = ctx.createImageData(size, size);
+        const data = imageData.data;
+        
+        // Create tileable random seed for each position
+        const grainIntensity = 100; // Adjust grain strength
+        const baseGray = 255; // Base color (light gray)
+        
+        for (let x = 0; x < size; x++) {
+          for (let y = 0; y < size; y++) {
+            const index = (y * size + x) * 4;
+            
+            // Create pseudo-random grain based on position
+            // Use multiple prime numbers to create good distribution
+            let seed = (x * 73856093) ^ (y * 19349663);
+            seed = (seed ^ (seed >> 13)) * 1664525 + 1013904223;
+            seed = seed ^ (seed >> 16);
+            
+            // Convert to -1 to 1 range
+            const random = ((seed & 0x7FFFFFFF) / 0x7FFFFFFF) * 2 - 1;
+            
+            // Add some high-frequency detail
+            let seed2 = ((x * 2) * 73856093) ^ ((y * 2) * 19349663);
+            seed2 = (seed2 ^ (seed2 >> 13)) * 1664525 + 1013904223;
+            const random2 = ((seed2 & 0x7FFFFFFF) / 0x7FFFFFFF) * 2 - 1;
+            
+            // Combine for film grain effect
+            const grain = (random * 0.7 + random2 * 0.3) * grainIntensity;
+            
+            // Apply grain to base color
+            const gray = Math.floor(baseGray + grain);
+            const clampedGray = Math.max(200, Math.min(255, gray));
+            
+            data[index] = clampedGray;     // Red
+            data[index + 1] = clampedGray; // Green  
+            data[index + 2] = clampedGray; // Blue
+            data[index + 3] = 255;        // Alpha
+          }
+        }
+        
+        ctx.putImageData(imageData, 0, 0);
+        
+        // Convert to data URL and apply to body
+        const dataURL = canvas.toDataURL();
+        
+        console.log('Film grain texture applied!');
+        
+        // Update the CSS with proper tiling
+        const style = document.createElement('style');
+        style.textContent = `
+          body::before {
+            background-image: url('${dataURL}') !important;
+            background-repeat: repeat !important;
+            background-size: ${size}px ${size}px !important;
+            image-rendering: auto !important;
+            height: ${document.documentElement.scrollHeight}px !important;
+          }
+        `;
+        document.head.appendChild(style);
+        
+        // Update height when content changes
+        const updateGrainHeight = () => {
+          const grainElement = document.querySelector('body::before');
+          if (grainElement) {
+            const newHeight = document.documentElement.scrollHeight;
+            style.textContent = style.textContent.replace(
+              /height: \d+px/,
+              `height: ${newHeight}px`
+            );
+          }
+        };
+        
+        // Watch for content changes
+        const observer = new ResizeObserver(updateGrainHeight);
+        observer.observe(document.body);
+        
+        // Also update on window resize
+        window.addEventListener('resize', updateGrainHeight);
       }
       
-      /* Dark mode styles */
-      .dark .prose {
-        color: #d1d5db;
-      }
-      .dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4 {
-        color: #f9fafb;
-      }
-      .dark .prose strong {
-        color: #f9fafb;
-      }
-      .dark .prose blockquote {
-        color: #f9fafb;
-        border-left-color: #4b5563;
-      }
-      .dark .prose code {
-        color: #f9fafb;
-        background-color: #374151;
-      }
-      .dark .prose th {
-        color: #f9fafb;
-      }
-      .dark .prose thead {
-        border-bottom-color: #4b5563;
-      }
-    </style>
+      // Generate texture when DOM is loaded
+      document.addEventListener('DOMContentLoaded', generateNoiseTexture);
+    </script>
     
     <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/AppIcons/180.png">
     <link rel="stylesheet" href="https://use.typekit.net/sjx0lym.css">
@@ -291,7 +253,7 @@
   </head>
 
   <body class="min-h-screen bg-white dark:bg-brand-dark dark:text-white font-sans page overflow-x-hidden">
-    <header class="px-4 sm:px-6 lg:px-8 xl:px-32 py-4 top-0 sticky md:static z-10 dark:text-white z-100 bg-gradient-to-b from-brand-gold/10 to-transparent transition-all duration-300" id="main-header">
+    <header class="px-4 sm:px-6 lg:px-8 xl:px-32 py-4 top-0 sticky md:static z-10 dark:text-white z-100 bg-gradient-to-b from-brand-gold/5 to-transparent transition-all duration-300" id="main-header">
 	<div class="flex items-center justify-between max-w-7xl mx-auto">
 		<div class="flex items-center space-x-4 lg:pt-20 md:pt-8 md:pb-4">
 			<h1 class="lg:text-lg xl:text-xl tracking-widest uppercase">
@@ -314,13 +276,13 @@
 		</button>
 		<!-- Desktop navigation -->
 		<nav class="hidden md:block print:hidden">
-			<ul class="flex items-center justify-end text-xs uppercase mb-6 opacity-50 hover:opacity-100 transition-opacity duration-300">
+			<ul class="flex items-center justify-end text-xs uppercase mb-6 transition-opacity duration-300">
 				
-				<li><a class="hover:bg-brand-coral/10 hover:text-brand-coral dark:hover:bg-brand-dark-900/50 rounded-md px-4 py-2" href="http://localhost:4000/about">About</a></li>
+				<li><a class="hover:bg-brand-coral/10 hover:text-brand-coral opacity-75 hover:opacity-100  dark:hover:bg-brand-dark-900/50 rounded-md px-4 py-2" href="http://localhost:4000/about">About</a></li>
 				
-				<li><a class="hover:bg-brand-coral/10 hover:text-brand-coral dark:hover:bg-brand-dark-900/50 rounded-md px-4 py-2" href="http://localhost:4000/faq">FAQ</a></li>
+				<li><a class="hover:bg-brand-coral/10 hover:text-brand-coral opacity-75 hover:opacity-100  dark:hover:bg-brand-dark-900/50 rounded-md px-4 py-2" href="http://localhost:4000/faq">FAQ</a></li>
 				
-				<li><a class="hover:bg-brand-coral/10 hover:text-brand-coral dark:hover:bg-brand-dark-900/50 rounded-md px-4 py-2" href="http://localhost:4000/contact">Contact</a></li>
+				<li><a class="hover:bg-brand-coral/10 hover:text-brand-coral opacity-75 hover:opacity-100  dark:hover:bg-brand-dark-900/50 rounded-md px-4 py-2" href="http://localhost:4000/contact">Contact</a></li>
 				
 			</ul>
 			<ul class="flex items-center py-2">
@@ -559,7 +521,7 @@ function CopyToClipboard(element) {
 
 </script>
 
-      <footer class="bg-gradient-to-t text-brand-dark/50 dark:text-white/50 from-brand-gold-100 to-white dark:from-brand-coral-900 dark:to-brand-dark px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
+      <footer class="bg-gradient-to-t text-brand-dark/50 dark:text-white/50 from-brand-coral/10 to-transparent px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
 	<div class="max-w-7xl mx-auto">
 		<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 			<div class="col-span-1">

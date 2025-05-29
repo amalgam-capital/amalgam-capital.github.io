@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
 	<div class="max-w-7xl mx-auto">
 		<div class="max-w-5xl">
 			<h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-6"><span>{{page.lineone}}</span><span class="italic">{{page.linetwo}}</span></h2>
@@ -18,8 +18,17 @@ layout: default
 				<div class="md:flex items-start space-y-6 md:space-x-6 mb-6">
 					<div class="flex-shrink-0 size-40 bg-brand-coral-100 dark:bg-brand-gold/20 rounded-full flex items-center justify-center bg-cover" style="background-image:url({{ site.url }}/images/team/{{ member.image }})"></div>
 					<div class="flex-1">
-						<h2 class="text-3xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ member.name }}</h2>
-						<p class="text-xl text-brand-coral-600 dark:text-brand-gold mb-4">{{ member.title }}</p>
+						<div class="flex items-start justify-between mb-2">
+							<div>
+								<h2 class="text-3xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ member.name }}</h2>
+								<p class="text-xl text-brand-coral-600 dark:text-brand-gold mb-4">{{ member.title }}</p>
+							</div>
+							{% if member.linkedin %}
+							<a href="{{ member.linkedin }}" target="_blank" rel="noopener noreferrer" class="opacity-50 hover:opacity-100 transition-colors">
+								<i class="fa-brands fa-linkedin text-brand-coral-600 dark:text-brand-gold text-xl"></i>
+							</a>
+							{% endif %}
+						</div>
 						<p class="leading-relaxed opacity-80">{{ member.description }}</p>
 					</div>
 				</div>

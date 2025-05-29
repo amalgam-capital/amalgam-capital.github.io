@@ -3,22 +3,24 @@ layout: default
 ---
 <section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
 	<div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-16">{{ page.title }}</h2>
+		<div class="max-w-5xl">
+			<h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-16"><span>{{page.lineone}}</span><span class="italic">{{page.linetwo}}</span></h2>
+		</div>
 		<div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
 			<div>
 				<i class="fa-duotone fa-light fa-bullseye text-4xl mb-4 text-brand-gold"></i>
-				<p class="text-2xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{page.target_companies.revenue}}</p>
+				<p class="text-2xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{page.target_companies.revenue}}</p>
                 <p class="opacity-80">Revenue Range</p>
 			</div>
 			<div>
 				<i class="fa-duotone fa-light fa-chart-line text-4xl mb-4 text-brand-gold"></i>
-				<p class="text-2xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{page.target_companies.ebitda}}</p>
+				<p class="text-2xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{page.target_companies.ebitda}}</p>
                 <p  class="opacity-80">EBITDA Target</p>
 			</div>
 			{% for situation in page.situations %}
 			<div>
 				<i class="fa-duotone fa-light {{ situation.icon }} text-4xl mb-4 text-brand-gold"></i>
-				<p class="text-2xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{situation.title}}</p>
+				<p class="text-2xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{situation.title}}</p>
                 <p class="opacity-80">{{situation.description}}</p>
 			</div>
 			{% endfor %}

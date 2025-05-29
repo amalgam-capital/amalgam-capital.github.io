@@ -1,4 +1,4 @@
-<header class="px-4 sm:px-6 lg:px-8 xl:px-32 py-4 top-0 sticky md:static z-10 dark:text-white z-100 bg-gradient-to-b from-brand-gold/10 to-transparent transition-all duration-300" id="main-header">
+<header class="px-4 sm:px-6 lg:px-8 xl:px-32 py-4 top-0 sticky md:static z-10 dark:text-white z-100 bg-gradient-to-b from-brand-gold/5 to-transparent transition-all duration-300" id="main-header">
 	<div class="flex items-center justify-between max-w-7xl mx-auto">
 		<div class="flex items-center space-x-4 lg:pt-20 md:pt-8 md:pb-4">
 			<h1 class="lg:text-lg xl:text-xl tracking-widest uppercase">
@@ -19,9 +19,9 @@
 		</button>
 		<!-- Desktop navigation -->
 		<nav class="hidden md:block print:hidden">
-			<ul class="flex items-center justify-end text-xs uppercase mb-6 opacity-50 hover:opacity-100 transition-opacity duration-300">
+			<ul class="flex items-center justify-end text-xs uppercase mb-6 transition-opacity duration-300">
 				{% for item in site.data.navigation.small-navigation %}
-				<li><a class="hover:bg-brand-coral/10 hover:text-brand-coral dark:hover:bg-brand-dark-900/50 rounded-md px-4 py-2" href="{{ site.url }}{{ item.url }}">{{ item.title }}</a></li>
+				<li><a class="hover:bg-brand-coral/10 hover:text-brand-coral opacity-75 hover:opacity-100  dark:hover:bg-brand-dark-900/50 rounded-md px-4 py-2" href="{{ site.url }}{{ item.url }}">{{ item.title }}</a></li>
 				{% endfor %}
 			</ul>
 			<ul class="flex items-center py-2">

@@ -12,6 +12,7 @@ team_members:
     title: "Managing Director"
     icon: "fa-user-tie"
     image: "arun.jpg"
+    linkedin: "https://www.linkedin.com/in/shuklaarun/"
     description: "Arun brings over 30 years of industry leadership and consulting expertise to Amalgam Capital. His career spans global roles in operations, strategy implementation, and business transformation across manufacturing, services, and technology sectors."
     experience:
       - "Founding Partner & CEO of SLKone, a management consulting firm bridging Strategy, Leadership, and Knowledge"
@@ -28,6 +29,7 @@ team_members:
     title: "Managing Partner"
     icon: "fa-cogs"
     image: "phil.jpg"
+    linkedin: "https://www.linkedin.com/in/philmlynch/"
     description: "Phil is a continuous improvement and integration specialist with expertise in operations, logistics, salesforce effectiveness, and M&A integration. As a founding partner and COO at SLKone, Phil has delivered significant performance improvements for clients across industries."
     experience:
       - "Founding Partner & COO at SLKone"
@@ -50,6 +52,7 @@ team_members:
     title: "Managing Director"
     icon: "fa-calculator"
     image: "andrew.jpg"
+    linkedin: "https://www.linkedin.com/in/andrewdklemm/"
     description: "Andrew combines quantitative rigor with operational insight. He has spent his career delivering business transformation projects across industries. His holistic approach to performance improvement has resulted in significant value creation for companies worldwide."
     experience:
       - "Partner and CFO at SLKone"
@@ -71,6 +74,7 @@ team_members:
     title: "Managing Director"
     icon: "fa-rocket"
     image: "rachit.jpg"
+    linkedin: "https://www.linkedin.com/in/rachit/"
     description: "Rachit brings his diverse experience as a serial entrepreneur, corporate executive, and early-stage investor to Amalgam Capital. His background includes founding, scaling, and exiting technology companies, giving him unique insight into growth strategies and digital transformation."
     experience:
       - "Co-founder of Abyss Analytics, a healthcare analytics company revolutionizing reimbursement intelligence"
@@ -87,6 +91,7 @@ team_members:
     title: "Managing Director"
     icon: "fa-lightbulb"
     image: "adit.jpg"
+    linkedin: "https://www.linkedin.com/in/aditshukla/"
     description: "Adit specializes in business development, product strategy, and organizational design. His background spans mobile product development, creative direction, and early-stage investing, giving him a multi-faceted perspective on building and scaling businesses."
     experience:
       - "Co-founder of Abyss Analytics"
