@@ -5,7 +5,7 @@ description: "We acquire and sustainably grow underrated businesses as independe
 logo: logo-circle.png
 teaser: 
 locale: en
-url: http://localhost:4000
+url: https://amalgamcapital.com
 feed:
   path: atom.xml
 
