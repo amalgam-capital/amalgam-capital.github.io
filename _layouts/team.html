@@ -16,11 +16,11 @@ layout: default
 			{% for member in page.team_members %}
 			<div class="md:rounded-lg md:border md:border-brand-coral-900/20 dark:border-brand-gold-900 p-6">
 				<div class="md:flex items-start space-y-6 md:space-x-6 mb-6">
-					<div class="flex-shrink-0 size-40 bg-brand-coral-100 dark:bg-brand-gold/20 rounded-full flex items-center justify-center bg-cover" style="background-image:url({{site.url}}/images/team/{{member.image}})"></div>
+					<div class="flex-shrink-0 size-40 bg-brand-coral-100 dark:bg-brand-gold/20 rounded-full flex items-center justify-center bg-cover" style="background-image:url({{ site.url }}/images/team/{{ member.image }})"></div>
 					<div class="flex-1">
-						<h2 class="text-3xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{member.name}}</h2>
-						<p class="text-xl text-brand-coral-600 dark:text-brand-gold mb-4">{{member.title}}</p>
-						<p class="leading-relaxed opacity-80">{{member.description}}</p>
+						<h2 class="text-3xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ member.name }}</h2>
+						<p class="text-xl text-brand-coral-600 dark:text-brand-gold mb-4">{{ member.title }}</p>
+						<p class="leading-relaxed opacity-80">{{ member.description }}</p>
 					</div>
 				</div>
 

@@ -5,15 +5,8 @@ sitemap: false
    Global
    ========================================================================== */
 @import "variables";
-@import "mixins";
-@import "base";
-@import "layout";
-@import "buttons";
 
 /*
    Components
    ========================================================================== */
 @import "logo";
-
-/* Overrides */
-@import "print";

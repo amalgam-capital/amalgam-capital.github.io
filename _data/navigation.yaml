@@ -1,14 +1,14 @@
 main-navigation:
+  - title: "For Owners"
+    url: "/for-business-owners"
+  - title: "For Investors"
+    url: "/for-investors" 
   - title: "Approach"
     url: "/investment-approach"
   - title: "Portfolio"
     url: "/portfolio"
   - title: "Team"
     url: "/team"
-  - title: "For Owners"
-    url: "/for-business-owners"
-  - title: "For Investors"
-    url: "/for-investors"
 
 small-navigation:
   - title: "About"
@@ -19,6 +19,10 @@ small-navigation:
     url: "/contact"
 
 mobile-navigation:
+  - title: "For Business Owners"
+    url: "/for-business-owners"
+  - title: "For Investors"
+    url: "/for-investors"
   - title: "Approach"
     url: "/investment-approach"
   - title: "Portfolio"
@@ -28,11 +32,7 @@ mobile-navigation:
   - title: "About"
     url: "/about"
   - title: "FAQ"
-    url: "/faq"
-  - title: "Owners"
-    url: "/for-business-owners"
-  - title: "Investors"
-    url: "/for-investors"
+    url: "/faq"    
   - title: "Contact"
     url: "/contact"
 

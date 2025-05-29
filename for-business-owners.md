@@ -34,7 +34,7 @@ superior_outcomes:
     - number: "1"
       title: "Better Valuation Understanding"
       description: "Our operational background means we can recognize the value that financial buyers might miss. We understand the value of your customer relationships, proprietary processes, and team capabilities because we've built these assets ourselves."
-      example: "When evaluating State Mechanical Services, we identified value in their specialized NASA facility experience that traditional buyers overlooked, resulting in a more attractive valuation."
+      example: "When evaluating Hampton Roads Mechanical of Virginia, we identified value in their specialized government facility contracting that traditional buyers overlooked as traditional construction, but was in fact maintenance-based work, resulting in a more attractive valuation."
     
     - number: "2"
       title: "Smoother, Faster Transactions"

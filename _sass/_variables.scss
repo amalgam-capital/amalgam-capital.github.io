@@ -1,33 +1,3 @@
-/* ==========================================================================
-   SCSS Variables
-   ========================================================================== */
-/*
-   Breakpoints
-   ========================================================================== */
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
-
-
-/*
-   Typography variables
-   ========================================================================== */
-$base-font-family               : "montserrat", verdana, sans-serif;
-$heading-font-family            : "merriweather", georgia, serif;
-$alt-font                    	: $heading-font-family;
-$doc-font-size               	: 14;
-$doc-line-height             	: 22;
-$doc-small-size                 : 12;
-
-$border-radius               	: 4px;
-
-
-
 
 /*
    Color variables
@@ -45,15 +15,3 @@ $secondary                    : #F4C35A;
 
 
 $link-color                   : $primary;
-
-/* Grid Variables */
-$grid-columns: 12 !default;
-$grid-gutter-width: 30px !default;
-
-/*
-   Spacing Variables
-   ========================================================================== */
-
-$section-spacing              : 48px;
-$section-spacing-small        : 24px;
-$section-spacing-tiny         : 8px;

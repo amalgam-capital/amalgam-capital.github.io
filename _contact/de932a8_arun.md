@@ -6,4 +6,5 @@ linked-in: https://www.linkedin.com/in/shuklaarun/
 email: arun@amalgamcapital.com
 phone: (404) 213-4517
 sitemap: false
+noindex: true
 ---
