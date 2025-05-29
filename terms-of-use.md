@@ -40,6 +40,5 @@ If you have any questions about these Terms, please contact:
 **Amalgam Capital**  
 510 Meadowmont Village Circle, Ste 212  
 Chapel Hill, NC 27517  
-[Insert contact email]
 
 contact@amalgamcapital.com
