@@ -2,6 +2,7 @@
 layout: investors
 permalink: /for-investors
 title: For Investors
+meta-title: For Investors - Amalgam Capital Co-Investment Partners
 description: Partner with operators who deliver operational alpha in the lower middle market
 lineone: "Partner With Operators Who "
 linetwo: "Deliver Operational Alpha"

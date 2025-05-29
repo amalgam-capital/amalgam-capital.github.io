@@ -2,6 +2,7 @@
 layout: business-owners
 permalink: /for-business-owners
 title: For Business Owners
+meta-title: For Business Owners - Amalgam Capital Exit Strategy
 description: Understanding your transition journey and why our approach delivers superior outcomes for business owners
 lineone: "Understanding Your "
 linetwo: "Journey"

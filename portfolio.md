@@ -2,6 +2,7 @@
 layout: portfolio
 permalink: /portfolio
 title: Our Portfolio
+meta-title: Our Portfolio - Amalgam Capital Investments & Results
 description: Active platforms and operational case studies showcasing our value creation approach
 lineone: "Our "
 linetwo: "Portfolio"

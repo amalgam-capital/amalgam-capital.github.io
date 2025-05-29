@@ -38,7 +38,7 @@
 		<div class="flex items-center justify-between max-w-7xl mx-auto">
 			<div class="flex items-center space-x-4 lg:pt-20 md:pt-8 md:pb-4">
 				<h1 class="lg:text-lg xl:text-xl tracking-widest uppercase">
-					<a class="stroke-brand-dark hover:stroke-brand-coral dark:stroke-white/50 flex items-center space-x-3 text-brand-dark hover:text-brand-coral transition-colors dark:text-white dark:hover:stroke-brand-coral" href="{{ site.url }}">
+					<a class="cursor-pointer stroke-brand-dark hover:stroke-brand-coral dark:stroke-white/50 flex items-center space-x-3 text-brand-dark hover:text-brand-coral transition-colors dark:text-white dark:hover:stroke-brand-coral" href="{{ site.url }}">
 					{% include logo.html class="size-8 opacity-80 md:opacity-100 md:size-12 mr-4" %}
 					Amalgam Capital
 					</a>
@@ -58,7 +58,7 @@
 		<div class="max-w-7xl mx-auto w-full">
 			<ul class="flex flex-col">
 				{% for item in site.data.navigation.mobile-navigation %}
-				<li><a class="w-full block py-4 border-t border-gray-200 dark:border-gray-800 text-2xl hover:text-brand-coral transition-colors {% if item.main-cta-title %}font-semibold{% endif %}" href="{{ site.url }}{{ item.url }}">{{ item.title }}{{ item.main-cta-title }}</a></li>
+				<li><a class="cursor-pointer w-full block py-4 border-t border-gray-200 dark:border-gray-800 text-2xl hover:text-brand-coral transition-colors {% if item.main-cta-title %}font-semibold{% endif %}" href="{{ site.url }}{{ item.url }}">{{ item.title }}{{ item.main-cta-title }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>

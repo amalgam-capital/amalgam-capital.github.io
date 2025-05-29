@@ -2,6 +2,7 @@
 layout: faq
 permalink: /faq
 title: Frequently Asked Questions
+meta-title: FAQ - Amalgam Capital Private Equity Questions
 description: Common questions about working with Amalgam Capital
 
 faq_sections:

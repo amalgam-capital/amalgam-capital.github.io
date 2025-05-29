@@ -2,6 +2,7 @@
 layout: about
 permalink: /about
 title: About Us
+meta-title: About Us - Amalgam Capital Private Equity & Operations
 description: Our story of bridging operational expertise with investment capital to transform undervalued businesses into market leaders
 lineone: "About "
 linetwo: "Us"

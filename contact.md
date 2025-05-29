@@ -2,6 +2,7 @@
 layout: contact
 permalink: /contact
 title: Connect With Us
+meta-title: Connect With Us - Amalgam Capital Contact & Partnerships
 description: We're looking for businesses looking to get acquired and capital partners to work with us
 lineone: "Connect "
 linetwo: "With Us"
