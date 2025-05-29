@@ -1,0 +1,119 @@
+---
+layout: default
+---
+<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
+	<div class="max-w-7xl mx-auto">
+		<div class="max-w-5xl">
+			<h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-6"><span>{{page.lineone}}</span><span class="italic">{{page.linetwo}}</span></h2>
+			<p class="text-xl lg:text-2xl leading-relaxed text-brand-coral-900 dark:text-white/80 mb-8">{{page.subtitle}}</p>
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<h3 class="text-3xl lg:text-4xl font-serif mb-8 text-brand-coral-900 dark:text-brand-gold-200">{{ page.amalgam_difference.title }}</h3>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			{% for point in page.amalgam_difference.points %}
+			<div class="bg-white dark:bg-brand-dark-900/50 rounded-lg p-6 border border-gray-200 dark:border-brand-gold-900">
+				<h4 class="text-xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ point.title }}</h4>
+				<p class="leading-relaxed opacity-80 mb-4">{{ point.description }}</p>
+				{% if point.process_steps %}
+				<ul class="list-disc pl-6">
+					{% for step in point.process_steps %}
+					<li class="opacity-80 mb-1">{{ step }}</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 pt-16">
+	<div class="max-w-7xl mx-auto">
+		<h2 class="text-3xl mb-8 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ page.superior_outcomes.title }}</h2>
+		
+		<div class="space-y-8">
+			{% for outcome in page.superior_outcomes.outcomes %}
+			<div class="py-16 border-b last:border-b-0 border-gray-200 dark:border-brand-gold-900">
+				<div class="flex items-start space-x-4">
+					<div class="flex-shrink-0 w-12 h-12 bg-brand-coral-600 dark:bg-brand-gold text-white dark:text-brand-dark rounded-full flex items-center justify-center text-lg font-bold">{{ outcome.number }}</div>
+					<div class="flex-1">
+						<h3 class="text-2xl mb-3 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ outcome.title }}</h3>
+						<p class="mb-4 leading-relaxed opacity-80">{{ outcome.description }}</p>
+						
+						{% if outcome.benefits %}
+						<ul class="space-y-2 list-disc ml-8 mb-4">
+							{% for benefit in outcome.benefits %}
+							<li>{{ benefit }}</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+						
+						{% if outcome.scenarios %}
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+							{% for scenario in outcome.scenarios %}
+							<div class="border border-gray-200 dark:border-brand-gold-900 rounded-lg p-4 hover:border-brand-coral-300 dark:hover:border-brand-gold transition-colors">
+								<h4 class="text-lg mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ scenario.title }}</h4>
+								<p class=" leading-relaxed opacity-80">{{ scenario.description }}</p>
+							</div>
+							{% endfor %}
+						</div>
+						{% endif %}
+						
+						{% if outcome.legacy_points %}
+						<ul class="space-y-2 list-disc ml-8 mb-4">
+							{% for point in outcome.legacy_points %}
+							<li>{{ point }}</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+						
+						{% if outcome.example %}
+						<div class="border border-gray-200 dark:border-brand-gold-900 rounded-lg p-4 hover:border-brand-coral-300 dark:hover:border-brand-gold transition-colors">
+							<h4 class="text-lg mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">Real Example:</h4>
+							<p class=" leading-relaxed opacity-80">{{ outcome.example }}</p>
+						</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16 hidden">
+	<div class="max-w-7xl mx-auto">
+		<div class="max-w-5xl">
+			<h3 class="text-3xl lg:text-4xl font-serif mb-8 text-brand-coral-900 dark:text-brand-gold-200">{{ page.testimonials.title }}</h3>
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+				{% for testimonial in page.testimonials.quotes %}
+				<div class="bg-white dark:bg-brand-dark-900/50 rounded-lg p-8 border border-gray-200 dark:border-brand-gold-900">
+					<blockquote class="mb-6">
+						<p class="text-lg italic leading-relaxed text-gray-700 dark:text-white/80">"{{ testimonial.quote }}"</p>
+					</blockquote>
+					<div class="border-t border-gray-200 dark:border-brand-gold-900 pt-4">
+						<p class="font-semibold text-brand-coral-900 dark:text-brand-gold-200">{{ testimonial.author }}</p>
+						<p class=" opacity-70">{{ testimonial.title }}</p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
+{% if page.contact_cta %}
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="bg-white dark:bg-brand-dark-900/50 rounded-lg p-6 border border-gray-200 dark:border-brand-gold-900">
+			<h3 class="text-3xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ page.contact_cta.text }}</h3>
+			<p class="mb-6 leading-relaxed opacity-80">Our team is here to discuss your unique situation and explore how we can help preserve your legacy while achieving your transition goals.</p>
+			<a class="inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg font-medium transition-colors" href="{{ page.contact_cta.button_link | relative_url }}">{{ page.contact_cta.button_text }} <i class="fa-duotone fa-light fa-arrow-right ml-2"></i></a>
+		</div>
+	</div>
+</section>
+{% endif %} 

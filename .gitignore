@@ -10,3 +10,5 @@ _asset_bundler_cache
 _site/atom.xml
 _site/atom.xml
 _site/index.html
+/.jekyll-cache
+.DS_Store

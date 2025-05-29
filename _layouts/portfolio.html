@@ -1,0 +1,112 @@
+---
+layout: default
+---
+<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
+	<div class="max-w-7xl mx-auto">
+		<div class="max-w-5xl">
+			<h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-6"><span>{{page.lineone}}</span><span class="italic">{{page.linetwo}}</span></h2>
+			<p class="text-xl lg:text-2xl leading-relaxed text-brand-coral-900 dark:text-white/80 mb-6">{{page.subtitle}}</p>
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 pb-16">
+	<div class="max-w-7xl mx-auto">
+		{% for platform in page.active_platforms.platforms %}
+		<div class="bg-white dark:bg-brand-dark-900/50 rounded-lg p-6 border border-gray-200 dark:border-brand-gold-900 mb-8">
+			<div class="mb-6">
+				<h3 class="text-3xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{platform.name}}</h3>
+				<p class="text-xl text-brand-coral-600 dark:text-brand-gold mb-2">{{platform.tagline}}</p>
+				<p class="opacity-70">Formed: {{platform.formed}}</p>
+			</div>
+
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+				<div>
+					<h4 class="text-lg mb-3 font-serif text-brand-coral-900 dark:text-brand-gold-200">Platform Companies</h4>
+					<div class="space-y-2">
+						{% for company in platform.companies %}
+						<div class="flex items-center space-x-3">
+							<span class="opacity-80">{{company}}</span>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+
+				<div>
+					<h4 class="text-lg mb-3 font-serif text-brand-coral-900 dark:text-brand-gold-200">Strategic Rationale</h4>
+					<p class="leading-relaxed opacity-80">{{platform.description}}</p>
+				</div>
+			</div>
+
+			<div class="mb-6">
+				<h4 class="text-lg mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">Progress & Achievements</h4>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+					{% for achievement in platform.achievements %}
+					<div>
+						<div class="flex items-center space-x-2 mb-2">
+							<span class="font-medium">{{achievement.title}}</span>
+						</div>
+						<p class="opacity-80">{{achievement.description}}</p>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+
+			<div class="mb-6">
+				<h4 class="text-lg mb-3 font-serif text-brand-coral-900 dark:text-brand-gold-200">Value Creation Impact</h4>
+				<p class="leading-relaxed opacity-80">{{platform.impact}}</p>
+			</div>
+
+			{% if platform.website %}
+			<a class="inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg font-medium transition-colors" href="{{platform.website}}" target="_blank">Learn About {{platform.name}} <i class="fa-duotone fa-light fa-arrow-right ml-2"></i></a>
+			{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 pb-16">
+	<div class="max-w-7xl mx-auto">
+		<h2 class="text-3xl mb-8 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{page.case_studies.title}}</h2>
+		<p class="opacity-80 mb-8">{{page.case_studies.subtitle}}</p>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			{% for study in page.case_studies.studies %}
+			<div class="bg-white dark:bg-brand-dark-900/50 rounded-lg p-6 border border-gray-200 dark:border-brand-gold-900">
+				<div class="flex items-start space-x-4 mb-4">
+					<div class="flex-1">
+						<h3 class="text-xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{study.title}}</h3>
+						<p class=" opacity-70 mb-3">{{study.company}}</p>
+					</div>
+				</div>
+				<div class="mb-4">
+					<h4 class="font-medium mb-2">Challenge</h4>
+					<p class="opacity-80">{{study.challenge}}</p>
+				</div>
+				<div class="mb-4">
+					<h4 class="font-medium mb-2">Solution</h4>
+					<p class="opacity-80">{{study.solution}}</p>
+				</div>
+				<div class="mb-4">
+					<h4 class="font-medium mb-2">Results</h4>
+					<ul class="list-inside">
+						{% for result in study.results %}
+						<li>{{result.metric}} {{result.description}}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 pb-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="bg-white dark:bg-brand-dark-900/50 rounded-lg p-6 border border-gray-200 dark:border-brand-gold-900">
+			<h3 class="text-3xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{page.contact_cta.title}}</h3>
+			<p class="mb-6 leading-relaxed opacity-80">{{page.contact_cta.subtitle}}</p>
+			<a class="inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg font-medium transition-colors" href="{{ site.url }}/contact">Contact Us <i class="fa-duotone fa-light fa-arrow-right ml-2"></i></a>
+		</div>
+	</div>
+</section> 

@@ -1,0 +1,140 @@
+---
+layout: default
+---
+<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
+	<div class="max-w-7xl mx-auto">
+		<div class="max-w-5xl">
+			<h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-6"><span>{{page.lineone}}</span><span class="italic">{{page.linetwo}}</span></h2>
+			<p class="text-xl lg:text-2xl leading-relaxed text-brand-coral-900 dark:text-white/80 mb-8">{{page.subtitle}}</p>
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="max-w-5xl">
+			<h3 class="text-3xl lg:text-4xl font-serif mb-4 text-brand-coral-900 dark:text-brand-gold-200">{{ page.investment_advantage.title }}</h3>
+			<p class="text-xl leading-relaxed text-gray-700 dark:text-white/80 mb-8">{{ page.investment_advantage.description }}</p>
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 pt-16">
+	<div class="max-w-7xl mx-auto">
+		<h2 class="text-3xl mb-8 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ page.why_choose_amalgam.title }}</h2>
+		
+		<div>
+			{% for advantage in page.why_choose_amalgam.advantages %}
+			<div class="py-16 border-b border-gray-200 dark:border-brand-gold-900">
+				<div class="flex items-start space-x-4">
+					<div class="flex-shrink-0 w-12 h-12 bg-brand-coral-600 dark:bg-brand-gold text-white dark:text-brand-dark rounded-full flex items-center justify-center text-lg font-bold">{{ advantage.number }}</div>
+					<div class="flex-1">
+						<h3 class="text-2xl mb-3 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ advantage.title }}</h3>
+						<p class="mb-4 leading-relaxed">{{ advantage.description }}</p>
+						
+						{% if advantage.points %}
+						<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+							{% for point in advantage.points %}
+							<div>
+								<h4 class="text-lg mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ point.title }}</h4>
+								<p class="leading-relaxed opacity-80">{{ point.description }}</p>
+							</div>
+							{% endfor %}
+						</div>
+						{% endif %}
+						
+						{% if advantage.levers %}
+						<ul class="space-y-2 list-disc ml-8 mb-4 grid md:grid-cols-2 gap-x-8">
+							{% for lever in advantage.levers %}
+							<li>{{ lever }}</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+						
+						{% if advantage.execution_points %}
+						<ul class="space-y-2 list-disc ml-8 mb-4 grid md:grid-cols-2 gap-x-8">
+							{% for point in advantage.execution_points %}
+							<li>{{ point }}</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+						
+						{% if advantage.alignment_points %}
+						<ul class="space-y-2 list-disc ml-8 mb-4 grid md:grid-cols-2 gap-x-8">
+							{% for point in advantage.alignment_points %}
+							<li>{{ point }}</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+						
+						{% if advantage.advantage %}
+						<div class="bg-white dark:bg-brand-dark-900/50 border border-gray-200 dark:border-brand-gold-900 rounded-lg p-4 hover:border-brand-coral-300 dark:hover:border-brand-gold transition-colors">
+							<h4 class="text-lg mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">Measurable Advantage:</h4>
+							<p class=" leading-relaxed opacity-80">{{ advantage.advantage }}</p>
+						</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 pt-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="max-w-5xl">
+			<h3 class="text-3xl lg:text-4xl font-serif mb-4 text-brand-coral-900 dark:text-brand-gold-200">{{ page.case_study.title }}</h3>
+			<p class="text-xl leading-relaxed text-gray-700 dark:text-white/80 mb-8">{{ page.case_study.subtitle }}</p>
+			
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				{% for section in page.case_study.sections %}
+				<div class="">
+					<h4 class="text-xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ section.title }}</h4>
+					{% if section.points %}
+					<ul class="space-y-2 list-disc pl-6">
+						{% for point in section.points %}
+						<li class="opacity-80">{{ point }}</li>
+						{% endfor %}
+					</ul>
+					{% endif %}
+					{% if section.metrics %}
+					<ul class="space-y-2 list-disc pl-6">
+						{% for metric in section.metrics %}
+						<li>{{ metric }}</li>
+						{% endfor %}
+					</ul>
+					{% endif %}
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-16">{{ page.investment_parameters.title }}</h2>
+		<div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+			{% for param in page.investment_parameters.parameters %}
+			<div>
+				<i class="fa-duotone fa-light {{ param.icon }} text-4xl mb-4 text-brand-gold"></i>
+				<p class="text-2xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ param.value }}</p>
+				<p class="opacity-80">{{ param.label }}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+{% if page.contact_cta %}
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="bg-white dark:bg-brand-dark-900/50 rounded-lg p-6 border border-gray-200 dark:border-brand-gold-900">
+			<h3 class="text-3xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ page.contact_cta.text }}</h3>
+			<p class="mb-6 leading-relaxed opacity-80">Learn more about our current investment opportunities and co-investment structures designed for institutional partners.</p>
+			<a class="inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg font-medium transition-colors" href="{{ page.contact_cta.button_link | relative_url }}">{{ page.contact_cta.button_text }} <i class="fa-duotone fa-light fa-arrow-right ml-2"></i></a>
+		</div>
+	</div>
+</section>
+{% endif %} 

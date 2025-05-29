@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
+	<div class="max-w-7xl mx-auto">
+		<div class="max-w-5xl">
+			<h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-6">{{ page.title }}</h2>
+			<p class="text-xl lg:text-2xl leading-relaxed text-brand-coral-900 dark:text-white/80 mb-8">{{ page.description }}</p>
+		</div>
+	</div>
+</section>
+
+{% for section in page.faq_sections %}
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="max-w-5xl">
+			<h3 class="text-3xl lg:text-4xl font-serif mb-8 text-brand-coral-900 dark:text-brand-gold-200">{{ section.title }}</h3>
+			
+			{% for faq in section.questions %}
+			<div class="mb-8 pb-8 border-b border-gray-200 dark:border-brand-gold-900 last:border-b-0">
+				<h4 class="text-xl lg:text-2xl font-semibold mb-4 text-brand-coral-900 dark:text-white">{{ faq.question }}</h4>
+				<div class="prose dark:prose-invert max-w-none">
+					<p class="text-lg leading-relaxed text-gray-700 dark:text-white/80 mb-4">{{ faq.answer }}</p>
+					
+					{% if faq.list %}
+					<ul class="list-disc pl-6 mb-4">
+						{% for item in faq.list %}
+						<li class="text-lg leading-relaxed text-gray-700 dark:text-white/80 mb-2">{{ item }}</li>
+						{% endfor %}
+					</ul>
+					{% endif %}
+					
+					{% if faq.additional %}
+					<p class="text-lg leading-relaxed text-gray-700 dark:text-white/80">{{ faq.additional }}</p>
+					{% endif %}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+{% endfor %}
+
+{% if page.contact_cta %}
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 pb-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="bg-white dark:bg-brand-dark-900/50 rounded-lg p-6 border border-gray-200 dark:border-brand-gold-900">
+			<h3 class="text-3xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{ page.contact_cta.text }}</h3>
+			<a class="inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg font-medium transition-colors" href="{{ page.contact_cta.button_link | relative_url }}">{{ page.contact_cta.button_text }} <i class="fa-duotone fa-light fa-arrow-right ml-2"></i></a>
+		</div>
+	</div>
+</section>
+{% endif %} 

@@ -1,6 +1,78 @@
 ---
 layout: default
 ---
-<div class="content container">
-{{ content }}
+<script src="https://cdn.jsdelivr.net/npm/p5@2.0.2/lib/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+<script>
+let vantaEffect;
+
+function initVanta() {
+  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  if (vantaEffect) vantaEffect.destroy();
+  
+  vantaEffect = VANTA.TRUNK({
+    el: "#bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 0.50,
+    spacing: 6.00,
+    chaos: 2.00,
+    color: 0xF16545,
+    backgroundColor: isDarkMode ? 0x2d3142 : 0xFFFFFF,
+    backgroundAlpha: 0
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initVanta);
+window.addEventListener('resize', initVanta);
+</script>
+<div id="bg" class="absolute inset-0 -z-10 -top-[50vh] h-[150vh] w-screen opacity-25"></div>
+<div id="bg-two" class="absolute inset-0 -z-20 h-screen w-screen bg-gradient-to-b from-brand-coral/10 to-transparent"></div>
+<div class="z-10">
+<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32">
+	<div class="flex max-w-7xl mx-auto py-8 min-h-[60vh] items-center">
+		<div class="max-w-5xl">
+			<h2 class="text-5xl lg:text-8xl xl:text-8xl font-serif mb-16"><span>{{page.lineone}}</span><span class="italic">{{page.linetwo}}</span></h2>
+			<p class="text-xl lg:text-2xl leading-relaxed text-brand-coral-900 dark:text-white/80 mb-8">{{page.subtitle}}</p>
+            <a href="{{site.url}}/investment-approach" class="text-xl inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg print:hidden">Read About Our Approach <i class="fa-duotone fa-light fa-arrow-right"></i></a>
+		</div>
+	</div>
+</section>
+
+<section id="why-choose" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-8 lg:pt-24 lg:pb-8 xl:pt-40 xl:pb-16">
+	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 max-w-7xl mx-auto">
+        {% for item in page.whychoose %}
+		<div>
+			<i class="fa-duotone fa-light {{item.icon}} text-4xl mb-4 text-brand-gold"></i>
+			<p class="text-2xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{item.title}}</p>
+			<p class="opacity-80">{{item.description}}</p>
+		</div>
+        {% endfor %}
+</section>
+
+<section id="numbers" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16 lg:pb-24 lg:pt-16 xl:pb-40 xl:pt-24">
+		<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+			{% for item in page.numbers %}
+			<div>
+				<p class="text-3xl lg:text-4xl xl:text-5xl text-brand-coral-900 mb-2 font-serif dark:text-brand-gold-200">{{item.value}}</p>
+				<p class="opacity-80">{{item.description}}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section id="case-study" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16 lg:pt-24 lg:pb-16 xl:pt-40 xl:pb-24">
+	<div class="border border-brand-coral-900 dark:border-brand-gold-900 rounded-lg p-8 max-w-7xl mx-auto">
+			<h3 class="text-4xl lg:text-5xl mb-6 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{page.casestudy.title}}</h3>
+			<p class="text-xl mb-6 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{page.casestudy.subtitle}}</p>
+			<p class="mb-8 leading-relaxed opacity-80">{{page.casestudy.description}}</p>
+			<a class="text-xl inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg print:hidden" href="https://mechanair.com">Learn About MechanAir <i class="fa-duotone fa-light fa-arrow-right"></i></a>
+	</div>
+</section>
 </div>

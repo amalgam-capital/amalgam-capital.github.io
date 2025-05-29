@@ -5,15 +5,12 @@ description: "We acquire and sustainably grow underrated businesses as independe
 logo: logo-circle.png
 teaser: 
 locale: en
-url: https://amalgamcapital.com
+url: http://localhost:4000
 feed:
   path: atom.xml
 
 # Jekyll configuration
 
-sass:
-  sass_dir: _sass
-  style: compressed
 permalink: /:categories/:title/
 highlighter: rouge
 gems:

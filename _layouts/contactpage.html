@@ -1,23 +1,107 @@
 ---
 layout: default
 ---
-<div data-aos="fade" data-aos-delay="200" class="contactpage content container">
-<div class="row">
-	<div class="col-xl-10 offset-xl-1">	
-		<div class="page-title">
-			{% assign filename = page.url | replace: 'contact', '' | replace: '/', ''  | replace: '.html', '.md' %}
-			<div class="qr-code" style="background-image: url('{{site.url}}/images/{{ filename }}.svg')">
+<script src="https://cdn.jsdelivr.net/npm/p5@2.0.2/lib/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+<script>
+let vantaEffect;
+
+function initVanta() {
+  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  if (vantaEffect) vantaEffect.destroy();
+  
+  vantaEffect = VANTA.TRUNK({
+    el: "#bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 0.50,
+    spacing: 6.00,
+    chaos: 5.00,
+    color: 0xF16545,
+    backgroundColor: isDarkMode ? 0x2d3142 : 0xFFFFFF,
+    backgroundAlpha: 0
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initVanta);
+window.addEventListener('resize', initVanta);
+</script>
+<div id="bg" class="absolute inset-0 -z-10 -top-[50vh] h-[100vh] w-screen opacity-20"></div>
+<div class="z-10">
+<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32">
+	<div class="flex max-w-7xl mx-auto py-16 min-h-[60vh] items-center justify-center">
+		<div class="max-w-2xl mx-auto">
+			<!-- Contact Card -->
+			<div class="bg-white dark:bg-brand-dark-900/50 rounded-xl shadow-lg border border-gray-200 dark:border-brand-gold-900 overflow-hidden">
+				<!-- Profile Image Section -->
+				<div class="bg-gradient-to-r from-brand-coral-600 to-brand-coral-700 dark:from-brand-gold dark:to-brand-gold/80 p-8 text-center">
+					{% assign filename = page.url | replace: 'contact', '' | replace: '/', ''  | replace: '.html', '.md' %}
+					<div class="w-32 h-32 mx-auto mb-6 bg-white dark:bg-brand-dark rounded-full p-4 shadow-lg">
+						<div class="w-full h-full bg-contain bg-no-repeat bg-center" style="background-image: url('{{site.url}}/images/{{ filename }}.svg')"></div>
+					</div>
+					<h2 class="text-3xl font-serif text-white dark:text-brand-dark mb-2">{{ page.title }}</h2>
+					<h3 class="text-xl font-serif text-brand-coral-100 dark:text-brand-dark/80">{{ page.job-title }}</h3>
+				</div>
+
+				<!-- Contact Information Section -->
+				<div class="p-8 text-center space-y-6">
+					{% if page.email %}
+					<div class="flex items-center justify-center space-x-3">
+						<i class="fa-duotone fa-light fa-envelope text-brand-coral-600 dark:text-brand-gold text-xl"></i>
+						<a href="mailto:{{ page.email }}" class="text-lg text-brand-coral-700 dark:text-brand-gold-200 hover:text-brand-coral-800 dark:hover:text-brand-gold transition-colors">
+							{{ page.email }}
+						</a>
+					</div>
+					{% endif %}
+
+					{% if page.phone %}
+					<div class="flex items-center justify-center space-x-3">
+						<i class="fa-duotone fa-light fa-phone text-brand-coral-600 dark:text-brand-gold text-xl"></i>
+						<a href="tel:{{ page.phone }}" class="text-lg text-brand-coral-700 dark:text-brand-gold-200 hover:text-brand-coral-800 dark:hover:text-brand-gold transition-colors">
+							{{ page.phone }}
+						</a>
+					</div>
+					{% endif %}
+
+					{% if page.linkedin %}
+					<div class="flex items-center justify-center space-x-3">
+						<i class="fa-duotone fa-light fa-linkedin text-brand-coral-600 dark:text-brand-gold text-xl"></i>
+						<a href="{{ page.linkedin }}" target="_blank" class="text-lg text-brand-coral-700 dark:text-brand-gold-200 hover:text-brand-coral-800 dark:hover:text-brand-gold transition-colors">
+							LinkedIn Profile
+						</a>
+					</div>
+					{% endif %}
+
+					<!-- Action Buttons -->
+					<div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+						<a class="inline-block bg-brand-coral-600 hover:bg-brand-coral-700 dark:bg-brand-gold dark:hover:bg-brand-gold/80 text-white dark:text-brand-dark px-6 py-3 rounded-lg font-medium transition-colors" href="{{site.url}}/vcards/{{ filename }}.vcf">
+							<i class="fa-duotone fa-light fa-download mr-2"></i>Save Contact
+						</a>
+						<a class="inline-block bg-brand-coral-100 hover:bg-brand-coral-200 dark:bg-brand-gold/20 dark:hover:bg-brand-gold/30 text-brand-coral-700 dark:text-brand-gold-200 px-6 py-3 rounded-lg font-medium transition-colors border border-brand-coral-200 dark:border-brand-gold-900" href="{{ site.url }}/team">
+							<i class="fa-duotone fa-light fa-arrow-left mr-2"></i>Back to Team
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Additional Contact Options -->
+			<div class="mt-8 text-center">
+				<div class="bg-brand-coral-100 dark:bg-brand-gold/20 rounded-xl p-6 border border-brand-coral-200 dark:border-brand-gold-900">
+					<h4 class="text-lg font-serif text-brand-coral-900 dark:text-brand-gold-200 mb-2">Ready to Connect?</h4>
+					<p class="text-brand-coral-700 dark:text-brand-gold-200 opacity-80 mb-4">
+						Feel free to reach out directly or explore other ways to get in touch with our team.
+					</p>
+					<a class="inline-block bg-brand-coral-600 hover:bg-brand-coral-700 dark:bg-brand-gold dark:hover:bg-brand-gold/80 text-white dark:text-brand-dark px-6 py-3 rounded-lg font-medium transition-colors" href="{{ site.url }}/contact">
+						View All Contact Options <i class="fa-duotone fa-light fa-arrow-right ml-2"></i>
+					</a>
+				</div>
 			</div>
 		</div>
-		<h2 class="h1">{{ page.title }}</h2>
-		<h4 class="h5">{{ page.job-title }}</h4>
-		<h5>
-			<strong>{{ page.email }}</strong>
-		</h5>
-		<h5>
-			<strong>{{ page.phone }}</strong>
-		</h5>
 	</div>
+</section>
 </div>
-</div>
-<a class="download-vcard btn-lg" href="{{site.url}}/vcards/{{ filename }}.vcf">Save Contact</a>

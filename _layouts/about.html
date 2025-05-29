@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
+	<div class="max-w-7xl mx-auto">
+		<div class="max-w-5xl">
+			<h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-6"><span>{{page.lineone}}</span><span class="italic">{{page.linetwo}}</span></h2>
+			<p class="text-xl lg:text-2xl leading-relaxed text-brand-coral-900 dark:text-white/80 mb-6">{{page.subtitle}}</p>
+			<p class="text-xl lg:text-2xl leading-relaxed text-brand-coral-900 dark:text-white/80 mb-6">{{page.additional}}</p>
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+			{% for point in page.what_makes_different.points %}
+			<div>
+				<i class="fa-duotone fa-light {{point.icon}} text-4xl mb-4 text-brand-gold"></i>
+				<p class="text-2xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{point.title}}</p>
+				<p class="opacity-80">{{point.description}}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="rounded-lg p-16 border border-gray-200 dark:border-brand-gold-900 mb-8">
+			<blockquote class="text-center">
+				<p class="text-2xl lg:text-4xl font-serif italic text-brand-coral-900 dark:text-brand-gold-200 leading-relaxed">{{page.our_mission.statement}}</p>
+			</blockquote>
+		</div>
+	</div>
+</section>
+

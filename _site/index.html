@@ -14,276 +14,557 @@
 	
 	
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:image" content="file:///Users/adit/Documents/amalgam-capital.github.io/_site//images/logo-circle.png">
+	<meta name="twitter:image" content="http://localhost:4000/images/logo-circle.png">
 	
 	<!-- Open Graph -->
 	<meta property="og:locale" content="en">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="Amalgam Capital">
 	
-	<meta property="og:url" content="file:///Users/adit/Documents/amalgam-capital.github.io/_site//">
+	<meta property="og:url" content="http://localhost:4000/">
 	<meta property="og:site_name" content="Amalgam Capital">
-	<meta property="og:image" content="file:///Users/adit/Documents/amalgam-capital.github.io/_site//images/social-default.jpg">
+	<meta property="og:image" content="http://localhost:4000/images/social-default.jpg">
 
-    <link rel="canonical" href="file:///Users/adit/Documents/amalgam-capital.github.io/_site//">
-    <link href="file:///Users/adit/Documents/amalgam-capital.github.io/_site//atom.xml" type="application/atom+xml" rel="alternate" title="Amalgam Capital Atom Feed">
-    <link href="file:///Users/adit/Documents/amalgam-capital.github.io/_site//sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+    <link rel="canonical" href="http://localhost:4000/">
+    <link href="http://localhost:4000/atom.xml" type="application/atom+xml" rel="alternate" title="Amalgam Capital Atom Feed">
+    <link href="http://localhost:4000/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
     <meta name="ahrefs-site-verification" content="63e17d02715431c0c148b79e28bb7e378f94937509f7fd1040f4167884f7436f">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="apple-touch-icon" sizes="180x180" href="file:///Users/adit/Documents/amalgam-capital.github.io/_site//images/AppIcons/180.png">
-  
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/203a8036d5.js" crossorigin="anonymous"></script>
 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                200: '#bae6fd',
+                300: '#7dd3fc',
+                400: '#38bdf8',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                700: '#0369a1',
+                800: '#075985',
+                900: '#0c4a6e',
+              },
+              // Custom brand colors with variations
+              brand: {
+                // Dark color variations
+                'dark-50': '#f8f8f9',     // Very light tint
+                'dark-100': '#e8e9eb',    // Light tint
+                'dark-200': '#c5c7cc',    // Medium light tint
+                'dark-300': '#9ea2aa',    // Medium tint
+                'dark-400': '#6b7080',    // Medium
+                'dark-500': '#4a4d5a',    // Medium dark
+                'dark-600': '#3a3d47',    // Darker
+                'dark': '#2d3142',        // Original dark
+                'dark-700': '#252834',    // Much darker
+                'dark-800': '#1d1f28',    // Very dark
+                'dark-900': '#15161c',    // Darkest
+                
+                // Gold color variations
+                'gold-50': '#fefcf3',     // Very light tint
+                'gold-100': '#fef7e0',    // Light tint
+                'gold-200': '#fdecc4',    // Medium light tint
+                'gold-300': '#fbdc9d',    // Medium tint
+                'gold-400': '#f8c876',    // Medium
+                'gold-500': '#f5b94f',    // Medium dark
+                'gold': '#F4C35A',        // Original gold
+                'gold-600': '#e6a832',    // Darker
+                'gold-700': '#c7912a',    // Much darker
+                'gold-800': '#a87a22',    // Very dark
+                'gold-900': '#8a631a',    // Darkest
+                
+                // Coral color variations
+                'coral-50': '#fef6f4',    // Very light tint
+                'coral-100': '#fde8e3',   // Light tint
+                'coral-200': '#fbc5b8',   // Medium light tint
+                'coral-300': '#f89d87',   // Medium tint
+                'coral-400': '#f57556',   // Medium
+                'coral': '#F16545',       // Original coral
+                'coral-500': '#e54d25',   // Medium dark
+                'coral-600': '#d4441f',   // Darker
+                'coral-700': '#b8391a',   // Much darker
+                'coral-800': '#9c2f15',   // Very dark
+                'coral-900': '#802510',   // Darkest
+              }
+            },
+            fontFamily: {
+              'sans': ['Montserrat', 'montserrat', 'system-ui', 'sans-serif'],
+              'serif': ['Merriweather', 'Georgia', 'serif'],
+              'logo': ['Montserrat', 'montserrat', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Typography styles -->
+    <style>
+      .prose {
+        color: #374151;
+        max-width: 65ch;
+      }
+      .prose p {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+      }
+      .prose h1 {
+        color: #111827;
+        font-weight: 800;
+        font-size: 2.25em;
+        margin-top: 0;
+        margin-bottom: 0.8888889em;
+        line-height: 1.1111111;
+      }
+      .prose h2 {
+        color: #111827;
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        line-height: 1.3333333;
+      }
+      .prose h3 {
+        color: #111827;
+        font-weight: 600;
+        font-size: 1.25em;
+        margin-top: 1.6em;
+        margin-bottom: 0.6em;
+        line-height: 1.6;
+      }
+      .prose h4 {
+        color: #111827;
+        font-weight: 600;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        line-height: 1.5;
+      }
+      .prose ul {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+        padding-left: 1.625em;
+      }
+      .prose ol {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+        padding-left: 1.625em;
+      }
+      .prose li {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .prose blockquote {
+        font-weight: 500;
+        font-style: italic;
+        color: #111827;
+        border-left-width: 0.25rem;
+        border-left-color: #e5e7eb;
+        quotes: "\201C""\201D""\2018""\2019";
+        margin-top: 1.6em;
+        margin-bottom: 1.6em;
+        padding-left: 1em;
+      }
+      .prose strong {
+        color: #111827;
+        font-weight: 600;
+      }
+      .prose a {
+        color: #0ea5e9;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+      .prose a:hover {
+        color: #0284c7;
+      }
+      .prose code {
+        color: #111827;
+        font-weight: 600;
+        font-size: 0.875em;
+        background-color: #f3f4f6;
+        padding: 0.25rem 0.375rem;
+        border-radius: 0.25rem;
+      }
+      .prose pre {
+        color: #e5e7eb;
+        background-color: #374151;
+        overflow-x: auto;
+        font-weight: 400;
+        font-size: 0.875em;
+        line-height: 1.7142857;
+        margin-top: 1.7142857em;
+        margin-bottom: 1.7142857em;
+        border-radius: 0.375rem;
+        padding: 0.8571429em 1.1428571em;
+      }
+      .prose pre code {
+        background-color: transparent;
+        border-width: 0;
+        border-radius: 0;
+        padding: 0;
+        color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+      .prose table {
+        width: 100%;
+        table-layout: auto;
+        text-align: left;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 0.875em;
+        line-height: 1.7142857;
+      }
+      .prose thead {
+        border-bottom-width: 1px;
+        border-bottom-color: #d1d5db;
+      }
+      .prose th {
+        color: #111827;
+        font-weight: 600;
+        vertical-align: bottom;
+        padding-right: 0.5714286em;
+        padding-bottom: 0.5714286em;
+        padding-left: 0.5714286em;
+      }
+      .prose td {
+        vertical-align: baseline;
+        padding-right: 0.5714286em;
+        padding-top: 0.5714286em;
+        padding-bottom: 0.5714286em;
+        padding-left: 0.5714286em;
+      }
+      
+      /* Dark mode styles */
+      .dark .prose {
+        color: #d1d5db;
+      }
+      .dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4 {
+        color: #f9fafb;
+      }
+      .dark .prose strong {
+        color: #f9fafb;
+      }
+      .dark .prose blockquote {
+        color: #f9fafb;
+        border-left-color: #4b5563;
+      }
+      .dark .prose code {
+        color: #f9fafb;
+        background-color: #374151;
+      }
+      .dark .prose th {
+        color: #f9fafb;
+      }
+      .dark .prose thead {
+        border-bottom-color: #4b5563;
+      }
+    </style>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/AppIcons/180.png">
     <link rel="stylesheet" href="https://use.typekit.net/sjx0lym.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="file:///Users/adit/Documents/amalgam-capital.github.io/_site//css/main.css">
+    <link rel="stylesheet" href="http://localhost:4000/style.css">
     
-  
-  
+    
   </head>
 
-  <body class="home">
-    <header  class="container site-header">
-	<div class="row">
-		<div class="header-left col-8 col-md-6 col-xl-5 offset-xl-1">
-			<h1 class="logo">
-				<a class="logo-link" href="file:///Users/adit/Documents/amalgam-capital.github.io/_site/">
-				<div class="mark">
-					<svg viewBox="0 0 60 54">
+  <body class="min-h-screen bg-white dark:bg-brand-dark dark:text-white font-sans home overflow-x-hidden">
+    <header class="px-4 sm:px-6 lg:px-8 xl:px-32 py-4 top-0 sticky md:static z-10 dark:text-white z-100 bg-gradient-to-b from-brand-gold/10 to-transparent transition-all duration-300" id="main-header">
+	<div class="flex items-center justify-between max-w-7xl mx-auto">
+		<div class="flex items-center space-x-4 lg:pt-20 md:pt-8 md:pb-4">
+			<h1 class="text-xl tracking-widest uppercase">
+				<a class="stroke-brand-dark hover:stroke-brand-coral dark:stroke-white/50 flex items-center space-x-3 text-brand-dark hover:text-brand-coral transition-colors dark:text-white dark:hover:stroke-brand-coral" href="http://localhost:4000">
+				<svg viewBox="0 0 60 54" class="drop-shadow-xl size-12 mr-4">
 		        <path class="stroke_one" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989" fill="none"></path><path fill="none" class="stroke_two" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_three" id="stroke_three" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_four" id="stroke_four" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_five" id="stroke_five" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_six" id="stroke_six" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_seven" id="stroke_seven" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path>
 			</svg>
-				</div>
 				Amalgam Capital
 				</a>
 			</h1>
 		</div>
-		<nav data-aos="fade" data-aos-delay="1000" class="header-right d-print-none site-nav col-4 col-md-6 col-xl-5">
-			<ul>
-<li class="d-none d-lg-block"><a class="btn" href="file:///Users/adit/Documents/amalgam-capital.github.io/_site//#criteria">Criteria</a></li>
-<li class="d-none d-lg-block"><a class="btn" href="file:///Users/adit/Documents/amalgam-capital.github.io/_site//#industries">Industries</a></li>
-<li class="d-none d-lg-block"><a class="btn" href="file:///Users/adit/Documents/amalgam-capital.github.io/_site//#process">Process</a></li>
-<li><a class="btn btn-primary" href ="file:///Users/adit/Documents/amalgam-capital.github.io/_site//contact"><div class="d-none d-sm-block">Talk to us</div><div class="d-sm-none">Contact</div></a></li>
-</ul>
+		<!-- Mobile menu button -->
+		<button type="button" class="print:hidden md:hidden inline-flex items-center justify-center p-2 rounded-md  hover: hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 z-110" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMobileMenu()">
+			<span class="sr-only">Open main menu</span>
+			<!-- Icon when menu is closed -->
+			<svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+			</svg>
+			<!-- Icon when menu is open -->
+			<svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+			</svg>
+		</button>
+		<!-- Desktop navigation -->
+		<nav class="hidden md:block print:hidden">
+			<ul class="flex items-center justify-end gap-x-2 text-xs uppercase mb-6">
+				
+				<li><a class="w-full block p-2 hover:text-brand-coral" href="http://localhost:4000/about">About</a></li>
+				
+				<li><a class="w-full block p-2 hover:text-brand-coral" href="http://localhost:4000/faq">FAQ</a></li>
+				
+				<li><a class="w-full block p-2 hover:text-brand-coral" href="http://localhost:4000/contact">Contact</a></li>
+				
+			</ul>
+			<ul class="flex items-center py-2 gap-x-2">
+				
+				<li><a class="p-4 hover:bg-brand-coral/50 hover:text-brand-coral dark:hover:bg-brand-dark-900/50 rounded-md" href="http://localhost:4000/investment-approach">Approach</a></li>
+				
+				<li><a class="p-4 hover:bg-brand-coral/50 hover:text-brand-coral dark:hover:bg-brand-dark-900/50 rounded-md" href="http://localhost:4000/portfolio">Portfolio</a></li>
+				
+				<li><a class="p-4 hover:bg-brand-coral/50 hover:text-brand-coral dark:hover:bg-brand-dark-900/50 rounded-md" href="http://localhost:4000/team">Team</a></li>
+				
+				<li><a class="p-4 hover:bg-brand-coral/50 hover:text-brand-coral dark:hover:bg-brand-dark-900/50 rounded-md" href="http://localhost:4000/for-business-owners">For Owners</a></li>
+				
+				<li><a class="p-4 hover:bg-brand-coral/50 hover:text-brand-coral dark:hover:bg-brand-dark-900/50 rounded-md" href="http://localhost:4000/for-investors">For Investors</a></li>
+				
+			</ul>
 		</nav>
+	</div>
+	<!-- Mobile menu -->
+	<div class="absolute hidden md:hidden top-20 left-0 w-screen bg-white dark:bg-brand-dark z-100 text-xl drop-shadow-xl print:hidden" id="mobile-menu">
+		<div class="p-4 pb-10">
+			<ul class="flex flex-col">
+				
+				<li><a class="w-full block py-4 border-t border-gray-200 dark:border-gray-800 md:w-auto md:inline-block md:p-4 md:border-none md:hover:bg-brand-coral/50 md:hover:text-brand-coral md:dark:hover:bg-brand-dark-900/50 rounded-md " href="http://localhost:4000/investment-approach">Approach</a></li>
+				
+				<li><a class="w-full block py-4 border-t border-gray-200 dark:border-gray-800 md:w-auto md:inline-block md:p-4 md:border-none md:hover:bg-brand-coral/50 md:hover:text-brand-coral md:dark:hover:bg-brand-dark-900/50 rounded-md " href="http://localhost:4000/portfolio">Portfolio</a></li>
+				
+				<li><a class="w-full block py-4 border-t border-gray-200 dark:border-gray-800 md:w-auto md:inline-block md:p-4 md:border-none md:hover:bg-brand-coral/50 md:hover:text-brand-coral md:dark:hover:bg-brand-dark-900/50 rounded-md " href="http://localhost:4000/team">Team</a></li>
+				
+				<li><a class="w-full block py-4 border-t border-gray-200 dark:border-gray-800 md:w-auto md:inline-block md:p-4 md:border-none md:hover:bg-brand-coral/50 md:hover:text-brand-coral md:dark:hover:bg-brand-dark-900/50 rounded-md " href="http://localhost:4000/about">About</a></li>
+				
+				<li><a class="w-full block py-4 border-t border-gray-200 dark:border-gray-800 md:w-auto md:inline-block md:p-4 md:border-none md:hover:bg-brand-coral/50 md:hover:text-brand-coral md:dark:hover:bg-brand-dark-900/50 rounded-md " href="http://localhost:4000/faq">FAQ</a></li>
+				
+				<li><a class="w-full block py-4 border-t border-gray-200 dark:border-gray-800 md:w-auto md:inline-block md:p-4 md:border-none md:hover:bg-brand-coral/50 md:hover:text-brand-coral md:dark:hover:bg-brand-dark-900/50 rounded-md " href="http://localhost:4000/for-business-owners">Owners</a></li>
+				
+				<li><a class="w-full block py-4 border-t border-gray-200 dark:border-gray-800 md:w-auto md:inline-block md:p-4 md:border-none md:hover:bg-brand-coral/50 md:hover:text-brand-coral md:dark:hover:bg-brand-dark-900/50 rounded-md " href="http://localhost:4000/for-investors">Investors</a></li>
+				
+				<li><a class="w-full block py-4 border-t border-gray-200 dark:border-gray-800 md:w-auto md:inline-block md:p-4 md:border-none md:hover:bg-brand-coral/50 md:hover:text-brand-coral md:dark:hover:bg-brand-dark-900/50 rounded-md " href="http://localhost:4000/contact">Contact</a></li>
+				
+			</ul>
+		</div>
 	</div>
 </header>
 
-      <div class="content container">
-<section data-aos="fade" data-aos-delay="1000" class="hero home-section row">
-	<div class="col-xl-10 offset-xl-1">
-		<h2 class="h1">We acquire and sustainably grow <em>underrated</em> businesses as independent sponsors.</h2>
-	</div>
-</section>
-<section id="numbers" data-aos="fade" data-aos-delay="1000" class="numbers home-section block-container row align-items-center equal-blocks">
-	<div class="col-xl-10 offset-xl-1">
-		<p class="large">Our multidisciplinary team of investors, entrepreneurs, and operators, has created substantial value for <em>others.</em></p>
-	</div>
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<p><span class="large">$10.47B</span> Cumulative revenue growth through our strategies</p>
-		</div>
-	</div>
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<p><span class="large">$1.27B</span> Cumulative savings (EBITDA) improvement</p>
-		</div>
-	</div>	
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<p><span class="large">$1.22B</span> Working capital improvement</p>
-		</div>
-	</div>		
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<p> <span class="large">47</span> Full-Time Executives Placed</p>
-		</div>
-	</div>			
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<p><span class="large">~10K</span> Total Jobs Saved/Rationalized</p>
-		</div>
-	</div>				
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<p><span class="large">97</span> Executives Coached</p>
-		</div>
-	</div>					
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<p><span class="large">09</span> Mergers and Exits Led</p>
-		</div>
-	</div>						
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<p><span class="large">07</span> Investments Made</p>
-		</div>
-	</div>							
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<p><span class="large">03</span> Unicorns Accelerated</p>
-		</div>
-	</div>								
-</section>
-<section id="criteria" data-aos="fade" data-aos-delay="100" class="home-section criteria row">
-	<div class="col-xl-10 offset-xl-1">
-		<div class="criteria-content">
-			<h3 class="h1">Our Investment Sweetspot</h3>
-			<p class="large">Revenue Generating</p>
-			<p>We invest in business generating between <b>$20M to $100M</b> in revenue annually</p>
-			<p class="large">History of Profitability</p>
-			<p>Businesses that have proven the ability to generate between <b>$2M to $10M in profit (EBITDA)</b></p>
-			<p class="large">We Do Our Best Work With:</p>
-			<div class="row nogutters">
-				<div class="col-md-6">
-					<p><strong>Companies in Transition</strong>
-					We can help you, as the owner, transition out of the business and/or retire with peace-of-mind that all that you’ve worked so hard to build will continue to flourish</p>
-					<p><strong>Growth Challenged</strong>
-					If you’re a business that is stuck, under-capitalized, and/or lagging behind your competitors, we can level you up</p>
-					<p><strong>Turnarounds</strong>
-					Are you experiencing negative cash-flow or operational distress? We can help bring stability to the business and ultimately retool it to grow (even in industries falling out of favor)</p>
-				</div>
-				<div class="col-md-6">
-					<p><strong>High Performers with Growth Potential</strong>
-					You may find that your business is doing well, but your management and capital are stretched thin. We can help carve-out non-core businesses and ensure that cash is re-invested wisely</p>
-					<p><strong>Asset Heavy Companies</strong>
-					We specialize in managing businesses that hold on to expensive, stable assets and can help you utilize them fully to facilitate growth</p>
-				</div>
-			</div>
-			<p class="large d-print-none">Does this sound like your business or one you represent?</p>
-			<a class="btn-primary btn-lg d-print-none" href="file:///Users/adit/Documents/amalgam-capital.github.io/_site//contact">Send us a Message</a>
-		</div>
-	</div>
-</section>
-<section id="industries" data-aos="fade" data-aos-delay="100" class="home-section industries row block-container equal-blocks align-items-center">
-	<h3 class="h1 col-xl-10 offset-xl-1">Our Favorite Industries</h3>
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<img alt="shopping icon" src="../images/ic-shopping.svg" />
-			<p class="large">Consumer Products</p>
-		</div>
-	</div>
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<img alt="distribution icon" src="../images/ic-distribution.svg" />
-			<p class="large">Distribution</p>
-		</div>
-	</div>	
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<img alt="manufacturing icon" src="../images/ic-manufacturing.svg" />
-			<p class="large">Industrial Manufacturing</p>
-		</div>
-	</div>	
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<img alt="retail icon" src="../images/ic-retail.svg" />
-			<p class="large">Retail</p>
-		</div>
-	</div>	
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<img alt="healthcare icon" src="../images/ic-healthcare.svg" />
-			<p class="large">Healthcare</p>
-		</div>
-	</div>	
-	<div class="em-block col-12 col-sm-6 col-lg-4">
-		<div class="block-content">
-			<img alt="industrial icon" src="../images/ic-industrial.svg" />
-			<p class="large">Industrial Services</p>
-		</div>
-	</div>	
-</section>
-<section id="process" data-aos="fade" data-aos-delay="100" class="home-section process row">
-	<div class="col-xl-10 offset-xl-1">
-		<div class="process-content">
-		<h3 class="h1">We know what it feels like to sell a business, so we've <em>made it as easy as possible for you.</em></h3>
-		<p>You've worked hard to build your business, and you have choices. You can work with another private equity and go through the typical process or consider the Amalgam Capital alternative–which is built on trust, professional respect, and thoughtful guidance for continued value creation.</p>
-		<p>Whatever your motives are to sell your business–or seek an investment–the process should be painless and straightforward. Whether you would like to stay with the business going forward or move to your next venture, we're committed to being true partners in the journey ahead.</p>
-		<div class="row no-gutter">
-			<div class="col-md-6 em-block">
-				<div class="block-content">
-				<p class="large">Traditional Private Equity Process</p>
-				<ul>
-					<li>Hire an Investment Banker / Broker <em>- 1 Month</em></li>
-					<li>Build and Populate Data Room <em>- 1 Month</em></li>
-					<li>Buyers Outreach <em>- 2 Months</em></li>
-					<li>The Dog and Pony Show <em>- 1 Month</em></li>
-					<li>Term Sheets + Negotiations + LOI <em>- 2 Months</em></li>
-					<li>Due Diligence <em>- 1-2 Months</em></li>
-					<li>Q&amp;As + Renegotiations <em>- 1 Month</em></li>
-					<li>Closing <em>- 1-2 Months &lt;50% Probability</em></li>
-				</ul>
-				<hr />
-				<p><strong>Total Time: 300-365 Days</strong></p>
-				<hr />
-				<p><strong>Next 5 years</strong></p>
-				<p>Your business is a reporting machine, your employees are unhappy, and you're locked into unreasonable earn-outs.</p>
-				</div>
-			</div>
-			<div class="col-md-6 em-block em-block-alt">
-				<div class="block-content">
-					<p class="large">Amalgam Capital Process</p>
-					<ul>
-						<li>The Business Statement – A Letter by You</li>
-						<li>Expression of Interest – A Letter by Us <em>- 1 Day</em></li>
-						<li>Analysis of Business <em>- 2-5 Days</em></li>
-						<li>A Fair Offer from Us <em>- 1 Day</em></li>
-						<li>The Handshake <em>- 2-3 Days</em></li>
-						<li>Closing <em>- 8-10 Weeks</em></li>
-					</ul>
-					<hr />
-					<p><strong>Total Time: 75 Days</strong></p>
-					<hr />
-					<p><strong>Next 3 Years</strong></p>
-					<p>We work together to sustainably grow your business and deliver the next exit event with wins for both you and your employees</p>
-					</div>
-				</div>
-			</div>
-			<p id="business-statement" class="large">What do we need from you to get started?</p>
-			<p><strong>Business Statement</strong></p>
-			<p>Send us an letter explaining your competitive advantage. Some examples of the things we're looking for: A dominant brand, a large and loyal community, a niche vertical, or something similar with 5+ years of operating history.</p>
-			<p><strong>Financials</strong></p>
-			<p>Share your historical financials. We're primarily looking for a profitability benchmark between $2.0M to $10M per year.</p>
-			<p><strong>Future Plans</strong></p>
-			<p>Tell us about your desires for the future of the business. Would you like to continue to run it or would you like to transition out? If you would like to stay, how do you see growing the business and where do you see the opportunities?</p><br />
-			<p class="large d-print-none">Ready to kick off the process?</p>
-			<a class="btn-primary btn-lg d-print-none" href="file:///Users/adit/Documents/amalgam-capital.github.io/_site//contact">Send us a Message</a>
+<script>
+function toggleMobileMenu() {
+	const mobileMenu = document.getElementById('mobile-menu');
+	const menuButton = document.querySelector('[aria-controls="mobile-menu"]');
+	const menuIcons = menuButton.querySelectorAll('svg');
+	
+	mobileMenu.classList.toggle('hidden');
+	menuIcons.forEach(icon => icon.classList.toggle('hidden'));
+	
+	const isExpanded = mobileMenu.classList.contains('hidden') ? 'false' : 'true';
+	menuButton.setAttribute('aria-expanded', isExpanded);
+}
+
+// Add scroll event listener to handle backdrop blur
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('main-header');
+    if (window.scrollY > 0) {
+        header.classList.add('backdrop-blur-xl');
+    } else {
+        header.classList.remove('backdrop-blur-xl');
+    }
+});
+</script>
+
+<script>
+function toggleMobileMenu() {
+	const mobileMenu = document.getElementById('mobile-menu');
+	const menuButton = document.querySelector('[aria-controls="mobile-menu"]');
+	const menuIcons = menuButton.querySelectorAll('svg');
+	
+	mobileMenu.classList.toggle('hidden');
+	menuIcons.forEach(icon => icon.classList.toggle('hidden'));
+	
+	const isExpanded = mobileMenu.classList.contains('hidden') ? 'false' : 'true';
+	menuButton.setAttribute('aria-expanded', isExpanded);
+}
+</script>
+      <script src="https://cdn.jsdelivr.net/npm/p5@2.0.2/lib/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+<script>
+let vantaEffect;
+
+function initVanta() {
+  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  if (vantaEffect) vantaEffect.destroy();
+  
+  vantaEffect = VANTA.TRUNK({
+    el: "#bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 0.50,
+    spacing: 6.00,
+    chaos: 2.00,
+    color: 0xF16545,
+    backgroundColor: isDarkMode ? 0x2d3142 : 0xFFFFFF,
+    backgroundAlpha: 0
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initVanta);
+window.addEventListener('resize', initVanta);
+</script>
+<div id="bg" class="absolute inset-0 -z-10 -top-[50vh] h-[150vh] w-screen opacity-25"></div>
+<div id="bg-two" class="absolute inset-0 -z-20 h-screen w-screen bg-gradient-to-b from-brand-coral/10 to-transparent"></div>
+<div class="z-10">
+<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32">
+	<div class="flex max-w-7xl mx-auto py-8 min-h-[60vh] items-center">
+		<div class="max-w-5xl">
+			<h2 class="text-5xl lg:text-8xl xl:text-8xl font-serif mb-16"><span>Operators First, </span><span class="italic">Investors Second.</span></h2>
+			<p class="text-xl lg:text-2xl leading-relaxed text-brand-coral-900 dark:text-white/80 mb-8">Mid-market companies ($25-250M revenue, $5-30M EBITDA) partner with Amalgam Capital because we've built, operated, and scaled businesses. Our hands-on approach delivers sustainable growth through operational excellence.</p>
+            <a href="http://localhost:4000/investment-approach" class="text-xl inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg print:hidden">Read About Our Approach <i class="fa-duotone fa-light fa-arrow-right"></i></a>
 		</div>
 	</div>
 </section>
 
-</div>
-      <footer class="site-footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-9 col-lg-7 offset-xl-1 footer-left">
-				<p><small>This website is intended solely to provide information regarding Amalgam Capital’s potential partnering and financing capabilities for prospective transactions. The information provided on this website, including information regarding Amalgam Capital's current and historical portfolio companies, is not intended to recommend any company or investment described herein and is not an offer or sale of any security or investment product or investment advice. In any event, past performance is not a guarantee of future results and it should not be assumed that results for portfolio investments will be achieved for other investments. Representative investments are not to be considered a complete list of all investments made or currently held in Amalgam Capital’s portfolio.</small></p>
-				
+<section id="why-choose" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-8 lg:pt-24 lg:pb-8 xl:pt-40 xl:pb-16">
+	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 max-w-7xl mx-auto">
+        
+		<div>
+			<i class="fa-duotone fa-light fa-dna text-4xl mb-4 text-brand-gold"></i>
+			<p class="text-2xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">Operational DNA From Day One</p>
+			<p class="opacity-80">Founded by the SLKone team with 30+ years of hands-on management consulting and industry experience transforming companies</p>
+		</div>
+        
+		<div>
+			<i class="fa-duotone fa-light fa-shield-quartered text-4xl mb-4 text-brand-gold"></i>
+			<p class="text-2xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">Independent Sponsor Advantage</p>
+			<p class="opacity-80">Deal-by-deal flexibility tailored to seller needs, not rigid fund mandates</p>
+		</div>
+        
+		<div>
+			<i class="fa-duotone fa-light fa-chart-column text-4xl mb-4 text-brand-gold"></i>
+			<p class="text-2xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">Proven Value Creation</p>
+			<p class="opacity-80">$10.47B cumulative revenue growth, $1.27B EBITDA improvement across our careers</p>
+		</div>
+        
+		<div>
+			<i class="fa-duotone fa-light fa-earth-americas text-4xl mb-4 text-brand-gold"></i>
+			<p class="text-2xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">Real-World Results</p>
+			<p class="opacity-80">30-50% lead-time reduction at a global manufacturer, 20%+ profit improvement for a specialty products company, 100% EBITDA growth in two years for a leading healthcare organization</p>
+		</div>
+        
+</section>
+
+<section id="numbers" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16 lg:pb-24 lg:pt-16 xl:pb-40 xl:pt-24">
+		<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+			
+			<div>
+				<p class="text-3xl lg:text-4xl xl:text-5xl text-brand-coral-900 mb-2 font-serif dark:text-brand-gold-200">$10.47B</p>
+				<p class="opacity-80">Cumulative revenue growth achieved</p>
 			</div>
-			<div class="col-md-3 col-lg-3 footer-right">
-				<p class="mark">
-					<svg viewBox="0 0 60 54">
-		        <path class="stroke_one" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989" fill="none"></path><path fill="none" class="stroke_two" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_three" id="stroke_three" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_four" id="stroke_four" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_five" id="stroke_five" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_six" id="stroke_six" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_seven" id="stroke_seven" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path>
-			</svg>
-				</p>
-				<p>&copy; 2022 Amalgam Capital, LLC</p>
-				<p><small>Suite 212, 510 Meadowmont Village Circle<br/>Chapel Hill, North Carolina 27517, USA</small></p>
+			
+			<div>
+				<p class="text-3xl lg:text-4xl xl:text-5xl text-brand-coral-900 mb-2 font-serif dark:text-brand-gold-200">10,000+</p>
+				<p class="opacity-80">Jobs saved or created in our ventures</p>
 			</div>
+			
+			<div>
+				<p class="text-3xl lg:text-4xl xl:text-5xl text-brand-coral-900 mb-2 font-serif dark:text-brand-gold-200">20+</p>
+				<p class="opacity-80">mergers & successful exits led by our team</p>
+			</div>
+			
+			<div>
+				<p class="text-3xl lg:text-4xl xl:text-5xl text-brand-coral-900 mb-2 font-serif dark:text-brand-gold-200">7</p>
+				<p class="opacity-80">Investments made (platforms and add-ons)</p>
+			</div>
+			
+			<div>
+				<p class="text-3xl lg:text-4xl xl:text-5xl text-brand-coral-900 mb-2 font-serif dark:text-brand-gold-200">3</p>
+				<p class="opacity-80">Unicorn companies accelerated</p>
+			</div>
+			
 		</div>
 	</div>
+</section>
+
+<section id="case-study" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16 lg:pt-24 lg:pb-16 xl:pt-40 xl:pb-24">
+	<div class="border border-brand-coral-900 dark:border-brand-gold-900 rounded-lg p-8 max-w-7xl mx-auto">
+			<h3 class="text-4xl lg:text-5xl mb-6 font-serif text-brand-coral-900 dark:text-brand-gold-200">MechanAir: Our Platform in Action</h3>
+			<p class="text-xl mb-6 font-serif text-brand-coral-900 dark:text-brand-gold-200">National HVAC & Plumbing Services Platform</p>
+			<p class="mb-8 leading-relaxed opacity-80">In 2021, we partnered with Delos Capital to form MechanAir, bringing together State Mechanical Services (Illinois) and Hampton Roads Mechanical (Virginia) – regional leaders with impressive client rosters including Amazon, Nobu Hotels, and NASA. Under our guidance, MechanAir has implemented shared estimating technology, launched 24/7 service teams, and executed on strategic add-on acquisitions – demonstrating our thesis of preserving regional brands while building national capabilities.</p>
+			<a class="text-xl inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg print:hidden" href="https://mechanair.com">Learn About MechanAir <i class="fa-duotone fa-light fa-arrow-right"></i></a>
+	</div>
+</section>
+</div>
+      <footer class="bg-gradient-to-t text-brand-dark/50 dark:text-white/50 from-brand-gold-100 to-white dark:from-brand-coral-900 dark:to-brand-dark px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
+	<div class="max-w-7xl mx-auto">
+		<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+			<div class="col-span-1">
+				<ul class="space-y-2">
+					
+					<li><a class="hover:text-brand-coral dark:hover:text-brand-gold" href="/investment-approach">Approach</a></li>
+					
+					<li><a class="hover:text-brand-coral dark:hover:text-brand-gold" href="/portfolio">Portfolio</a></li>
+					
+					<li><a class="hover:text-brand-coral dark:hover:text-brand-gold" href="/team">Team</a></li>
+					
+					<li><a class="hover:text-brand-coral dark:hover:text-brand-gold" href="/about">About</a></li>
+					
+				</ul>
+			</div>
+			<div class="col-span-1">
+				<ul class="space-y-2">
+					
+					<li><a class="hover:text-brand-coral dark:hover:text-brand-gold" href="/contact">Contact Us</a></li>
+					
+					<li><a class="hover:text-brand-coral dark:hover:text-brand-gold" href="/for-business-owners">For Business Owners</a></li>
+					
+					<li><a class="hover:text-brand-coral dark:hover:text-brand-gold" href="/for-investors">For Investors</a></li>
+					
+					<li><a class="hover:text-brand-coral dark:hover:text-brand-gold" href="/faq">FAQ</a></li>
+					
+				</ul>
+			</div>
+			<div class="col-span-1 text-sm">
+				<ul class="space-y-4">
+					<li>&copy; 2025 Amalgam Capital, LLC</li>
+					<li>510 Meadowmont Village Circle, Ste 212, Chapel Hill, NC 27517</li>
+					<li><a class="hover:text-brand-coral dark:hover:text-brand-gold" href="/privacy-policy">Privacy Policy</a></li>
+					<li><a class="hover:text-brand-coral dark:hover:text-brand-gold" href="/terms-of-service">Terms of Service</a></li>
+				</ul>
+			</div>
+			<div class="col-span-1">
+				<div class="flex justify-end mb-8">
+					<svg viewBox="0 0 60 54" class="drop-shadow-xl size-48 stroke-brand-dark-300 dark:stroke-brand-gold-200 opacity-20">
+		        <path class="stroke_one" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989" fill="none"></path><path fill="none" class="stroke_two" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_three" id="stroke_three" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_four" id="stroke_four" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_five" id="stroke_five" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_six" id="stroke_six" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path><path fill="none" class="stroke_seven" id="stroke_seven" d="M45.9935452,36.821 L43.7875452,31.965 L33.6415452,9.634 C32.0185452,6.062 26.9455452,6.062 25.3235452,9.634 L6.73654516,50.547 C6.33454516,51.432 5.45254516,52 4.48054516,52 C2.67954516,52 1.47954516,50.138 2.22454516,48.498 L20.8115452,7.584 C22.3775452,4.139 25.6995452,2 29.4825452,2 C33.2655452,2 36.5885452,4.139 38.1525452,7.584 L56.7405452,48.498 C57.4855452,50.138 56.2865452,52 54.4845452,52 C53.5135452,52 52.6315452,51.432 52.2285452,50.547 L49.5385452,44.623 C48.7975452,42.992 47.1705452,41.945 45.3785452,41.945 L23.9925452,41.945 C21.0585452,41.945 18.8725452,39.855 18.8725452,36.989 C18.8725452,34.125 21.0585452,32.035 24.0075452,32.035 L36.8675452,32.035 C37.8395452,32.035 38.7215452,32.603 39.1235452,33.488 C39.8685452,35.128 38.6695452,36.989 36.8675452,36.989 L23.7875452,36.989"></path>
+			</svg>
+				</div>
+			</div>
+		</div>
+		<p class="text-xs">This website is intended solely to provide information regarding Amalgam Capital's potential partnering and financing capabilities for prospective transactions. The information provided on this website, including information regarding Amalgam Capital's current and historical portfolio companies, is not intended to recommend any company or investment described herein and is not an offer or sale of any security or investment product or investment advice. In any event, past performance is not a guarantee of future results and it should not be assumed that results for portfolio investments will be achieved for other investments. Representative investments are not to be considered a complete list of all investments made or currently held in Amalgam Capital's portfolio.</p>
+	</div>
 </footer>
+
   <script>
     AOS.init();
   </script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>      
+  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168886951-1"></script>
   <script>

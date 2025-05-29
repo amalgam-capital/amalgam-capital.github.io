@@ -22,33 +22,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
     <meta name="ahrefs-site-verification" content="63e17d02715431c0c148b79e28bb7e378f94937509f7fd1040f4167884f7436f">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/images/AppIcons/180.png">
-  
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/203a8036d5.js" crossorigin="anonymous"></script>
 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                200: '#bae6fd',
+                300: '#7dd3fc',
+                400: '#38bdf8',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                700: '#0369a1',
+                800: '#075985',
+                900: '#0c4a6e',
+              },
+              // Custom brand colors with variations
+              brand: {
+                // Dark color variations
+                'dark-50': '#f8f8f9',     // Very light tint
+                'dark-100': '#e8e9eb',    // Light tint
+                'dark-200': '#c5c7cc',    // Medium light tint
+                'dark-300': '#9ea2aa',    // Medium tint
+                'dark-400': '#6b7080',    // Medium
+                'dark-500': '#4a4d5a',    // Medium dark
+                'dark-600': '#3a3d47',    // Darker
+                'dark': '#2d3142',        // Original dark
+                'dark-700': '#252834',    // Much darker
+                'dark-800': '#1d1f28',    // Very dark
+                'dark-900': '#15161c',    // Darkest
+                
+                // Gold color variations
+                'gold-50': '#fefcf3',     // Very light tint
+                'gold-100': '#fef7e0',    // Light tint
+                'gold-200': '#fdecc4',    // Medium light tint
+                'gold-300': '#fbdc9d',    // Medium tint
+                'gold-400': '#f8c876',    // Medium
+                'gold-500': '#f5b94f',    // Medium dark
+                'gold': '#F4C35A',        // Original gold
+                'gold-600': '#e6a832',    // Darker
+                'gold-700': '#c7912a',    // Much darker
+                'gold-800': '#a87a22',    // Very dark
+                'gold-900': '#8a631a',    // Darkest
+                
+                // Coral color variations
+                'coral-50': '#fef6f4',    // Very light tint
+                'coral-100': '#fde8e3',   // Light tint
+                'coral-200': '#fbc5b8',   // Medium light tint
+                'coral-300': '#f89d87',   // Medium tint
+                'coral-400': '#f57556',   // Medium
+                'coral': '#F16545',       // Original coral
+                'coral-500': '#e54d25',   // Medium dark
+                'coral-600': '#d4441f',   // Darker
+                'coral-700': '#b8391a',   // Much darker
+                'coral-800': '#9c2f15',   // Very dark
+                'coral-900': '#802510',   // Darkest
+              }
+            },
+            fontFamily: {
+              'sans': ['Montserrat', 'montserrat', 'system-ui', 'sans-serif'],
+              'serif': ['Merriweather', 'Georgia', 'serif'],
+              'logo': ['Montserrat', 'montserrat', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Typography styles -->
+    <style>
+      .prose {
+        color: #374151;
+        max-width: 65ch;
+      }
+      .prose p {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+      }
+      .prose h1 {
+        color: #111827;
+        font-weight: 800;
+        font-size: 2.25em;
+        margin-top: 0;
+        margin-bottom: 0.8888889em;
+        line-height: 1.1111111;
+      }
+      .prose h2 {
+        color: #111827;
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        line-height: 1.3333333;
+      }
+      .prose h3 {
+        color: #111827;
+        font-weight: 600;
+        font-size: 1.25em;
+        margin-top: 1.6em;
+        margin-bottom: 0.6em;
+        line-height: 1.6;
+      }
+      .prose h4 {
+        color: #111827;
+        font-weight: 600;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        line-height: 1.5;
+      }
+      .prose ul {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+        padding-left: 1.625em;
+      }
+      .prose ol {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+        padding-left: 1.625em;
+      }
+      .prose li {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .prose blockquote {
+        font-weight: 500;
+        font-style: italic;
+        color: #111827;
+        border-left-width: 0.25rem;
+        border-left-color: #e5e7eb;
+        quotes: "\201C""\201D""\2018""\2019";
+        margin-top: 1.6em;
+        margin-bottom: 1.6em;
+        padding-left: 1em;
+      }
+      .prose strong {
+        color: #111827;
+        font-weight: 600;
+      }
+      .prose a {
+        color: #0ea5e9;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+      .prose a:hover {
+        color: #0284c7;
+      }
+      .prose code {
+        color: #111827;
+        font-weight: 600;
+        font-size: 0.875em;
+        background-color: #f3f4f6;
+        padding: 0.25rem 0.375rem;
+        border-radius: 0.25rem;
+      }
+      .prose pre {
+        color: #e5e7eb;
+        background-color: #374151;
+        overflow-x: auto;
+        font-weight: 400;
+        font-size: 0.875em;
+        line-height: 1.7142857;
+        margin-top: 1.7142857em;
+        margin-bottom: 1.7142857em;
+        border-radius: 0.375rem;
+        padding: 0.8571429em 1.1428571em;
+      }
+      .prose pre code {
+        background-color: transparent;
+        border-width: 0;
+        border-radius: 0;
+        padding: 0;
+        color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+      .prose table {
+        width: 100%;
+        table-layout: auto;
+        text-align: left;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 0.875em;
+        line-height: 1.7142857;
+      }
+      .prose thead {
+        border-bottom-width: 1px;
+        border-bottom-color: #d1d5db;
+      }
+      .prose th {
+        color: #111827;
+        font-weight: 600;
+        vertical-align: bottom;
+        padding-right: 0.5714286em;
+        padding-bottom: 0.5714286em;
+        padding-left: 0.5714286em;
+      }
+      .prose td {
+        vertical-align: baseline;
+        padding-right: 0.5714286em;
+        padding-top: 0.5714286em;
+        padding-bottom: 0.5714286em;
+        padding-left: 0.5714286em;
+      }
+      
+      /* Dark mode styles */
+      .dark .prose {
+        color: #d1d5db;
+      }
+      .dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4 {
+        color: #f9fafb;
+      }
+      .dark .prose strong {
+        color: #f9fafb;
+      }
+      .dark .prose blockquote {
+        color: #f9fafb;
+        border-left-color: #4b5563;
+      }
+      .dark .prose code {
+        color: #f9fafb;
+        background-color: #374151;
+      }
+      .dark .prose th {
+        color: #f9fafb;
+      }
+      .dark .prose thead {
+        border-bottom-color: #4b5563;
+      }
+    </style>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/images/AppIcons/180.png">
     <link rel="stylesheet" href="https://use.typekit.net/sjx0lym.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.url }}/style.css">
+    
     {% if page.noindex == true %}
     <meta name="robots" content="noindex" />
     {% endif %}
-  
-  
   </head>
 
-  <body class="{{ page.layout }}">
+  <body class="min-h-screen bg-white dark:bg-brand-dark dark:text-white font-sans {{ page.layout }} overflow-x-hidden">
     {% include header.html %}
-
       {{ content }}
       {% include footer.html %}
   <script>
     AOS.init();
   </script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>      
+  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168886951-1"></script>
   <script>

@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
+	<div class="max-w-7xl mx-auto">
+		<div class="max-w-5xl">
+			<h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-6"><span>{{page.lineone}}</span><span class="italic">{{page.linetwo}}</span></h2>
+			<p class="text-xl lg:text-2xl leading-relaxed text-brand-coral-900 dark:text-white/80">{{page.subtitle}}</p>
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+			<!-- Contact Form -->
+			 <div>
+				<div class="flex items-center space-x-3 mb-4">
+					<i class="fa-duotone fa-light fa-envelope text-4xl text-brand-gold"></i>
+					<h3 class="text-2xl font-serif text-brand-coral-900 dark:text-brand-gold-200">{{page.contact_form.title}}</h3>
+					
+				</div>
+				
+				<form action="{{page.contact_form.action}}" method="{{page.contact_form.method}}" class="space-y-4">
+					<div>
+						<label for="contactname" class="block  font-medium text-brand-coral-900 dark:text-brand-gold-200 mb-2">Name</label>
+						<input required class="w-full px-4 py-3 border border-gray-300 dark:border-brand-gold-900 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-coral-500 dark:focus:ring-brand-gold focus:border-brand-coral-500 dark:focus:border-brand-gold bg-white dark:bg-brand-dark-900/50 text-brand-coral-900 dark:text-brand-gold-200" id="contactname" type="text" name="name">
+					</div>
+					<div>
+						<label for="contactemail" class="block  font-medium text-brand-coral-900 dark:text-brand-gold-200 mb-2">Email</label>
+						<input required class="w-full px-4 py-3 border border-gray-300 dark:border-brand-gold-900 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-coral-500 dark:focus:ring-brand-gold focus:border-brand-coral-500 dark:focus:border-brand-gold bg-white dark:bg-brand-dark-900/50 text-brand-coral-900 dark:text-brand-gold-200" id="contactemail" type="email" name="_replyto">
+					</div>
+					<div>
+						<label for="contactmessage" class="block  font-medium text-brand-coral-900 dark:text-brand-gold-200 mb-2">Message</label>
+						<textarea required class="w-full px-4 py-3 border border-gray-300 dark:border-brand-gold-900 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-coral-500 dark:focus:ring-brand-gold focus:border-brand-coral-500 dark:focus:border-brand-gold bg-white dark:bg-brand-dark-900/50 text-brand-coral-900 dark:text-brand-gold-200 h-32 resize-none" id="contactmessage" name="message" placeholder="Tell us about your business, investment interests, or how we can help..."></textarea>
+					</div>
+					<button class="w-full inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg font-medium transition-colors" type="submit">
+						<i class="fa-duotone fa-light fa-paper-plane mr-2"></i>Send Message
+					</button>
+				</form>
+				<p class="my-6 opacity-80">{{page.contact_form.description}}</p>
+			</div>
+			<!-- Direct Contact Options -->
+			<div class="space-y-4">
+				{% for group in page.contact_groups %}
+				<div class="bg-white dark:bg-brand-dark-900/50 rounded-lg p-6 border border-gray-200 dark:border-brand-gold-900">
+					<div class="flex items-start space-x-4">
+						<div class="flex-shrink-0 w-12 h-12 bg-brand-coral-100 dark:bg-brand-gold/20 rounded-lg flex items-center justify-center border border-brand-coral-200 dark:border-brand-gold-900">
+							<i class="fa-duotone fa-light {{group.icon}} text-xl text-brand-coral-600 dark:text-brand-gold"></i>
+						</div>
+						<div class="flex-1">
+							<h4 class="text-lg font-serif text-brand-coral-900 dark:text-brand-gold-200 mb-2">{{group.title}}</h4>
+							<p class=" opacity-80 mb-3">{{group.description}}</p>
+							
+							{% if group.email %}
+							<div class="flex items-center space-x-2 mb-2">
+								<i class="fa-duotone fa-light fa-envelope text-brand-coral-500 dark:text-brand-gold "></i>
+								<a href="mailto:{{group.email}}" class="text-brand-coral-600 dark:text-brand-gold hover:text-brand-coral-800 dark:hover:text-brand-gold/80 transition-colors font-medium">{{group.email}}</a>
+							</div>
+							{% endif %}
+							
+							{% if group.phone %}
+							<div class="flex items-center space-x-2 mb-2">
+								<i class="fa-duotone fa-light fa-phone text-brand-coral-500 dark:text-brand-gold "></i>
+								<a href="tel:{{group.phone}}" class="text-brand-coral-600 dark:text-brand-gold hover:text-brand-coral-800 dark:hover:text-brand-gold/80 transition-colors font-medium">{{group.phone}}</a>
+							</div>
+							{% endif %}
+							
+							{% if group.additional %}
+							<p class="opacity-70 mt-2 italic">{{group.additional}}</p>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+			{% for location in page.offices.locations %}
+			<div>
+				<i class="fa-duotone fa-light {{location.icon}} text-4xl mb-4 text-brand-gold"></i>
+				<p class="text-2xl mb-2 font-serif text-brand-coral-900 dark:text-brand-gold-200">{{location.name}}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="px-4 sm:px-6 lg:px-8 xl:px-32 py-16">
+	<div class="max-w-7xl mx-auto">
+		<div class="bg-white dark:bg-brand-dark-900/50 rounded-lg p-6 border border-gray-200 dark:border-brand-gold-900">
+			<h3 class="text-3xl mb-4 font-serif text-brand-coral-900 dark:text-brand-gold-200">Meet Our Team</h3>
+			<p class="mb-6 leading-relaxed opacity-80">Get to know the operators and investors behind Amalgam Capital and access individual contact information for direct outreach to the right person for your specific situation.</p>
+			<a class="inline-block p-4 bg-brand-coral/50 hover:bg-brand-coral dark:hover:bg-brand-dark-900/50 dark:hover:text-brand-coral dark:bg-brand-gold dark:text-brand-dark rounded-lg font-medium transition-colors" href="{{ site.url }}/team">
+				View Team Profiles <i class="fa-duotone fa-light fa-arrow-right ml-2"></i>
+			</a>
+		</div>
+	</div>
+</section> 

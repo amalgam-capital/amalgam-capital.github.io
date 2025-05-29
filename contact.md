@@ -1,40 +1,54 @@
 ---
-layout: page
+layout: contact
 permalink: /contact
-title: Talk To Us
+title: Connect With Us
 description: We're looking for businesses looking to get acquired and capital partners to work with us
----
-<div class="row">
-<div class="col-md-6">
-<form
-  action="https://formspree.io/mrgykpeq"
-  method="POST"
->
-  <div class="form-group">
-  <label for="contactname">Name</label>
-  <input required class="form-control" id="contactname" type="text" name="name">
-  </div>
-  <div class="form-group">
-  <label for="contactemail">
-    Email:
-  </label>
-  <input required class="form-control" id="contactemail" type="text" name="_replyto">
-  </div>
-  <div class="form-group">
-  <label for="contactmessage">
-    Message:
-  </label>
-  <textarea required class="form-control" id="contactmessage" name="message"></textarea>
-  </div>
-  <button class="btn btn-primary btn-lg" type="submit">Send</button>
+lineone: "Connect "
+linetwo: "With Us"
+subtitle: "Ready to explore partnership opportunities or discuss your business transition? Our team is here to help with direct access to decision-makers and rapid response times."
 
-</form>
-</div>
-<div class="em-block col-md-6">
-  <br/>
-  <div class="block-content">
-    <p>Or reach out to us directly</p>
-    <p class="large"><a href="mailto:intro@amalgamcapital.com">intro@amalgamcapital.com</a></p>
-  </div>
-</div>
-</div>
+contact_form:
+  title: "Get in Touch"
+  description: "We to aim respond within 24 hours to discuss your specific situation and goals."
+  action: "https://formspree.io/mrgykpeq"
+  method: "POST"
+
+contact_groups:
+  - title: "Business Owners & Sellers"
+    icon: "fa-building"
+    description: "Ready to discuss your transition options? Connect with a partner directly:"
+    email: "owners@amalgamcapital.com"
+    phone: "+1 919-555-1234"
+    additional: "Direct access to decision-makers from day one"
+
+  - title: "Investment Bankers & Intermediaries"
+    icon: "fa-handshake"
+    description: "Send teasers directly to our deal team:"
+    email: "deals@amalgamcapital.com"
+    additional: "We guarantee a response within 48 hours"
+
+  - title: "Investors & Co-Investors"
+    icon: "fa-chart-line"
+    description: "Learn about our current investment opportunities:"
+    email: "invest@amalgamcapital.com"
+    phone: "+1 212-555-5678"
+    additional: "Flexible co-investment structures available"
+
+  - title: "Portfolio Company Careers"
+    icon: "fa-users"
+    description: "Explore leadership and growth opportunities across our platforms:"
+    email: "careers@amalgamcapital.com"
+    additional: "Join a growing network of operational leaders"
+
+offices:
+  title: "Office Locations"
+  locations:
+    - name: "New York"
+      icon: "fa-map-marker-alt"
+    - name: "Philadelphia"
+      icon: "fa-map-marker-alt"
+    - name: "Atlanta"
+      icon: "fa-map-marker-alt"
+    - name: "Raleigh-Durham"
+      icon: "fa-map-marker-alt"
+---
