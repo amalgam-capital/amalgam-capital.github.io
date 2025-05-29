@@ -1,15 +1,15 @@
 <header class="px-4 sm:px-6 lg:px-8 xl:px-32 py-4 top-0 sticky md:static z-10 dark:text-white z-100 bg-gradient-to-b from-brand-gold/10 to-transparent transition-all duration-300" id="main-header">
 	<div class="flex items-center justify-between max-w-7xl mx-auto">
 		<div class="flex items-center space-x-4 lg:pt-20 md:pt-8 md:pb-4">
-			<h1 class="text-xl tracking-widest uppercase">
+			<h1 class="lg:text-lg xl:text-xl tracking-widest uppercase">
 				<a class="stroke-brand-dark hover:stroke-brand-coral dark:stroke-white/50 flex items-center space-x-3 text-brand-dark hover:text-brand-coral transition-colors dark:text-white dark:hover:stroke-brand-coral" href="{{ site.url }}">
-				{% include logo.html class="size-12 mr-4" %}
+				{% include logo.html class="size-8 opacity-80 md:opacity-100 md:size-12 mr-4" %}
 				Amalgam Capital
 				</a>
 			</h1>
 		</div>
 		<!-- Mobile menu button -->
-		<button type="button" class="print:hidden md:hidden inline-flex items-center justify-center p-2 rounded-md  hover: hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 z-110" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMobileMenu()">
+		<button type="button" class="print:hidden md:hidden inline-flex items-center justify-center p-2 rounded-md hover:bg-brand-coral/50 hover:text-brand-coral dark:hover:bg-brand-dark-900/50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 z-110" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMobileMenu()">
 			<span class="sr-only">Open main menu</span>
 			<!-- Icon when menu is closed -->
 			<svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -35,7 +35,7 @@
 		</nav>
 	</div>
 	<!-- Mobile menu -->
-	<div class="absolute hidden md:hidden top-20 left-0 w-screen bg-white dark:bg-brand-dark z-100 text-xl drop-shadow-xl print:hidden" id="mobile-menu">
+	<div class="backdrop-blur-xl absolute hidden md:hidden top-[72px] left-0 w-screen z-100 text-xl drop-shadow-xl print:hidden" id="mobile-menu">
 		<div class="p-4 pb-10">
 			<ul class="flex flex-col">
 				{% for item in site.data.navigation.mobile-navigation %}
