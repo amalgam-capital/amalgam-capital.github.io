@@ -44,8 +44,6 @@ contact_groups:
 offices:
   title: "Office Locations"
   locations:
-    - name: "New York"
-      icon: "fa-map-marker-alt"
     - name: "Philadelphia"
       icon: "fa-map-marker-alt"
     - name: "Atlanta"
