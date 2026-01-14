@@ -34,7 +34,6 @@ team_members:
     description: "Phil is a continuous improvement and integration specialist with expertise in operations, logistics, salesforce effectiveness, and M&A integration. As a founding partner and COO at SLKone, Phil has delivered significant performance improvements for clients across industries."
     experience:
       - "Founding Partner & COO at SLKone"
-      - "Co-founder of Abyss Analytics, a healthcare analytics company revolutionizing reimbursement intelligence"
       - "Former Director at Berkeley Research Group"
       - "Former Director of Performance Improvement at FTI Consulting"
       - "Led major operational transformations across aerospace, manufacturing, healthcare, and retail"
@@ -78,7 +77,6 @@ team_members:
     linkedin: "https://www.linkedin.com/in/rachit/"
     description: "Rachit brings his diverse experience as a serial entrepreneur, corporate executive, and early-stage investor to Amalgam Capital. His background includes founding, scaling, and exiting technology companies, giving him unique insight into growth strategies and digital transformation."
     experience:
-      - "Co-founder of Abyss Analytics, a healthcare analytics company revolutionizing reimbursement intelligence"
       - "Client Development Manager at SLKone, specializing in go-to-market strategies"
       - "Former VP of Emerging Technologies and Mobile at Ticketmaster"
       - "Co-founder and CEO of Two Toasters, a mobile product agency acquired by Ticketmaster"
@@ -95,7 +93,6 @@ team_members:
     linkedin: "https://www.linkedin.com/in/aditshukla/"
     description: "Adit specializes in business development, product strategy, and organizational design. His background spans mobile product development, creative direction, and early-stage investing, giving him a multi-faceted perspective on building and scaling businesses."
     experience:
-      - "Co-founder of Abyss Analytics"
       - "Client Development Manager at SLKone"
       - "Former VP of Mobile & Emerging Technologies at Ticketmaster"
       - "Co-Founder, Partner, and Creative Director at Two Toasters (acquired by Ticketmaster)"
