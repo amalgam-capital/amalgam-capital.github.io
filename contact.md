@@ -19,7 +19,6 @@ contact_groups:
     icon: "fa-building"
     description: "Ready to discuss your transition options? Connect with a partner directly:"
     email: "owners@amalgamcapital.com"
-    phone: "+1 919-555-1234"
     additional: "Direct access to decision-makers from day one"
 
   - title: "Investment Bankers & Intermediaries"
@@ -32,7 +31,6 @@ contact_groups:
     icon: "fa-chart-line"
     description: "Learn about our current investment opportunities:"
     email: "invest@amalgamcapital.com"
-    phone: "+1 212-555-5678"
     additional: "Flexible co-investment structures available"
 
   - title: "Portfolio Company Careers"
