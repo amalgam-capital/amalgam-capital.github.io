@@ -1,6 +1,7 @@
 ---
 title: Privacy Policy
 layout: page
+description: "Learn how Amalgam Capital collects, uses, and protects your personal information when you visit our website."
 ---
 
 **Effective Date:** 6/1/2020

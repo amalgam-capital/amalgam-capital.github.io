@@ -1,8 +1,9 @@
 # Site wide configuration
 
 title: "Amalgam Capital"
+tagline: "Operators First, Investors Second."
 description: "We acquire and sustainably grow underrated businesses as independent sponsors."
-logo: logo-circle.png
+logo: /images/logo-circle.png
 teaser: 
 locale: en
 url: https://amalgamcapital.com
@@ -13,16 +14,17 @@ feed:
 
 permalink: /:categories/:title/
 highlighter: rouge
-gems:
+
+plugins:
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-
-plugins_dir:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
   - jekyll-paginate
+
+# jekyll-seo-tag configuration
+twitter:
+  card: summary
 
 collections:
   team-members:
@@ -31,7 +33,10 @@ collections:
     output: true    
 
 defaults:
-           
+  - scope:
+      path: ""
+    values:
+      image: /images/social-default.jpg
 
 include:
   - .htaccess

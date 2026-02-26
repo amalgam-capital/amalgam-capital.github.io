@@ -1,10 +1,27 @@
 ---
 layout: default
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for section in page.faq_sections %}{% for faq in section.questions %}{% unless forloop.first and section == page.faq_sections.first %},{% endunless %}
+    {
+      "@type": "Question",
+      "name": {{ faq.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ faq.answer | jsonify }}
+      }
+    }{% endfor %}{% endfor %}
+  ]
+}
+</script>
 <section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
 	<div class="max-w-7xl mx-auto">
 		<div class="max-w-5xl">
-			<h2 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-6">{{ page.title }}</h2>
+			<h1 class="text-4xl lg:text-6xl xl:text-7xl font-serif mb-6">{{ page.title }}</h1>
 			<p class="text-xl lg:text-2xl leading-relaxed text-brand-coral-900 dark:text-white/80 mb-8">{{ page.description }}</p>
 		</div>
 	</div>
