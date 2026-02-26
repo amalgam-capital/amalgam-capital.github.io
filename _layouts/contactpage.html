@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<script src="https://cdn.jsdelivr.net/npm/p5@2.0.2/lib/p5.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
 <script>
 let vantaEffect;
@@ -44,8 +43,8 @@ window.addEventListener('resize', initVanta);
 					<div class="w-32 h-32 mx-auto mb-6 bg-white dark:bg-brand-dark rounded-full p-4 shadow-lg">
 						<div class="w-full h-full bg-contain bg-no-repeat bg-center" style="background-image: url('{{site.url}}/images/{{ filename }}.svg')"></div>
 					</div>
-					<h2 class="text-3xl font-serif text-white dark:text-brand-dark mb-2">{{ page.title }}</h2>
-					<h3 class="text-xl font-serif text-brand-coral-100 dark:text-brand-dark/80">{{ page.job-title }}</h3>
+					<h1 class="text-3xl font-serif text-white dark:text-brand-dark mb-2">{{ page.title }}</h1>
+					<p class="text-xl font-serif text-brand-coral-100 dark:text-brand-dark/80">{{ page.job-title }}</p>
 				</div>
 
 				<!-- Contact Information Section -->
