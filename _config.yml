@@ -22,6 +22,10 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
+# jekyll-paginate configuration
+paginate: 10
+paginate_path: "/insights/page:num/"
+
 # jekyll-seo-tag configuration
 twitter:
   card: summary
@@ -37,6 +41,11 @@ defaults:
       path: ""
     values:
       image: /images/social-default.jpg
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
 
 include:
   - .htaccess
