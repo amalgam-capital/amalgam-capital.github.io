@@ -1,6 +1,7 @@
 ---
 title: Terms of Use
 layout: page
+description: "Terms and conditions governing your use of the Amalgam Capital website."
 ---
 **Effective Date:** 6/1/2020
 

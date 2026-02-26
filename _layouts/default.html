@@ -1,44 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% if page.meta-title %}{{ page.meta-title }}{% else %}{{ page.title }}{% endif %}</title>
-    {% if page.description %}<meta name="description" content="{{ page.excerpt | strip_html }}">
-    {% else %}
-    <meta name="description" content="{{ site.description }}">
-    {% endif %}
-    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
-    {% if page.author %}
-      {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
-    {% endif %}
-    {% include open-graph.html %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    {% seo %}
+
     <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
     <link href="{{ site.url }}/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
     <meta name="ahrefs-site-verification" content="63e17d02715431c0c148b79e28bb7e378f94937509f7fd1040f4167884f7436f">
+
     <link rel="icon" type="image/x-icon" href="{{site.url}}/images/AppIcons/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/images/AppIcons/180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{site.url}}/images/AppIcons/32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{site.url}}/images/AppIcons/16.png">
-    <!-- Social Media Images -->
-    <meta property="og:image" content="{{site.url}}/images/social-default.jpg">
-    <meta property="og:image:secure_url" content="{{site.url}}/images/social-default.jpg">
-    <meta name="twitter:image" content="{{site.url}}/images/social-default.jpg">
-    <!-- App Store Images -->
-    <link rel="apple-touch-icon" href="{{site.url}}/images/appstore.png">
-    <link rel="android-touch-icon" href="{{site.url}}/images/playstore.png">
-    <!-- LinkedIn Image -->
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="627">
-    <meta property="og:image:alt" content="LinkedIn Preview Image">
-    <meta property="og:image" content="{{site.url}}/images/linkedin.jpg">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,89 +26,13 @@
     
     <script src="https://kit.fontawesome.com/203a8036d5.js" crossorigin="anonymous"></script>
 
-    <!-- p5.js for noise texture -->
-    <script src="https://cdn.jsdelivr.net/npm/p5@2.0.2/lib/p5.min.js"></script>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: {
-                50: '#f0f9ff',
-                100: '#e0f2fe',
-                200: '#bae6fd',
-                300: '#7dd3fc',
-                400: '#38bdf8',
-                500: '#0ea5e9',
-                600: '#0284c7',
-                700: '#0369a1',
-                800: '#075985',
-                900: '#0c4a6e',
-              },
-              // Custom brand colors with variations
-              brand: {
-                // Dark color variations
-                'dark-50': '#f8f8f9',     // Very light tint
-                'dark-100': '#e8e9eb',    // Light tint
-                'dark-200': '#c5c7cc',    // Medium light tint
-                'dark-300': '#9ea2aa',    // Medium tint
-                'dark-400': '#6b7080',    // Medium
-                'dark-500': '#4a4d5a',    // Medium dark
-                'dark-600': '#3a3d47',    // Darker
-                'dark': '#2d3142',        // Original dark
-                'dark-700': '#252834',    // Much darker
-                'dark-800': '#1d1f28',    // Very dark
-                'dark-900': '#15161c',    // Darkest
-                
-                // Gold color variations
-                'gold-50': '#fefcf3',     // Very light tint
-                'gold-100': '#fef7e0',    // Light tint
-                'gold-200': '#fdecc4',    // Medium light tint
-                'gold-300': '#fbdc9d',    // Medium tint
-                'gold-400': '#f8c876',    // Medium
-                'gold-500': '#f5b94f',    // Medium dark
-                'gold': '#F4C35A',        // Original gold
-                'gold-600': '#e6a832',    // Darker
-                'gold-700': '#c7912a',    // Much darker
-                'gold-800': '#a87a22',    // Very dark
-                'gold-900': '#8a631a',    // Darkest
-                
-                // Coral color variations
-                'coral-50': '#fef6f4',    // Very light tint
-                'coral-100': '#fde8e3',   // Light tint
-                'coral-200': '#fbc5b8',   // Medium light tint
-                'coral-300': '#f89d87',   // Medium tint
-                'coral-400': '#f57556',   // Medium
-                'coral': '#F16545',       // Original coral
-                'coral-500': '#e54d25',   // Medium dark
-                'coral-600': '#d4441f',   // Darker
-                'coral-700': '#b8391a',   // Much darker
-                'coral-800': '#9c2f15',   // Very dark
-                'coral-900': '#802510',   // Darkest
-              }
-            },
-            fontFamily: {
-              'sans': ['Montserrat', 'montserrat', 'system-ui', 'sans-serif'],
-              'serif': ['Merriweather', 'Georgia', 'serif'],
-              'logo': ['Montserrat', 'montserrat', 'system-ui', 'sans-serif'],
-            }
-          }
-        }
-      }
-    </script>
-
-    </style>
+    <!-- Compiled Tailwind CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
 
     <!-- Noise Texture Script -->
     <script>
-      // Generate noise texture
       function generateNoiseTexture() {
-        console.log('Generating film grain texture...');
-        
-        const size = 512; // Power of 2 for better tiling
+        const size = 512;
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
         canvas.width = size;
@@ -136,51 +40,31 @@
         
         const imageData = ctx.createImageData(size, size);
         const data = imageData.data;
-        
-        // Create tileable random seed for each position
-        const grainIntensity = 100; // Adjust grain strength
-        const baseGray = 255; // Base color (light gray)
+        const grainIntensity = 100;
+        const baseGray = 255;
         
         for (let x = 0; x < size; x++) {
           for (let y = 0; y < size; y++) {
             const index = (y * size + x) * 4;
-            
-            // Create pseudo-random grain based on position
-            // Use multiple prime numbers to create good distribution
             let seed = (x * 73856093) ^ (y * 19349663);
             seed = (seed ^ (seed >> 13)) * 1664525 + 1013904223;
             seed = seed ^ (seed >> 16);
-            
-            // Convert to -1 to 1 range
             const random = ((seed & 0x7FFFFFFF) / 0x7FFFFFFF) * 2 - 1;
-            
-            // Add some high-frequency detail
             let seed2 = ((x * 2) * 73856093) ^ ((y * 2) * 19349663);
             seed2 = (seed2 ^ (seed2 >> 13)) * 1664525 + 1013904223;
             const random2 = ((seed2 & 0x7FFFFFFF) / 0x7FFFFFFF) * 2 - 1;
-            
-            // Combine for film grain effect
             const grain = (random * 0.7 + random2 * 0.3) * grainIntensity;
-            
-            // Apply grain to base color
             const gray = Math.floor(baseGray + grain);
             const clampedGray = Math.max(200, Math.min(255, gray));
-            
-            data[index] = clampedGray;     // Red
-            data[index + 1] = clampedGray; // Green  
-            data[index + 2] = clampedGray; // Blue
-            data[index + 3] = 255;        // Alpha
+            data[index] = clampedGray;
+            data[index + 1] = clampedGray;
+            data[index + 2] = clampedGray;
+            data[index + 3] = 255;
           }
         }
         
         ctx.putImageData(imageData, 0, 0);
-        
-        // Convert to data URL and apply to body
         const dataURL = canvas.toDataURL();
-        
-        console.log('Film grain texture applied!');
-        
-        // Update the CSS with proper tiling
         const style = document.createElement('style');
         style.textContent = `
           body::before {
@@ -193,56 +77,35 @@
         `;
         document.head.appendChild(style);
         
-        // Update height when content changes
         const updateGrainHeight = () => {
-          const grainElement = document.querySelector('body::before');
-          if (grainElement) {
-            const newHeight = document.documentElement.scrollHeight;
-            style.textContent = style.textContent.replace(
-              /height: \d+px/,
-              `height: ${newHeight}px`
-            );
-          }
+          const newHeight = document.documentElement.scrollHeight;
+          style.textContent = style.textContent.replace(
+            /height: \d+px/,
+            `height: ${newHeight}px`
+          );
         };
-        
-        // Watch for content changes
         const observer = new ResizeObserver(updateGrainHeight);
         observer.observe(document.body);
-        
-        // Also update on window resize
         window.addEventListener('resize', updateGrainHeight);
       }
-      
-      // Generate texture when DOM is loaded
       document.addEventListener('DOMContentLoaded', generateNoiseTexture);
     </script>
     
-    <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}/images/AppIcons/180.png">
     <link rel="stylesheet" href="https://use.typekit.net/sjx0lym.css">
     <link rel="stylesheet" href="{{ site.url }}/style.css">
-    
-    {% if page.noindex == true %}
-    <meta name="robots" content="noindex" />
-    {% endif %}
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   </head>
 
   <body class="min-h-screen bg-white dark:bg-brand-dark dark:text-white font-sans {{ page.layout }} overflow-x-hidden">
     {% include header.html %}
       {{ content }}
       {% include footer.html %}
-  <script>
-    AOS.init();
-  </script>
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics (UA is deprecated; migrate to GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168886951-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-168886951-1');
   </script>
 

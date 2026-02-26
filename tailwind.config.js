@@ -22,46 +22,40 @@ module.exports = {
           800: '#075985',
           900: '#0c4a6e',
         },
-        // Custom brand colors with variations
         brand: {
-          // Dark color variations
-          'dark-50': '#f8f8f9',     // Very light tint
-          'dark-100': '#e8e9eb',    // Light tint
-          'dark-200': '#c5c7cc',    // Medium light tint
-          'dark-300': '#9ea2aa',    // Medium tint
-          'dark-400': '#6b7080',    // Medium
-          'dark-500': '#4a4d5a',    // Medium dark
-          'dark-600': '#3a3d47',    // Darker
-          'dark': '#2d3142',        // Original dark
-          'dark-700': '#252834',    // Much darker
-          'dark-800': '#1d1f28',    // Very dark
-          'dark-900': '#15161c',    // Darkest
-          
-          // Gold color variations
-          'gold-50': '#fefcf3',     // Very light tint
-          'gold-100': '#fef7e0',    // Light tint
-          'gold-200': '#fdecc4',    // Medium light tint
-          'gold-300': '#fbdc9d',    // Medium tint
-          'gold-400': '#f8c876',    // Medium
-          'gold-500': '#f5b94f',    // Medium dark
-          'gold': '#F4C35A',        // Original gold
-          'gold-600': '#e6a832',    // Darker
-          'gold-700': '#c7912a',    // Much darker
-          'gold-800': '#a87a22',    // Very dark
-          'gold-900': '#8a631a',    // Darkest
-          
-          // Coral color variations
-          'coral-50': '#fef6f4',    // Very light tint
-          'coral-100': '#fde8e3',   // Light tint
-          'coral-200': '#fbc5b8',   // Medium light tint
-          'coral-300': '#f89d87',   // Medium tint
-          'coral-400': '#f57556',   // Medium
-          'coral': '#F16545',       // Original coral
-          'coral-500': '#e54d25',   // Medium dark
-          'coral-600': '#d4441f',   // Darker
-          'coral-700': '#b8391a',   // Much darker
-          'coral-800': '#9c2f15',   // Very dark
-          'coral-900': '#802510',   // Darkest
+          'dark-50': '#f8f8f9',
+          'dark-100': '#e8e9eb',
+          'dark-200': '#c5c7cc',
+          'dark-300': '#9ea2aa',
+          'dark-400': '#6b7080',
+          'dark-500': '#4a4d5a',
+          'dark-600': '#3a3d47',
+          'dark': '#2d3142',
+          'dark-700': '#252834',
+          'dark-800': '#1d1f28',
+          'dark-900': '#15161c',
+          'gold-50': '#fefcf3',
+          'gold-100': '#fef7e0',
+          'gold-200': '#fdecc4',
+          'gold-300': '#fbdc9d',
+          'gold-400': '#f8c876',
+          'gold-500': '#f5b94f',
+          'gold': '#F4C35A',
+          'gold-600': '#e6a832',
+          'gold-700': '#c7912a',
+          'gold-800': '#a87a22',
+          'gold-900': '#8a631a',
+          'coral-50': '#fef6f4',
+          'coral-100': '#fde8e3',
+          'coral-200': '#fbc5b8',
+          'coral-300': '#f89d87',
+          'coral-400': '#f57556',
+          'coral': '#F16545',
+          'coral-500': '#e54d25',
+          'coral-600': '#d4441f',
+          'coral-700': '#b8391a',
+          'coral-800': '#9c2f15',
+          'coral-900': '#802510',
         },
         gray: {
           50: '#f9fafb',
@@ -77,8 +71,10 @@ module.exports = {
         }
       },
       fontFamily: {
-        'sans': ['proxima-nova', 'system-ui', 'sans-serif'],
-        'heading': ['proxima-nova', 'system-ui', 'sans-serif'],
+        'sans': ['Montserrat', 'montserrat', 'system-ui', 'sans-serif'],
+        'serif': ['Merriweather', 'Georgia', 'serif'],
+        'logo': ['Montserrat', 'montserrat', 'system-ui', 'sans-serif'],
+        'heading': ['Montserrat', 'montserrat', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         'xs': '0.75rem',

@@ -2,7 +2,7 @@
 layout: home
 permalink: /
 title: Amalgam Capital
-meta-title: Amalgam Capital - Operators First, Investors Second.
+seo_title: "Amalgam Capital - Operators First, Investors Second."
 description: Operators First. Investors Second. We partner with mid-market companies to deliver sustainable growth through operational excellence.
 lineone: "Operators First, "
 linetwo: "Investors Second."
