@@ -1,6 +1,6 @@
 ---
 layout: team
-permalink: /team
+permalink: /team/
 title: Our Team
 seo_title: "Our Team - Amalgam Capital Leadership & Experience"
 description: Leadership that delivers results through operational expertise and hands-on experience

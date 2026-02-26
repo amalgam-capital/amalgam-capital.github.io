@@ -6,11 +6,38 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    font-family: 'proxima-nova', system-ui, sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.01em;
+    font-family: 'Montserrat', montserrat, system-ui, sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    transition: all 0.4s ease;
+  }
+
+  /* Noise texture overlay */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-repeat: repeat;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: -1;
+    mix-blend-mode: multiply;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body::before {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -18,28 +45,53 @@
   .btn-primary {
     @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200;
   }
-  
+
   .btn-secondary {
-    @apply inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md  bg-white hover: focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200;
+    @apply inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200;
   }
-  
+
   .section-padding {
     @apply py-16 lg:py-24;
   }
-  
+
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .hero-gradient {
     background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);
   }
-  
+
   .card {
     @apply bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
   }
-  
+
   .stat-card {
     @apply text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
+  }
+
+  /* Logo SVG stroke animations */
+  .stroke_one, .stroke_two, .stroke_three, .stroke_four, .stroke_five, .stroke_six, .stroke_seven {
+    fill: none;
+    stroke-linecap: round;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transition: all 2s ease;
+    stroke-width: 2.477;
+  }
+
+  .stroke_one   { stroke-dasharray: 51.573 295.332; stroke-dashoffset: 0; }
+  .stroke_two   { stroke-dasharray: 41.243 295.332; stroke-dashoffset: -56.529; }
+  .stroke_three { stroke-dasharray: 76.04 295.332;  stroke-dashoffset: -102.726; }
+  .stroke_four  { stroke-dasharray: 40.552 295.332; stroke-dashoffset: -183.722; }
+  .stroke_five  { stroke-dasharray: 11.452 295.332; stroke-dashoffset: -229.253; }
+  .stroke_six   { stroke-dasharray: 18.951 295.332; stroke-dashoffset: -245.659; }
+  .stroke_seven { stroke-dasharray: 25.773 295.332; stroke-dashoffset: -269.559; }
+
+  @keyframes stroke_anim {
+    0%   { stroke-dashoffset: -50; opacity: 0; }
+    50%  { opacity: 0.5; scale: 1; }
+    100% { opacity: 1; }
   }
 } 

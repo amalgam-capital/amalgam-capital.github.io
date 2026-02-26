@@ -1,6 +1,6 @@
 ---
 layout: investors
-permalink: /for-investors
+permalink: /for-investors/
 title: For Investors
 seo_title: "For Investors - Amalgam Capital Co-Investment Partners"
 description: Partner with operators who deliver operational alpha in the lower middle market

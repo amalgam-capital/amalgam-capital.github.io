@@ -1,6 +1,6 @@
 ---
 layout: investment-approach
-permalink: /investment-approach
+permalink: /investment-approach/
 title: Investment Approach
 seo_title: "Investment Approach - Amalgam Capital Value Creation"
 description: Our systematic approach to value creation through operational excellence and strategic growth

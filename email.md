@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /email
+permalink: /email/
 title: Amalgam Capital Email Styling
 noindex: true
 ---

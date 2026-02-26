@@ -1,6 +1,6 @@
 ---
 layout: about
-permalink: /about
+permalink: /about/
 title: About Us
 seo_title: "About Us - Amalgam Capital Private Equity & Operations"
 description: Our story of bridging operational expertise with investment capital to transform undervalued businesses into market leaders

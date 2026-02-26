@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-permalink: /portfolio
+permalink: /portfolio/
 title: Our Portfolio
 seo_title: "Our Portfolio - Amalgam Capital Investments & Results"
 description: Active platforms and operational case studies showcasing our value creation approach

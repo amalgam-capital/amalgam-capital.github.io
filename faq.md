@@ -1,6 +1,6 @@
 ---
 layout: faq
-permalink: /faq
+permalink: /faq/
 title: Frequently Asked Questions
 seo_title: "FAQ - Amalgam Capital Private Equity Questions"
 description: Common questions about working with Amalgam Capital
