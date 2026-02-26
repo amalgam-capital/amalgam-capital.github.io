@@ -41,7 +41,7 @@ window.addEventListener('resize', initVanta);
 				<div class="bg-gradient-to-r from-brand-coral-600 to-brand-coral-700 dark:from-brand-gold dark:to-brand-gold/80 p-8 text-center">
 					{% assign filename = page.url | replace: 'contact', '' | replace: '/', ''  | replace: '.html', '.md' %}
 					<div class="w-32 h-32 mx-auto mb-6 bg-white dark:bg-brand-dark rounded-full p-4 shadow-lg">
-						<div class="w-full h-full bg-contain bg-no-repeat bg-center" style="background-image: url('{{site.url}}/images/{{ filename }}.svg')"></div>
+						<img src="{{site.url}}/images/{{ filename }}.svg" alt="{{ page.title }} contact photo" class="w-full h-full object-contain" width="128" height="128" loading="lazy">
 					</div>
 					<h1 class="text-3xl font-serif text-white dark:text-brand-dark mb-2">{{ page.title }}</h1>
 					<p class="text-xl font-serif text-brand-coral-100 dark:text-brand-dark/80">{{ page.job-title }}</p>

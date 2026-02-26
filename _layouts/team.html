@@ -16,7 +16,7 @@ layout: default
 			{% for member in page.team_members %}
 			<div class="md:rounded-lg md:border md:border-brand-coral-900/20 dark:border-brand-gold-900 p-6">
 				<div class="md:flex items-start space-y-6 md:space-x-6 mb-6">
-					<div class="flex-shrink-0 size-40 bg-brand-coral-100 dark:bg-brand-gold/20 rounded-full flex items-center justify-center bg-cover" style="background-image:url({{ site.url }}/images/team/{{ member.image }})"></div>
+					<img src="{{ site.url }}/images/team/{{ member.image }}" alt="{{ member.name }}, {{ member.title }} at Amalgam Capital" class="flex-shrink-0 size-40 rounded-full object-cover bg-brand-coral-100 dark:bg-brand-gold/20" width="160" height="160" loading="lazy">
 					<div class="flex-1">
 						<div class="flex items-start justify-between mb-2">
 							<div>
