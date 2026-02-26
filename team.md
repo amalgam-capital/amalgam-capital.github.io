@@ -27,7 +27,7 @@ team_members:
     quote: "Another great day, which is better than yesterday and one that will make way for a better tomorrow for my clients, my team, and my dear ones."
   
   - name: "Phil Lynch"
-    title: "Managing Partner"
+    title: "Managing Director"
     icon: "fa-cogs"
     image: "phil.jpg"
     linkedin: "https://www.linkedin.com/in/philmlynch/"
