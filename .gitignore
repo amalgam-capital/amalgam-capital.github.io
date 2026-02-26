@@ -12,3 +12,5 @@ _site/atom.xml
 _site/index.html
 /.jekyll-cache
 .DS_Store
+vendor/
+.bundle/
