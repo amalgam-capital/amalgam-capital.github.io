@@ -402,27 +402,39 @@ window.addEventListener('resize', initVanta);
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Amalgam Capital",
+  "legalName": "Amalgam Capital, LLC",
   "url": "https://amalgamcapital.com",
   "logo": "https://amalgamcapital.com/images/logo-circle.png",
+  "image": "https://amalgamcapital.com/images/social-default.webp",
   "description": "We acquire and sustainably grow underrated businesses as independent sponsors.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "510 Meadowmont Village Circle, Ste 212",
-    "addressLocality": "Chapel Hill",
-    "addressRegion": "NC",
-    "postalCode": "27517",
-    "addressCountry": "US"
-  },
+  "foundingDate": "2020",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "510 Meadowmont Village Circle, Ste 212",
+      "addressLocality": "Chapel Hill",
+      "addressRegion": "NC",
+      "postalCode": "27517",
+      "addressCountry": "US"
+    }
+  ],
+  "location": [
+    { "@type": "Place", "name": "Philadelphia Office", "address": { "@type": "PostalAddress", "addressLocality": "Philadelphia", "addressRegion": "PA", "addressCountry": "US" } },
+    { "@type": "Place", "name": "Atlanta Office", "address": { "@type": "PostalAddress", "addressLocality": "Atlanta", "addressRegion": "GA", "addressCountry": "US" } },
+    { "@type": "Place", "name": "Raleigh-Durham Office", "address": { "@type": "PostalAddress", "addressLocality": "Raleigh", "addressRegion": "NC", "addressCountry": "US" } }
+  ],
   "sameAs": [
     "https://www.linkedin.com/company/amalgam-capital"
   ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Business Development",
-    "email": "owners@amalgamcapital.com"
-  }
+  "contactPoint": [
+    { "@type": "ContactPoint", "contactType": "Business Development", "email": "owners@amalgamcapital.com" },
+    { "@type": "ContactPoint", "contactType": "Investor Relations", "email": "invest@amalgamcapital.com" },
+    { "@type": "ContactPoint", "contactType": "Deal Flow", "email": "deals@amalgamcapital.com" }
+  ]
 }
 </script>
+
+      
 
 
   <!-- Google Analytics (GA4) -->

@@ -1,6 +1,26 @@
 ---
 layout: default
 ---
+{% for member in page.team_members %}
+{% assign img_base = member.image | split: '.' | first %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ member.name | jsonify }},
+  "jobTitle": {{ member.title | jsonify }},
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Amalgam Capital",
+    "url": "https://amalgamcapital.com"
+  },
+  "url": "https://amalgamcapital.com/team/",
+  "image": "https://amalgamcapital.com/images/team/{{ img_base }}.webp",
+  "description": {{ member.description | jsonify }}{% if member.linkedin %},
+  "sameAs": [{{ member.linkedin | jsonify }}]{% endif %}
+}
+</script>
+{% endfor %}
 <section id="main" class="px-4 sm:px-6 lg:px-8 xl:px-32 py-12">
 	<div class="max-w-7xl mx-auto">
 		<div class="max-w-5xl">
