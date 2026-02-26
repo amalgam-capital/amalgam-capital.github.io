@@ -7,7 +7,7 @@ description: Our story of bridging operational expertise with investment capital
 lineone: "About "
 linetwo: "Us"
 subtitle: "Amalgam Capital was founded in 2020 by the entrepreneurs behind SLKone, a management consulting firm dedicated to bridging strategy, leadership, and knowledge through data-driven solutions. While advising clients on operational improvements, we recognized a gap in the middle market: businesses needed investors who truly understood operations, not just spreadsheets."
-additional: "As a family-driven independent sponsor with offices in New York, Philadelphia, Atlanta, and Raleigh-Durham, Amalgam combines patient capital with hands-on operational expertise to transform undervalued businesses into market leaders while preserving the legacy that founders worked so hard to build."
+additional: 'As a family-driven independent sponsor with offices in Philadelphia, Atlanta, and Raleigh-Durham, Amalgam combines patient capital with hands-on operational expertise to transform undervalued businesses into market leaders while preserving the legacy that founders worked so hard to build. <a href="/team/">Meet our team →</a>'
 
 what_makes_different:
   points:

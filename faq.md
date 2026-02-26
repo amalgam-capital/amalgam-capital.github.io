@@ -9,13 +9,13 @@ faq_sections:
   - title: "For Business Owners"
     questions:
       - question: "What types of companies does Amalgam acquire?"
-        answer: "We focus on businesses with $25-250M in revenue and $5-30M in EBITDA in industrial services, manufacturing, distribution, healthcare services, and tech-enabled B2B operations. We're particularly interested in founder/family transitions, companies with growth potential, and operationally challenged businesses that would benefit from our hands-on approach."
+        answer: 'We focus on businesses with $25-250M in revenue and $5-30M in EBITDA in industrial services, manufacturing, distribution, healthcare services, and tech-enabled B2B operations. We''re particularly interested in founder/family transitions, companies with growth potential, and operationally challenged businesses that would benefit from our hands-on approach. Learn more about our <a href="/investment-approach/">investment approach</a>.'
       
       - question: "How is Amalgam different from traditional private equity?"
-        answer: "Unlike traditional financial buyers, we're operators first and investors second. Our team has built, run, and transformed businesses from the ground up, giving us unique insight into owners' challenges. Our independent sponsor model allows for flexible deal structures tailored to each situation, and our operational expertise means we can create value through business improvements rather than financial engineering."
+        answer: 'Unlike traditional financial buyers, we''re operators first and investors second. Our <a href="/team/">team</a> has built, run, and transformed businesses from the ground up, giving us unique insight into owners'' challenges. Our independent sponsor model allows for flexible deal structures tailored to each situation, and our operational expertise means we can create value through business improvements rather than financial engineering.'
       
       - question: "What happens to my company's brand and identity after acquisition?"
-        answer: "We believe in preserving the legacy you've built. As demonstrated with our MechanAir platform, we maintain regional brands and identities while providing access to shared resources, technology, and capital for growth. Our goal is to build upon your success, not erase your history."
+        answer: 'We believe in preserving the legacy you''ve built. As demonstrated with our <a href="/portfolio/">MechanAir platform</a>, we maintain regional brands and identities while providing access to shared resources, technology, and capital for growth. Our goal is to build upon your success, not erase your history.'
       
       - question: "How involved will Amalgam be in day-to-day operations?"
         answer: "Our involvement varies based on the company's needs and the management team's preferences. We can be as hands-on as needed, stepping into interim roles during transitions or providing more strategic guidance for stable operations. We all focus on collaborative partnership rather than dictating decisions from afar."

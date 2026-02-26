@@ -34,5 +34,5 @@ numbers:
 casestudy:
   title: "MechanAir: Our Platform in Action"
   subtitle: "National HVAC & Plumbing Services Platform"
-  description: "In 2021, we partnered with Delos Capital to form MechanAir, bringing together State Mechanical Services (Illinois) and Hampton Roads Mechanical (Virginia) – regional leaders with impressive client rosters including Amazon, Nobu Hotels, and NASA. Under our guidance, MechanAir has implemented shared estimating technology, launched 24/7 service teams, and executed on strategic add-on acquisitions – demonstrating our thesis of preserving regional brands while building national capabilities."
+  description: 'In 2021, we partnered with Delos Capital to form MechanAir, bringing together State Mechanical Services (Illinois) and Hampton Roads Mechanical (Virginia) – regional leaders with impressive client rosters including Amazon, Nobu Hotels, and NASA. Under our guidance, MechanAir has implemented shared estimating technology, launched 24/7 service teams, and executed on strategic add-on acquisitions – demonstrating our thesis of preserving regional brands while building national capabilities. <a href="/portfolio/">View our full portfolio →</a>'
 ---

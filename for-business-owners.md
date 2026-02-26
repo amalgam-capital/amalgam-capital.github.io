@@ -71,7 +71,7 @@ superior_outcomes:
         - "We invest in expanding capabilities, not just cutting costs"
         - "We create growth opportunities for your employees"
         - "We maintain community relationships and involvement"
-      example: "The MechanAir platform demonstrates how we've grown the businesses we acquired while honoring their individual legacies – expanding service offerings, creating career advancement opportunities, and strengthening their market positions."
+      example: 'The <a href="/portfolio/">MechanAir platform</a> demonstrates how we''ve grown the businesses we acquired while honoring their individual legacies – expanding service offerings, creating career advancement opportunities, and strengthening their market positions.'
 
 testimonials:
   title: "Owner Testimonials"

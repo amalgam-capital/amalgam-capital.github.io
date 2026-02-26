@@ -40,7 +40,7 @@ active_platforms:
           color: "indigo"
           description: "Serving Amazon, Nobu Hotels, NASA, and other leading organizations"
           span_cols: true
-      impact: "MechanAir exemplifies our investment approach – finding strong regional players, supporting them with capital and operational expertise, and creating a larger entity that delivers greater value to customers and investors alike."
+      impact: 'MechanAir exemplifies our <a href="/investment-approach/">investment approach</a> – finding strong regional players, supporting them with capital and operational expertise, and creating a larger entity that delivers greater value to customers and investors alike.'
       website: "https://mechanair.com"
 
 case_studies:

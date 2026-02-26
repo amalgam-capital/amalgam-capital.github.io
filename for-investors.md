@@ -10,7 +10,7 @@ subtitle: "Our unique approach combines proprietary deal flow with proven operat
 
 investment_advantage:
   title: "The Amalgam Capital Investment Advantage"
-  description: "Traditional private equity relies heavily on financial engineering, multiple expansion, and market timing. Amalgam creates value differently – through tangible operational improvements and strategic growth initiatives that reduce risk and enhance returns regardless of market conditions."
+  description: 'Traditional private equity relies heavily on financial engineering, multiple expansion, and market timing. Amalgam creates value differently – through tangible operational improvements and strategic growth initiatives that reduce risk and enhance returns regardless of market conditions. See our <a href="/investment-approach/">full approach</a>.'
 
 why_choose_amalgam:
   title: "Why Limited Partners & Co-Investors Choose Amalgam"

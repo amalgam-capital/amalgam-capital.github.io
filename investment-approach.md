@@ -70,7 +70,7 @@ playbook:
         - "Technology modernization and digital transformation"
         - "New market entry and customer diversification"
         - "Talent development and incentive alignment"
-      conclusion: "Throughout this process, we maintain the unique culture and customer relationships that made the business successful in the first place."
+      conclusion: 'Throughout this process, we maintain the unique culture and customer relationships that made the business successful in the first place. See how this works in practice with our <a href="/portfolio/">portfolio companies</a>.'
 
 seller_process:
   title: "Seller-Friendly Process"
