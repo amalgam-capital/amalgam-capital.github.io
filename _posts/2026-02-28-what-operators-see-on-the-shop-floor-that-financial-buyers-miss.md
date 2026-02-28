@@ -227,7 +227,7 @@ This framework is not a checklist to run through on a site visit. It is a lens f
 
 **We conduct operational due diligence on every deal we evaluate, and we share our full Operational Due Diligence Framework with capital partners before every close. If you are an investor looking for a sponsor who goes deeper than the spreadsheet, request a copy of the framework and we will walk you through how we apply it. If you are a business owner wondering what an operator would see on your shop floor, we will give you a confidential, no-obligation assessment. No pitch, just perspective.**
 
-**Contact Rachit Shukla, Managing Partner, at [email] or visit amalgamcapital.com.**
+**Contact Rachit Shukla, Managing Partner, at rachit@amalgamcapital.com or visit amalgamcapital.com.**
 
 -----
 
