@@ -3,7 +3,7 @@ title: "What Operators See on the Shop Floor That Financial Buyers Miss"
 description: "Most private equity due diligence lives in spreadsheets. The operator's edge lives on the shop floor. Here is the six-category framework we use to find value that financial buyers overlook, and the discipline to walk away when the operational lift is too heavy."
 author: "Rachit Shukla"
 date: 2026-02-28
-categories: [Operations, Due Diligence]
+categories: [Insights]
 tags: [operational-due-diligence, manufacturing, value-creation, lower-middle-market]
 ---
 
