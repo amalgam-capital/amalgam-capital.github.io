@@ -1,7 +1,7 @@
 ---
 title: "PE Firms Spend $500K on Due Diligence and $0 on Asking Management What Is Actually Working"
 description: "Private equity has the most rigorous pre-investment process of any asset class, then governs a five-year partnership with a quarterly PowerPoint and good intentions. The retrospective framework borrowed from software can fix that."
-author: "Rachit Kataria"
+author: "Rachit Shukla"
 date: 2026-03-09
 categories: [Insights]
 tags: [Private Equity, Portfolio Operations, Retrospectives, Management, Governance]
