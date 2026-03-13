@@ -66,17 +66,31 @@
 </div>
 
 <script>
-function toggleMobileMenu() {
-	const mobileMenu = document.getElementById('mobile-menu');
-	const menuButton = document.querySelector('[aria-controls="mobile-menu"]');
-	const menuIcons = menuButton.querySelectorAll('svg');
-	
-	mobileMenu.classList.toggle('hidden');
-	menuIcons.forEach(icon => icon.classList.toggle('hidden'));
-	
-	const isExpanded = mobileMenu.classList.contains('hidden') ? 'false' : 'true';
-	menuButton.setAttribute('aria-expanded', isExpanded);
-}
+(function() {
+	let mobileMenu, menuButtons, menuIcons;
+
+	function initMenuCache() {
+		mobileMenu = document.getElementById('mobile-menu');
+		menuButtons = document.querySelectorAll('[aria-controls="mobile-menu"]');
+		menuIcons = [];
+		menuButtons.forEach(btn => {
+			const icons = btn.querySelectorAll('svg');
+			icons.forEach(icon => menuIcons.push(icon));
+		});
+	}
+
+	window.toggleMobileMenu = function() {
+		if (!mobileMenu) initMenuCache();
+		if (!mobileMenu) return;
+
+		mobileMenu.classList.toggle('hidden');
+		menuIcons.forEach(icon => icon.classList.toggle('hidden'));
+
+		const isExpanded = !mobileMenu.classList.contains('hidden');
+		const expandedStr = isExpanded ? 'true' : 'false';
+		menuButtons.forEach(btn => btn.setAttribute('aria-expanded', expandedStr));
+	}
+})();
 
 // Add scroll event listener to handle backdrop blur on mobile only
 window.addEventListener('scroll', function() {
