@@ -73,9 +73,9 @@ function CopyToClipboard(element) {
         .cssText;
       //chang Element tag from block level elements to inline level elements (span)
       descendents[i].outerHTML = descendents[i].outerHTML.replace(
-        new RegExp(tagname, "ig"),
-        "span"
-      ); //todo: need to change RegExp to tag name only not inner text
+        new RegExp("(<\\/?)" + tagname + "(\\s|\\/?>)", "ig"),
+        "$1span$2"
+      );
       //add all Element style include default style to new tag
       descendents[i].style.cssText = defultcss;
     }
