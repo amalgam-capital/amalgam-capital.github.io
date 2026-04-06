@@ -16,7 +16,7 @@ noindex: true
          <table cellspacing="0" cellpadding="0" border="0">
             <tr>
                <td valign="top" width="80" style="padding:0 8px 0 0;vertical-align: top;">
-               	<a href="http://amalgam.capital" target="_blank"><img alt="Amalgam Capital" width="80" style="width:80px;moz-border-radius:100%;khtml-border-radius:100%;o-border-radius:10%;webkit-border-radius:100%;ms-border-radius:100%;border-radius:100%;" src="https://amalgamcapital.com/images/logo-circle.png" /></a>
+		<a href="http://amalgam.capital" target="_blank" rel="noopener noreferrer"><img alt="Amalgam Capital" width="80" style="width:80px;moz-border-radius:100%;khtml-border-radius:100%;o-border-radius:10%;webkit-border-radius:100%;ms-border-radius:100%;border-radius:100%;" src="https://amalgamcapital.com/images/logo-circle.png" /></a>
                </td>
                <td style="font-size:1em;padding:0 15px 0 8px;vertical-align: top;" valign="top">
                   <table cellspacing="0" cellpadding="0" border="0" style="line-height: 1.1;">
@@ -35,7 +35,7 @@ noindex: true
                         <td style="padding: 0;"><a style="font: 0.75em Verdana, Geneva, sans-serif;color:#F16545; text-decoration: none;" href="tel:(XXX) XXX-XXXX">(XXX) XXX-XXXX</a></td>
                      </tr>
                      <tr style="padding: 0;">
-                        <td style="padding: 0;"><a style="font: 0.75em Verdana, Geneva, sans-serif;color:#F16545; text-decoration: none;" href="http://amalgam.capital" target="_blank">amalgam.capital</a></td>
+                        <td style="padding: 0;"><a style="font: 0.75em Verdana, Geneva, sans-serif;color:#F16545; text-decoration: none;" href="http://amalgam.capital" target="_blank" rel="noopener noreferrer">amalgam.capital</a></td>
                      </tr>
                   </table>
                </td>
