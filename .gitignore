@@ -14,3 +14,4 @@ _site/index.html
 .DS_Store
 vendor/
 .bundle/
+.DS_Store
